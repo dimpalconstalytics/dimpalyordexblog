@@ -75,6 +75,7 @@ sections:
   button:
     copy: 
     url: 
+- handle: testimonials
 layout: index
 ---
 

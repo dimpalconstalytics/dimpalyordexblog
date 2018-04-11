@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  testimonials:
+    title: Testimonials
+    output: false
 defaults:
 - scope:
     path: ''
@@ -20,6 +23,15 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: testimonials
+  values:
+    body:
+    author:
+      name:
+      title:
+      company:
 url: http://www.yordex.com
 description: Simplify your payment process with our software to automate the accounts
   payable system for both buyers and sellers. Reduce cost and improve payment terms.

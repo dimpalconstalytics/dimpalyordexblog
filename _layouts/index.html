@@ -36,6 +36,11 @@ layout: default
 	{% when 'signup' %}
 		<h3 class="">{{ section.title }}</h3>
 		<p>{{ subsection.body | markdownify }}</p>
+		{% if section.button %}
+			<!-- Show cta button to get started page – page will be added later -->
+		{% endif %}
+	{% when 'testimonials' %}
+	{% assign sorted_testimonials = site.testimonials | sort:'position' %}
 {% endcase %}
 </section>
 {% endfor %}
