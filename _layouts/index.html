@@ -5,22 +5,37 @@ layout: default
 {% for section in page.sections %}
 {% assign handle = section.handle %}
 <section class="section {% if handle %}{{ section.handle | prepend: 'section-' | append: ' ' }}{% endif %}">
-{% if section.title %}
-	{{ section.title }}
-{% endif %}
-
 {% case handle %}
-    {% when 'benefits' %}
-      {% for subsection in section.subsections %}
-			<img src="{{ subsection.icon-image }}" />
-			<h2 class="">{{ subsection.title }}</h2>
-			<p>{{ subsection.body | markdownify }}</p>
-			<figure class="">
-				<img src="{{ subsection.image }}" />
-			</figure>
+  {% when 'benefits' %}
+    {% for subsection in section.subsections %}
+		<img src="{{ subsection.icon-image }}" />
+		<h2 class="">{{ subsection.title }}</h2>
+		<p>{{ subsection.body | markdownify }}</p>
+		<figure class="">
+			<img src="{{ subsection.image }}" />
+		</figure>
 		{% endfor %}
-		{% when 'demo' %}
-    {% when 'features' %}
+	{% when 'demo' %}
+	{{ section.subtitle }}
+	<form>
+    <input class="" type="email" placeholder="Your Work Email"/>
+    <button class="" type="submit">{{ section.button.copy }}</button>
+	</form>
+	<div class="macbook">
+    <div class="macbook__screen" style="padding-top: 62.5%; background-image: url('{{ section.image }}'); background-size: cover;"></div>
+   </div>
+  {% when 'features' %}
+  {% if section.title %}
+		<h3 class="">{{ section.title }}</h3>
+	{% endif %}
+  {% for subsection in section.subsections %}
+		<img src="{{ subsection.icon-image }}" />
+		<h4 class="">{{ subsection.title }}</h4>
+		<p>{{ subsection.body | markdownify }}</p>
+	{% endfor %}
+	{% when 'signup' %}
+		<h3 class="">{{ section.title }}</h3>
+		<p>{{ subsection.body | markdownify }}</p>
 {% endcase %}
 </section>
 {% endfor %}
