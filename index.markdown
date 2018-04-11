@@ -69,9 +69,9 @@ sections:
     icon-image: "/uploads/icon-reports.svg"
 - handle: signup
   title: Maximise your ROI from day one
-  body: Unlock access to information, sooner. Get real time visibility and control
-    over all purchases and expenses by implementing a mobile-friendly PO approval
-    process.
+  body: Get up and running with Yordex with virtually no interruption to your current
+    processes. Unlike other AP solutions Yordex has no expensive, time-consuming process
+    re-design enabling you to maximise your return on investment from day one.
 layout: index
 ---
 
