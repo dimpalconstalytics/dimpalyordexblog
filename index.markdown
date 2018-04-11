@@ -1,7 +1,6 @@
 ---
 title: Home
-header:
-
+header: 
 sections:
 - title: 
   handle: benefits
@@ -31,11 +30,12 @@ sections:
     image: 
     icon-image: "/uploads/icon-support-love.svg"
 - title: 
-  subtitle: Reduce invoice processing costs, improve visibility and working capital. Schedule your free demo today.
+  subtitle: Reduce invoice processing costs, improve visibility and working capital.
+    Schedule your free demo today.
   handle: demo
   button:
     copy: Schedule a demo
-    url: /request-demo
+    url: "/request-demo"
 - title: A powerful set of financial features to reduce your invoice processing cost
   handle: features
 layout: index
