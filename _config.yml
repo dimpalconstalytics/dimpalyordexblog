@@ -24,7 +24,8 @@ defaults:
   values:
     layout: page
 url: http://www.yordex.com
-description: Simplify your payment process with our software to automate the accounts payable system for both buyers and sellers. Reduce cost and improve payment terms.
+description: Simplify your payment process with our software to automate the accounts
+  payable system for both buyers and sellers. Reduce cost and improve payment terms.
 twitter:
   username: YordexLTD
 social:
@@ -33,11 +34,11 @@ social:
     link: https://www.twitter.com/YordexLTD
   - name: LinkedIn
     link: https://www.linkedin.com/company/yordex
-footer_text:
+footer_text: 
 date_format: "%-d %B %Y"
 per_page: 10
 gtm-code: GTM-55TB3WF
-excerpt_separator: |2+
+excerpt_separator: ''
 exclude:
 - Gemfile
 - Gemfile.lock
@@ -48,5 +49,3 @@ exclude:
 gems:
 - jekyll-seo-tag
 - jekyll-sitemap
-
-
