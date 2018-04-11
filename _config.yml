@@ -2,9 +2,6 @@
 title: yordex.com
 timezone: Europe/London
 collections:
-  faqs:
-    title: Faqs
-    output: true
   posts:
     title: Posts
     output: true
