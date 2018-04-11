@@ -1,0 +1,18 @@
+{% assign post = include.post %}
+{% assign is_excerpt = include.is_excerpt %}
+<article class="">
+  {% if is_excerpt %}
+    <h2 class=""><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  {% endif %}
+
+  <section class="">
+    {% if is_excerpt %}
+      {{ post.excerpt | markdownify }}
+    {% else %}
+      {{ post.content | markdownify }}
+    {% endif %}
+    {% if is_excerpt and post.excerpt != post.content %}
+      <a href="{{ post.url }}" class="">Read more</a>
+    {% endif %}
+  </section>
+</article>
