@@ -3,5 +3,24 @@ layout: default
 ---
 
 {% for section in page.sections %}
+{% assign handle = section.handle %}
+<section class="section {% if handle %}{{ section.handle | prepend: 'section-' | append: ' ' }}{% endif %}">
+{% if section.title %}
+	{{ section.title }}
+{% endif %}
 
+{% case handle %}
+    {% when 'benefits' %}
+      {% for subsection in section.subsections %}
+			<img src="{{ subsection.icon-image }}" />
+			<h2 class="">{{ subsection.title }}</h2>
+			<p>{{ subsection.body | markdownify }}</p>
+			<figure class="">
+				<img src="{{ subsection.image }}" />
+			</figure>
+		{% endfor %}
+		{% when 'demo' %}
+    {% when 'features' %}
+{% endcase %}
+</section>
 {% endfor %}
