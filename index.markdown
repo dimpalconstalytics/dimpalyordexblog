@@ -76,6 +76,16 @@ sections:
     copy: 
     url: 
 - handle: testimonials
+  testimonials:
+  - Aidan Connolly
+  - Sheetal Sachdev
+  - Remco Rausch
+- handle: cta
+  title: Ready to get your business on Yordex?
+  subtitle: Reduce invoice processing costs, improve visibility and working capital. Schedule your free demo today.
+  button:
+    copy: Schedule a Demo
+    url: 
 layout: index
 ---
 
