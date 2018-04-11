@@ -72,6 +72,9 @@ sections:
   body: Get up and running with Yordex with virtually no interruption to your current
     processes. Unlike other AP solutions Yordex has no expensive, time-consuming process
     re-design enabling you to maximise your return on investment from day one.
+  button:
+    copy: 
+    url: 
 layout: index
 ---
 
