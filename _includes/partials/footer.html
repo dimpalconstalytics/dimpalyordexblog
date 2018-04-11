@@ -1,4 +1,14 @@
 <footer class="" role="contentinfo">
+&copy;&nbsp;{{ 'now' | date: "%Y" }},&nbsp;Yordex Ltd. All rights reserved.
+{% if site.footer_text %}
+  {{ site.footer_text }}
+{% endif %}
+
+{% for item in site.data.navigation.header %}
+  <a href="{{ item.url }}" class="">{{ item.title }}</a>
+{% endfor %}
+
+<!-- TODO: Show Category Label -->
 {% for item in site.data.navigation.footer %}
   <a href="{{ item.url }}" class="">{{ item.title }}</a>
 {% endfor %}
