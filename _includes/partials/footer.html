@@ -1,0 +1,5 @@
+<footer class="" role="contentinfo">
+{% for item in site.data.navigation.footer %}
+  <a href="{{ item.url }}" class="">{{ item.title }}</a>
+{% endfor %}
+</footer>

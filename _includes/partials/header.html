@@ -1,0 +1,7 @@
+{% assign my_page_url = page.url | remove: '/' %}
+
+<header role="banner">
+{% for item in site.data.navigation.header %}
+  <a href="{{ item.url }}" class="">{{ item.title }}</a>
+{% endfor %}
+</header>
