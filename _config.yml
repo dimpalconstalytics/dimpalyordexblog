@@ -32,7 +32,8 @@ defaults:
       name: 
       title: 
       company: 
-    image: 
+      profile-image: 
+    logo-image: 
 url: http://www.yordex.com
 description: Simplify your payment process with our software to automate the accounts
   payable system for both buyers and sellers. Reduce cost and improve payment terms.
