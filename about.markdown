@@ -1,6 +1,6 @@
 ---
 title: About
-date: 2018-04-11 03:41:00 Z
+date: 2018-04-11 04:41:00 +01:00
 position: 5
 layout: about
 ---

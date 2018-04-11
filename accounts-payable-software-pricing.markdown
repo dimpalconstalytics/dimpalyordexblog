@@ -1,6 +1,6 @@
 ---
 title: Pricing
-date: 2018-04-11 03:37:00 Z
+date: 2018-04-11 04:37:00 +01:00
 position: 2
 layout: pricing
 ---
