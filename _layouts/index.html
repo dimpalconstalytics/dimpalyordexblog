@@ -41,7 +41,7 @@ layout: default
 		{% endif %}
 	{% when 'testimonials' %}
 	{% assign sorted_testimonials = site.testimonials | sort:'position' %}
-	{% for testimonial in sorted_testimonials limit:6 %}
+	{% for testimonial in sorted_testimonials %}
 		{% if section.testimonials contains testimonial.title %}
 			<blockquote class="">{{ testimonial.content }}</blockquote>
 			<img src="{{ testimonial.author.profile-image }}" alt="Photo of {{ testimonial.author.name }}" title="{{ testimonial.author.name }}" />
