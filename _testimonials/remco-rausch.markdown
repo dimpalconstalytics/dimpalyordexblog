@@ -5,6 +5,8 @@ author:
   name: Remco Rausch
   title: Enterprise Product Manager
   company: LoveCrafts
+  profile-image: "/uploads/remco@2x.jpg"
+logo-image: "/uploads/logo-lovecrafts@2x.png"
 color: "#05C"
 ---
 
