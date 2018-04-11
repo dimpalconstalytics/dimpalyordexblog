@@ -41,6 +41,15 @@ layout: default
 		{% endif %}
 	{% when 'testimonials' %}
 	{% assign sorted_testimonials = site.testimonials | sort:'position' %}
+	{% for testimonial in sorted_testimonials limit:6 %}
+		<blockquote class="">{{ testimonial.body }}</blockquote>
+		<img src="{{ testimonial.profile-image }}" alt="Photo of {{ testimonial.author.name }}" title="{{ testimonial.author.name }}" />
+		{{ testimonial.author.name }}
+		{{ testimonial.author.title }}&nbsp;at&nbsp;{{ testimonial.author.company }}
+		{% if testimonial.logo-image %}
+		<img src="{{ testimonial.logo-image }}" alt="{{ testimonial.author.company }} logo" title="{{ testimonial.author.company }}" />
+		{% endif %}
+	{% endfor %}
 {% endcase %}
 </section>
 {% endfor %}
