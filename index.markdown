@@ -8,7 +8,9 @@ header:
     up to 75%, improve visibility, optimise cash flow and deliver winning buyer-supplier
     relationships.
   button:
-    Key 1: 
+    copy: Schedule a Demo
+    url: "/request-demo"
+  hero-image: 
 layout: index
 ---
 
