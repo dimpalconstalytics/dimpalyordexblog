@@ -1,29 +1,27 @@
 header:
 - title: Product
-  url: /product/
-- title: Pricing
-  url: /accounts-payable-software-pricing/
+  url: https://yordex.com/product
 - title: Suppliers
-  url: /suppliers/
+  url: https://yordex.com/supplier
 footer:
 - title: About Us
-  url: /about/
+  url: https://yordex.com/about
   category: Company
 - title: News
-  url: /blog/
+  url: /
   category: Company
 - title: Faq
-  url: /faq/
+  url: https://yordex.com/faqs
   category: Support
 - title: Contact
-  url: /contact/
+  url: https://yordex.com/contact
   category: Support
 - title: API Docs
   url: http://docs.yordex.com
   category: Support
 - title: Privacy Policy
-  url: /privacy/
+  url: https://yordex.com/privacy
   category: Resources
 - title: Terms of Service
-  url: /terms-of-use/
+  url: https://yordex.com/terms-of-use
   category: Resources
