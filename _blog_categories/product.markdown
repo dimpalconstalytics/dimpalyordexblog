@@ -1,0 +1,4 @@
+---
+title: Product
+layout: category
+---

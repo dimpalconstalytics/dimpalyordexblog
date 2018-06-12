@@ -2,8 +2,14 @@
 title: yordex.com
 timezone: Europe/London
 collections:
+  authors:
+    title: Authors
+    output: true
   posts:
     title: Posts
+    output: true
+  blog_categories:
+    title: Categories
     output: true
   testimonials:
     title: Testimonials
@@ -18,6 +24,19 @@ defaults:
   values:
     layout: post
     permalink: "/:title/"
+- scope:
+    path: ''
+    type: blog_categories
+  values:
+    permalink: "/category/:title/"
+    layout: category
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/author/:title/"
+    layout: author
+    image:
 - scope:
     path: ''
     type: pages
