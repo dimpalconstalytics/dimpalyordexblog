@@ -1,9 +1,35 @@
 {% assign post = include.post %}
 {% assign is_excerpt = include.is_excerpt %}
-<article class="">
+{% assign show_author = include.show_author %}
+
+<article class="article">
+
   {% if is_excerpt %}
-    <h2 class=""><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <header>
+      {% if post.category %}
+      <div class="article__category">
+        {{ post.category }}
+      </div>
+      {% endif %}
+
+      <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+      <div class="article__meta">
+        {% assign author = site.authors | where: 'title', post.author | first %}
+        {% if author and show_author %}
+        <div class="article__author"><img class="article__author-profile thumb--small thumb--rounded" src='{{ author.image }}' alt="{{ author.title }}" title="{{ author.title }}" /><a href="{{ author.url }}">{{ author.title }}</a>
+        </div>
+        {% endif %}
+        {% if post.date %}
+        <div class="article__date">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+        </div>
+        {% endif %}
+      </div>
+    </header>
   {% endif %}
+
+
 
   <section class="">
     {% if is_excerpt %}
@@ -16,3 +42,4 @@
     {% endif %}
   </section>
 </article>
+
