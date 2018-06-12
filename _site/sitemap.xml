@@ -8,9 +8,6 @@
 <loc>http://localhost:4000/about.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/accounts-payable-software-pricing.html</loc>
-</url>
-<url>
 <loc>http://localhost:4000/blog.html</loc>
 </url>
 <url>
@@ -21,9 +18,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/privacy.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/product.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/suppliers.html</loc>
