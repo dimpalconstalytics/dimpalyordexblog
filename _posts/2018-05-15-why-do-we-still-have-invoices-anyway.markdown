@@ -3,6 +3,7 @@ title: Why do we still have invoices anyway?
 date: 2018-05-15 05:02:00 +01:00
 categories:
 - best practices
+author: Erik De Kroon
 ---
 
 Let’s take invoices as an example. They may sometimes be received by email, but they still need to be manually compared to what was ordered and what was received. It takes an average business 10 days and between £15 to £25 to approve an invoice for payment. After that, someone still needs to manually enter the invoice in the accounting system and trigger a payment with their bank.
