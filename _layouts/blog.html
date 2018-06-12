@@ -6,7 +6,7 @@ layout: default
   <div class="container">
   	<div class="blog__content gutter">
 			{% for post in site.posts limit:site.per_page %}
-			  {% include partials/post.html post=post is_excerpt=true %}
+			  {% include partials/post.html post=post is_excerpt=true show_author=true %}
 			{% endfor %}
 			<div class="blog__buttonWrap">
   			<a href="/archive/" class="button button-secondary">Older posts</a>

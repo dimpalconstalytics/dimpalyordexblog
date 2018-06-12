@@ -3,35 +3,40 @@
 {% assign show_author = include.show_author %}
 
 <article class="article">
-
   {% if is_excerpt %}
-    <header>
-      {% if post.category %}
-      <div class="article__category">
-        {{ post.category }}
+    {% if post.categories %}
+      <ul class="article__categories">
+        {% for post_category in post.categories %}
+          {% assign post_category_downcase = post_category | downcase %}
+          {% for site_category in site.blog_categories %}
+            {% assign site_category_title = site_category.title | downcase %}
+            {% if site_category_title == post_category_downcase %}
+              <li class="article__category"><a href="{{ site_category.permalink }}" class="article__category__link{% if site_category.color %} bg--{{site_category.color}}{% endif %}">{{ site_category.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+    {% if post.author or post.date %}
+    <section class="article__meta">
+      {% assign author = site.authors | where: 'title', post.author | first %}
+      {% if author and show_author %}
+      <div class="article__author"><img class="article__author-profile thumb--small thumb--rounded" src='{{ author.image }}' alt="{{ author.title }}" title="{{ author.title }}" /><a href="{{ author.url }}">{{ author.title }}</a>
       </div>
       {% endif %}
-
-      <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="article__meta">
-        {% assign author = site.authors | where: 'title', post.author | first %}
-        {% if author and show_author %}
-        <div class="article__author"><img class="article__author-profile thumb--small thumb--rounded" src='{{ author.image }}' alt="{{ author.title }}" title="{{ author.title }}" /><a href="{{ author.url }}">{{ author.title }}</a>
-        </div>
-        {% endif %}
-        {% if post.date %}
-        <div class="article__date">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
-        </div>
-        {% endif %}
+      {% if post.date %}
+      <div class="article__date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
       </div>
-    </header>
+      {% endif %}
+    </section>
+    {% endif %}
   {% endif %}
 
-
-
-  <section class="">
+  <section class="article__content">
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}
     {% else %}
