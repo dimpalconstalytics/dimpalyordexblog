@@ -3,6 +3,9 @@ title: Should your supply chain be agile?
 date: 2018-06-08 04:39:00 +01:00
 categories:
 - product
+description: This is the first post in a series of posts about making supply chain
+  management and the related functions procurement and accounts payable more agile.
+author: Erik De Kroon
 ---
 
 In this first article we will just look at the "why". In later posts we will look at the "how".
