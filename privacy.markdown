@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 date: 2018-04-11 04:45:00 +01:00
-position: 6
+position: 7
 layout: post
 ---
 
