@@ -24,9 +24,10 @@ defaults:
   values:
     layout: post
     permalink: "/:title/"
+    description: 
+    category: 
     image: 
     author: 
-    description: 
 - scope:
     path: ''
     type: blog_categories
