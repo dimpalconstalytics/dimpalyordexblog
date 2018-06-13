@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.header %}
-<section class="page-header o-section">
+<section class="page-header">
 	<div class="o-container-6">
 		<div class="page-header__hgroup">
 			{% if page.header.title %}<h1 class="page-header__heading o-h2">{{ page.header.title }}</h1>{% endif %}
@@ -13,11 +13,12 @@ layout: default
 </section>
 {% endif %}
 
-<section class="section-blog o-section">
+<section class="section-blog">
   <div class="o-container-6">
-  	<ul class="blog__topics">
+  	<ul class="blog__topics c-tab-bar">
+  	<li class="c-tab-bar__item c-tab-bar__item--active">Latest</li>
   	{% for blog_topic in site.topics %}
-  			<li class="blog__topic"><a href="{{ blog_topic.url }}" class="blog__topic__link">{{ blog_topic.title }}</a></li>
+  			<li class="c-tab-bar__item"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
 		{% endfor %}
 		</ul>
 

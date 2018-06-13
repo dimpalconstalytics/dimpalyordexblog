@@ -1,0 +1,25 @@
+.c-tab-bar {
+	display: flex;
+  box-shadow: 0 1px 0 0 $text-color-light-7;
+  justify-content: center;
+
+	&__item {
+    flex: 0 1 auto;
+    padding: 0 18px;
+    font-size: ms(0);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: rhythm(1) 20px;
+    transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
+    text-align: center;
+    color: $text-color-dark-4;
+    box-shadow: none;
+
+    &--active {
+      font-weight: 500;
+      color: $color-tertiary;
+      box-shadow: 0 2px 0 $color-primary;
+    }
+	}
+}

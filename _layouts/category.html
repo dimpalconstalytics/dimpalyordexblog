@@ -1,11 +1,24 @@
 ---
 layout: default
 ---
-
-{% assign topic_posts = site.posts | where: 'topic', page.title %}
+<section class="page-header">
+	<div class="o-container-6">
+		<div class="page-header__hgroup">
+			<h1 class="page-header__heading o-h2">{{ page.title }}</h1>
+		</div>
+	</div>
+</section>
 
 <section class="section-blog">
-  <div class="">
+	<div class="o-container-6">
+		<ul class="blog__topics c-tab-bar">
+  	<li class="c-tab-bar__item"><a href="/">Latest</a></li>
+  	{% for blog_topic in site.topics %}
+  		<li class="c-tab-bar__item {% if blog_topic.url == page.url %}c-tab-bar__item--active{% endif %}"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
+		{% endfor %}
+		</ul>
+
+		{% assign topic_posts = site.posts | where: 'topic', page.title %}
   	<div class="">
 			{% for post in topic_posts %}
   			{% include partials/post.html post=post is_excerpt=true show_author=true %}
