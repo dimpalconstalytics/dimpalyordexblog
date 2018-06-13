@@ -1,11 +1,10 @@
 ---
 title: Invoices are a real problem, and now they are a genuine opportunity
 date: 2018-04-10 05:03:00 +01:00
-categories:
-- news
-description: Just over a year ago I decided to leave my job at a successful payments
-  company to start my own company. The decision wasn’t easy with a family and three
-  children in London. So why did I do it?
+excerpt: Just over a year ago I decided to leave my job at a successful payments company
+  to start my own company. The decision wasn’t easy with a family and three children
+  in London. So why did I do it?
+topic: News
 author: Erik De Kroon
 ---
 
