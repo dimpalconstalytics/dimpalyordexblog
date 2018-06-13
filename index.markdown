@@ -2,8 +2,8 @@
 title: News
 date: 2018-12-06 09:50:00 +00:00
 position: 0
+heading: Our official Blog
+subheading: All the latest news about our accounts payable software.
 layout: blog
 ---
 
-# Our official Blog
-All the latest news about our accounts payable software.
