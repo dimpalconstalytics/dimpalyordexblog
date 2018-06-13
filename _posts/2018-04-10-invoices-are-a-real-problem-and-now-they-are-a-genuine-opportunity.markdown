@@ -2,6 +2,7 @@
 title: Invoices are a real problem, and now they are a genuine opportunity
 date: 2018-04-10 05:03:00 +01:00
 topic: News
+image: "/uploads/article_img_1@2x.jpg"
 author: Erik De Kroon
 ---
 
