@@ -1,6 +1,6 @@
 ---
 title: News
-layout: topic
+layout: category
 color: blue
 ---
 

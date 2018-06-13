@@ -32,8 +32,8 @@ defaults:
     path: ''
     type: topics
   values:
-    permalink: "/topics/:title/"
-    layout: topic
+    permalink: "/category/:title/"
+    layout: category
 - scope:
     path: ''
     type: authors

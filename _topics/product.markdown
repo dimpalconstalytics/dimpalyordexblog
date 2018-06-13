@@ -1,6 +1,6 @@
 ---
 title: Product
-layout: topic
+layout: category
 color: green
 ---
 
