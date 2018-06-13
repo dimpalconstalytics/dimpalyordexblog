@@ -1,11 +1,10 @@
 ---
 title: Why do we still have invoices anyway?
 date: 2018-05-15 05:02:00 +01:00
-categories:
-- best practices
-description: Digital technologies have impacted almost every aspect of business. Well,
+excerpt: Digital technologies have impacted almost every aspect of business. Well,
   almost every aspect. The way companies and suppliers exchange orders and invoices
   still seems mostly still stuck in the pre-Internet days.
+topic: Best practices
 author: Erik De Kroon
 ---
 
