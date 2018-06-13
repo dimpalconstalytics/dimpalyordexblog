@@ -47,6 +47,10 @@ $grid:
   margin: auto;
 }
 
+.o-container-4 {
+  max-width: get-columns-width(4) + $gutter-width;
+  margin: auto;
+}
 
 // Gutter Objects
 // ------------------------------------ //
@@ -62,6 +66,10 @@ $grid:
   display: flex;
   margin-right: -($gutter-width / 2);
   margin-left: -($gutter-width / 2);
+}
+
+.o-grid-2 {
+  width: get-columns-percentage(2);
 }
 
 .o-grid-3 {

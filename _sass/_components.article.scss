@@ -41,9 +41,124 @@
 
 	&__title {
 		margin-bottom: rhythm(2);
+		padding-right: get-columns-width(2);
 	}
 
-	&__main {
+	&__container {
 		display: flex;
+		justify-content: space-between;
+	}
+
+	&__image {
+		img {
+			max-width: get-columns-width(2);
+    	height: auto;
+    	border-radius: 3px;
+		}
+	}
+
+	&__date {
+		color: $text-color-light-5;
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+		margin-bottom: rhythm(2);
+		font-size: ms(-1);
+
+		&__image {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+	}
+
+	&__link {
+		margin-top: rhythm(2);
+	}
+
+	&__lead {
+		@extend .o-h4;
+		margin: 0 0 rhythm(3) rhythm(-3);
+		padding: rhythm(2) 0 rhythm(2) 22px;
+    border-left: 2px solid $color-primary;
+	}
+
+	&__content {
+	max-width: get-columns-width(4) + $gutter-width;
+
+	  h2,
+	  h3,
+	  h4,
+	  h5,
+	  h6 {
+	    margin: rhythm(5) 0 rhythm(2);
+	    color: $text-color-dark-1;
+	  }
+
+	  h4 {
+			margin-top: rhythm(2);
+	  }
+
+	  p + p {
+	    margin-top: rhythm(3);
+	  }
+
+	  p:first-of-type {
+	    margin-bottom: rhythm(3);
+	  }
+
+	  strong {
+	    font-weight: 500;
+	    position: relative;
+	    color: $text-color-dark-2;
+	  }
+
+	  em {
+	    font-family: 'Open Sans', sans-serif;
+	  }
+
+	  ul,
+	  ol {
+	    margin: 0 0 rhythm(4) 0;
+	    padding-left: 1em;
+
+	    > li {
+	      margin-top: rhythm(2);
+	    }
+	  }
+
+	  a {
+	    @extend .o-link;
+	  }
+
+	  table {
+	    font-size: .875em;
+	    overflow: hidden;
+	    width: 100%;
+	    margin: rhythm(3) 0;
+	    border-collapse: collapse;
+	    color: $text-color-dark-3;
+	    background: $color-white;
+
+	    th,
+	    td {
+	      padding: .5em;
+	      text-align: left;
+	      border: 1px solid $border-color-default;
+	    }
+
+	    th {
+	      font-weight: normal;
+	      padding: 1em .5em;
+	      color: $text-color-dark-1;
+	      border-bottom: 2px solid $border-color-dark;
+	      background: $background-light-2;
+	    }
+	  }
 	}
 }
+
+

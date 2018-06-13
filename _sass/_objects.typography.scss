@@ -83,6 +83,7 @@
   position: relative;
   display: inline-block;
   outline: none;
+  color: $text-color-link;
 
   &::before,
   &::after {
@@ -96,13 +97,13 @@
 
   &::before {
     opacity: .2;
-    background: currentColor;
+    background: rgba(24,170,242,0.50);
   }
 
   &::after {
     transition: transform .3s ease-in-out;
     transform: scaleX(0);
-    background: currentColor;
+    background: rgba(24,170,242,1);
   }
 
   &:hover::after,
@@ -110,7 +111,6 @@
     transform: scaleX(1);
   }
 }
-
 
 // Text Display Objects
 // ------------------------------------ //

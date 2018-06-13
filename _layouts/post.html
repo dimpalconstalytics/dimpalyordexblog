@@ -1,5 +1,16 @@
 ---
 layout: default
 ---
+<section class="page-header">
+	<div class="o-container-6">
+		<div class="page-header__hgroup">
+			<h1 class="page-header__heading o-h1">{{ page.title }}</h1>
+		</div>
+	</div>
+</section>
 
-{% include partials/post.html post=page show_author=true %}
+<section class="section-blog">
+  <div class="o-container-4">
+		{% include partials/post.html post=page show_author=true %}
+  </div>
+</section>
