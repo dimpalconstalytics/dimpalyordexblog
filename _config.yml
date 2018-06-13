@@ -46,8 +46,8 @@ defaults:
   values:
     layout: page
     header:
-      title:
-      body:
+      title: 
+      body: 
 - scope:
     path: ''
     type: testimonials
