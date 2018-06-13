@@ -1,0 +1,49 @@
+.article {
+	margin-bottom: rhythm(4);
+	padding-bottom: rhythm(4);
+	box-shadow: 0 1px 0 0 $text-color-light-7;
+
+	&__category {
+		display: inline-block;
+		margin-bottom: rhythm(1);
+
+		&__link {
+			font-size: 11px;
+			line-height: rhythm(2);
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: .5px;
+			padding: 5px 8px 3px;
+			background: lighten($color-tertiary, 20);
+			border-radius: 20px;
+
+			&--blue {
+				color: $color-tertiary;
+				background: $background-label-1;
+			}
+
+			&--green {
+				color: $color-primary;
+				background: $background-label-2;
+			}
+
+			&--purple {
+				color: $color-quaternary;
+				background: $background-label-3;
+			}
+
+			&--lightblue {
+				color: $color-secondary;
+				background: $background-label-4;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: rhythm(2);
+	}
+
+	&__main {
+		display: flex;
+	}
+}

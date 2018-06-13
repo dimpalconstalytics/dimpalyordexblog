@@ -1,6 +1,6 @@
 ---
 title: Best practices
-color: lightblue
+color: purple
 layout: category
 ---
 
