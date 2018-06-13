@@ -1,7 +1,7 @@
 ---
 title: Home
 published: false
-position: 0
+position: 1
 header:
   title: Unlock the hidden value in accounts payable
   body: Yordex Smart PO’s help businesses reduce invoice processing costs by up to
