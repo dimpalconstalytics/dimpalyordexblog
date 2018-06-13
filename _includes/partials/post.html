@@ -3,20 +3,17 @@
 {% assign show_author = include.show_author %}
 
 <article class="article">
-  {{ post.topic }}
   {% if is_excerpt %}
-    {% if post.categories %}
-      <ul class="article__categories">
-        {% for post_category in post.categories %}
-          {% assign post_category_downcase = post_category | downcase %}
-          {% for site_category in site.blog_categories %}
-            {% assign site_category_title = site_category.title | downcase %}
-            {% if site_category_title == post_category_downcase %}
-              <li class="article__category"><a href="{{ site_category.permalink }}" class="article__category__link{% if site_category.color %} bg--{{site_category.color}}{% endif %}">{{ site_category.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-      </ul>
+    {% if post.topic %}
+    {% assign post_topic_downcase = post.topic | downcase %}
+      <div class="article__category">
+      {% for site_topic in site.topics %}
+        {% assign site_topic_title = site_topic.title | downcase %}
+        {% if site_topic_title == post_topic_downcase %}
+          <a href="{{ site_topic.url }}" class="article__category__link{% if site_topic.color %} bg--{{site_topic.color}}{% endif %}">{{ site_topic.title }}</a>
+        {% endif %}
+      {% endfor %}
+      </div>
     {% endif %}
 
     <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>

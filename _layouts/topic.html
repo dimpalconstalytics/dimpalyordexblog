@@ -2,12 +2,11 @@
 layout: default
 ---
 
-{% assign topic = page.title | downcase %}
-{% assign topic_posts = site.topics[topic] %}
+{% assign topic_posts = site.posts | where: 'topic', page.title %}
 
-<section class="section section-blog">
-  <div class="container">
-  	<div class="blog__content gutter">
+<section class="section-blog">
+  <div class="">
+  	<div class="">
 			{% for post in topic_posts %}
   			{% include partials/post.html post=post is_excerpt=true show_author=true %}
 			{% endfor %}
