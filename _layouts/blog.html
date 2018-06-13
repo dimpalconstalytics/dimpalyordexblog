@@ -2,14 +2,16 @@
 layout: default
 ---
 
+{% if page.header %}
 <section class="page-header o-section">
 	<div class="o-container-6">
 		<div class="page-header__hgroup">
-			<h1 class="page-header__heading o-h2">{{ page.heading }}</h1>
-			<p class="page-header__subheading o-lg-text">{{ page.subheading }}</p>
+			{% if page.header.title %}<h1 class="page-header__heading o-h2">{{ page.header.title }}</h1>{% endif %}
+			{% if page.header.body %}<p class="page-header__subheading o-lg-text">{{ page.header.body }}</p>{% endif %}
 		</div>
 	</div>
 </section>
+{% endif %}
 
 <section class="section-blog o-section">
   <div class="o-container-6">
