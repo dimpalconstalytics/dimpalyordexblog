@@ -24,7 +24,6 @@ defaults:
   values:
     layout: post
     permalink: "/:title/"
-    excerpt: 
     topic: 
     image: 
     author: 
