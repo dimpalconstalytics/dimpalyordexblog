@@ -7,6 +7,7 @@ author: Erik De Kroon
 
 Digital technologies have impacted almost every aspect of business. Well, almost every aspect. The way companies and suppliers exchange orders and invoices still seems mostly still stuck in the pre-Internet days.
 
+
 Let’s take invoices as an example. They may sometimes be received by email, but they still need to be manually compared to what was ordered and what was received. It takes an average business 10 days and between £15 to £25 to approve an invoice for payment. After that, someone still needs to manually enter the invoice in the accounting system and trigger a payment with their bank.
 
 No wonder people hate it. 82% of UK finance professionals say that poor invoice process management was impacting their teams’ ability to perform effectively and leading to low job satisfaction.
