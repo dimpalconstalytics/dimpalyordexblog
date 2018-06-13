@@ -4,7 +4,7 @@ timezone: Europe/London
 collections:
   authors:
     title: Authors
-    output: true
+    output: false
   blog_categories:
     title: Categories
     output: true

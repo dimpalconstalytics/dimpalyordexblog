@@ -24,12 +24,14 @@
     <section class="article__meta">
       {% assign author = site.authors | where: 'title', post.author | first %}
       {% if author and show_author %}
-      <div class="article__author"><img class="article__author-profile thumb--small thumb--rounded" src='{{ author.image }}' alt="{{ author.title }}" title="{{ author.title }}" /><a href="{{ author.url }}">{{ author.title }}</a>
+      <div class="article__author">
+        <img class="article__author__image" src='{{ author.image }}' alt="{{ author.title }}" title="{{ author.title }}" />
+        {{ author.title }}
       </div>
       {% endif %}
       {% if post.date %}
       <div class="article__date">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+        on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
       </div>
       {% endif %}
     </section>
