@@ -5,3 +5,5 @@ position: 0
 layout: blog
 ---
 
+# Our official Blog
+All the latest news about our accounts payable software.
