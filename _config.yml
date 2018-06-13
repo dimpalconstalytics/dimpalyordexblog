@@ -73,7 +73,7 @@ footer_text: Procure-to-pay platform to save time, increase visibility into spen
 date_format: "%-d %B %Y"
 per_page: 10
 gtm-code: GTM-55TB3WF
-excerpt_separator: ''
+excerpt_separator: |2+
 exclude:
 - Gemfile
 - Gemfile.lock
