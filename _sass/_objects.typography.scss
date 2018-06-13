@@ -1,0 +1,172 @@
+// Heading Objects
+// ------------------------------------ //
+.o-h1 {
+  font-size: ms(10);
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.o-h2 {
+  font-size: ms(7);
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.o-h3 {
+  font-size: ms(6);
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.o-h4 {
+  font-size: ms(2);
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.o-h5 {
+  font-size: ms(1);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+// Text Size Objects
+// ------------------------------------ //
+.o-text {
+  font-size: ms(0);
+  line-height: 24px;
+}
+
+.o-lg-text {
+  font-size: ms(1);
+  line-height: 28px;
+}
+
+
+// Text Color Objects
+// ------------------------------------ //
+.o-tc-black {
+  color: $text-color-dark-1;
+}
+
+.o-tc-dark {
+  color: $text-color-dark-2;
+}
+
+.o-tc-light {
+  color: $text-color-dark-3;
+}
+
+.o-tc-primary {
+  color: $color-primary;
+}
+
+.o-tc-secondary {
+  color: $color-secondary;
+}
+
+.o-tc-link {
+  color: $text-color-link;
+}
+
+// Text Position Objects
+// ------------------------------------ //
+.o-align-center {
+  text-align: center;
+}
+
+
+// Text Link Objects
+// ------------------------------------ //
+.o-link {
+  position: relative;
+  display: inline-block;
+  outline: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+  }
+
+  &::before {
+    opacity: .2;
+    background: currentColor;
+  }
+
+  &::after {
+    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    background: currentColor;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+
+// Text Display Objects
+// ------------------------------------ //
+.o-block {
+  display: block;
+}
+
+
+// Responsive Styles
+// ------------------------------------ //
+@include responsive(desktopSM) {
+  .o-h1 {
+    font-size: ms(8);
+    line-height: 48px;
+  }
+
+  .o-h2 {
+    font-size: ms(5);
+    line-height: 40px;
+  }
+
+  .o-h3 {
+    font-size: ms(4);
+    line-height: 32px;
+  }
+
+  .o-h4 {
+    font-size: ms(1);
+    line-height: 28px;
+  }
+
+  .o-h5 {
+    font-size: ms(0);
+    line-height: 24px;
+  }
+
+  .o-text {
+    font-size: ms(0);
+    line-height: 24px;
+  }
+
+  .o-lg-text {
+    font-size: ms(0);
+    line-height: 24px;
+  }
+}
+
+
+// Mobile Responsive Styles
+// ------------------------------------ //
+@include responsive(mobile) {
+  :root {
+    font-size: 15px;
+  }
+
+  .o-h1 {
+    font-size: ms(6);
+  }
+}

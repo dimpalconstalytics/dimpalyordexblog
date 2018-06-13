@@ -1,0 +1,23 @@
+.o-section {
+  overflow-x: hidden;
+  padding-top: rhythm(15);
+  padding-bottom: rhythm(15);
+  background: $color-white;
+
+  // Hero Specific
+  &-hero {
+    padding-top: rhythm(12);
+
+    h2 {
+      color: $text-color-dark-1;
+    }
+  }
+}
+
+// Responsive
+@include slicer(2) {
+  .o-section {
+    padding-top: rhythm(7);
+    padding-bottom: rhythm(7);
+  }
+}

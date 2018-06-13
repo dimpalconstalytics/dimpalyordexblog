@@ -2,9 +2,17 @@
 layout: default
 ---
 
-<section class="section-blog">
-  <div class="container">
-  	{{ content }}
+<section class="page-header o-section">
+	<div class="o-container-6">
+		<div class="page-header__hgroup">
+			<h1 class="page-header__heading o-h2">{{ page.heading }}</h1>
+			<p class="page-header__subheading o-lg-text">{{ page.subheading }}</p>
+		</div>
+	</div>
+</section>
+
+<section class="section-blog o-section">
+  <div class="o-container-6">
   	<ul class="blog__topics">
   	{% for blog_topic in site.topics %}
   			<li class="blog__topic"><a href="{{ blog_topic.url }}" class="blog__topic__link">{{ blog_topic.title }}</a></li>

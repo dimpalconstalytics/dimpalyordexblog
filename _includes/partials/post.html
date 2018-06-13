@@ -16,7 +16,7 @@
       </div>
     {% endif %}
 
-    <h2 class="article__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2 class="article__title o-h3 o-tc-dark"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
     {% if post.author or post.date %}
     <section class="article__meta">
@@ -40,9 +40,9 @@
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}
     {% else %}
-      <p class="article__lead">
+      <div class="article__lead">
         {{ post.excerpt | markdownify }}
-      </p>
+      </div>
       {{ post.content | remove: post.excerpt | markdownify }}
     {% endif %}
     {% if is_excerpt and post.excerpt != post.content %}

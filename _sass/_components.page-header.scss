@@ -1,0 +1,20 @@
+.page-header {
+	padding-top: rhythm(11);
+
+	&__hgroup {
+		margin: 0 auto rhythm(9);
+		text-align: center;
+	}
+
+	&__heading {
+		margin-bottom: rhythm(2);
+		color: $text-color-dark-1;
+	}
+
+	&__subheading {
+		max-width: 700px;
+		margin-right: auto;
+		margin-left: auto;
+		color: $text-color-dark-2;
+	}
+}
