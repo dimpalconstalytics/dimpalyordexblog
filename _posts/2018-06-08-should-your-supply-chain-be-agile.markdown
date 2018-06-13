@@ -7,7 +7,6 @@ author: Erik De Kroon
 
 This is the first post in a series of posts about making supply chain management and the related functions procurement and accounts payable more agile.
 
-
 In this first article we will just look at the "why". In later posts we will look at the "how".
 
 Most companies today want to digitally transform their business and become more agile. IT, product development and marketing are usually high on the agenda, but how about your supply chain? Should it be agile? You want to have long-term relations with your suppliers and the procure-to-pay process should be highly repeatable, so what does it even mean for your supply chain to be agile?

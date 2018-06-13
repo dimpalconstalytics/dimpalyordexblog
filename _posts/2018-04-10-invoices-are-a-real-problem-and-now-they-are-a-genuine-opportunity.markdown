@@ -7,7 +7,6 @@ author: Erik De Kroon
 
 Just over a year ago I decided to leave my job at a successful payments company to start my own company. The decision wasn’t easy with a family and three children in London. So why did I do it?
 
-
 It always struck me that paying suppliers was a pain everywhere I worked, both startups and large companies.
 
 The problem is different depending on the size of the business. At startups placing an order was easy but keeping track of spend against plan was hard because there was no link between the order, the payment and the (usually excel-based) forecast. It was always very easy to overrun the budget.
