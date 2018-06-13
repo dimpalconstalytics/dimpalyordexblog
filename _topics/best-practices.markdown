@@ -1,6 +1,6 @@
 ---
 title: Best practices
-layout: category
+layout: topic
 color: lightblue
 ---
 

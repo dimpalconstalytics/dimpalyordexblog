@@ -5,8 +5,8 @@ collections:
   authors:
     title: Authors
     output: false
-  blog_categories:
-    title: Categories
+  topics:
+    title: Topics
     output: true
   posts:
     title: Posts
@@ -25,15 +25,15 @@ defaults:
     layout: post
     permalink: "/:title/"
     description: 
-    category: 
+    topic: 
     image: 
     author: 
 - scope:
     path: ''
-    type: blog_categories
+    type: topics
   values:
-    permalink: "/category/:title/"
-    layout: category
+    permalink: "/topics/:title/"
+    layout: topic
 - scope:
     path: ''
     type: authors

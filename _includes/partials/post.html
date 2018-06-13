@@ -3,6 +3,7 @@
 {% assign show_author = include.show_author %}
 
 <article class="article">
+  {{ post.topic }}
   {% if is_excerpt %}
     {% if post.categories %}
       <ul class="article__categories">
