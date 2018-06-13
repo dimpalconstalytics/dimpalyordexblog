@@ -40,7 +40,10 @@
     {% if is_excerpt %}
       {{ post.excerpt | markdownify }}
     {% else %}
-      {{ post.content | markdownify }}
+      <p class="article__lead">
+        {{ post.excerpt | markdownify }}
+      </p>
+      {{ post.content | remove: post.excerpt | markdownify }}
     {% endif %}
     {% if is_excerpt and post.excerpt != post.content %}
       <a href="{{ post.url }}" class="">Read more</a>
