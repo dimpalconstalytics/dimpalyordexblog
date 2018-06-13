@@ -5,15 +5,15 @@ collections:
   authors:
     title: Authors
     output: false
-  topics:
-    title: Topics
-    output: true
   posts:
     title: Posts
     output: true
   testimonials:
     title: Testimonials
     output: false
+  topics:
+    title: Topics
+    output: true
   uploads:
     title: Uploads
     output: true
