@@ -36,11 +36,3 @@ We’ve built the technology with the option to take a ‘stepping-stone’ appr
   You don’t have a PO process yet? No problem, this can be included as well. Do you want to also automate expenses? Also no problem, we offer a complete solution to manage all your spend.
 
 If you’re under pressure to find ways to free up resources, operate lean, clean, green and fast then reach out as [I’d love to discuss how Yordex can help](https://yordex.com/contact) you and your business make sure the old invoicing model becomes a relic of the past.
-
-### Want to know more?
-
-* [Find our more about Yordex](https://yordex.com/)
-
-* [Schedule a demo](https://yordex.com/request-demo)
-
-* [Contact us](https://yordex.com/contact)
