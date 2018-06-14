@@ -1,8 +1,6 @@
 ---
 title: Product
 color: green
-cta:
-  title: test
 layout: category
 ---
 
