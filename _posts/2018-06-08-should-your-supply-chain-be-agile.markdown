@@ -2,6 +2,7 @@
 title: Should your supply chain be agile?
 date: 2018-06-08 04:39:00 +01:00
 topic: Product
+image: "/uploads/article_img_2@2x.jpg"
 author: Erik De Kroon
 ---
 
