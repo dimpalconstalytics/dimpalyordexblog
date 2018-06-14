@@ -3,8 +3,10 @@
 	padding-bottom: rhythm(4);
 	box-shadow: 0 1px 0 0 $text-color-light-7;
 
-	&:only-child {
+	&:last-of-type {
 		box-shadow: none;
+		margin: 0;
+		padding: 0;
 	}
 
 	&__category {
@@ -16,7 +18,7 @@
 			line-height: rhythm(2);
 			font-weight: 600;
 			text-transform: uppercase;
-			letter-spacing: .5px;
+			letter-spacing: 1px;
 			padding: 5px 8px 3px;
 			background: lighten($color-tertiary, 20);
 			border-radius: 20px;
@@ -79,11 +81,8 @@
 		}
 	}
 
-	&__link {
-		margin-top: rhythm(2);
-	}
-
 	&__lead {
+		@extend .o-h4;
 		margin: 0 0 rhythm(3) rhythm(-3);
 		padding: rhythm(2) 0 rhythm(2) 22px;
     border-left: 2px solid $color-primary;
@@ -101,8 +100,20 @@
 	    color: $text-color-dark-1;
 	  }
 
+		h2 {
+	    margin: rhythm(6) 0px rhythm(2) 0px;
+	  }
+
+	  h3 {
+	    margin: rhythm(4) 0px rhythm(1) 0px;
+	  }
+
+	  h4 {
+	    margin: rhythm(2) 0px rhythm(1) 0px;
+	  }
+
 	  p {
-	    margin-bottom: rhythm(3);
+	    margin-bottom: rhythm(2);
 	  }
 
 	  strong {

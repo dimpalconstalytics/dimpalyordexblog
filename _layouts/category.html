@@ -21,3 +21,14 @@ layout: default
 		{% endif %}
 	</div>
 </div>
+</section>
+
+<section class="c-cta o-gutter">
+  <div class="c-cta__hgroup">
+    <h2 class="c-cta__heading o-h2">{{ page.cta.title | default:site.cta.title }}</h2>
+    <p class="o-lg-text">{{ page.cta.subtitle | default:site.cta.subtitle }}</p>
+  </div>
+  <div class="o-flex-h-center">
+    <a class="o-btn o-btn--lg o-primary-btn" href="{{ page.cta.button.url | default:site.cta.button.url }}">{{ page.cta.button.copy | default:site.cta.button.copy }}</a>
+  </div>
+</section>

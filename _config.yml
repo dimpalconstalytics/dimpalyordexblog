@@ -72,6 +72,12 @@ social:
     link: https://www.linkedin.com/company/yordex
 footer_text: Procure-to-pay platform to save time, increase visibility into spend
   and improve cash flow.
+cta:
+  title: Ready to get your business on Yordex?
+  subtitle: Reduce invoice processing costs, improve visibility and working capital. Schedule your free demo today.
+  button:
+    copy: Schedule a Demo
+    url: "https://yordex.com/request-demo"
 date_format: "%-d %B %Y"
 per_page: 10
 gtm-code: GTM-55TB3WF

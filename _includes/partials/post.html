@@ -39,7 +39,7 @@
         {{ post.excerpt | markdownify }}
       {% else %}
         <div class="article__lead">
-          <h4 class="o-h4">{{ post.excerpt | strip_html }}</h4>
+          {{ post.excerpt | strip_html }}
         </div>
         {{ post.content | remove: post.excerpt | markdownify }}
         <div class="article__link">
@@ -61,4 +61,3 @@
     {% endif %}
   </section>
 </article>
-
