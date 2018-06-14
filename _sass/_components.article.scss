@@ -80,55 +80,77 @@
 	}
 
 	&__lead {
-		@extend .o-h4;
 		margin: 0 0 rhythm(3) rhythm(-3);
 		padding: rhythm(2) 0 rhythm(2) 22px;
     border-left: 2px solid $color-primary;
 	}
 
 	&__content {
-	max-width: get-columns-width(4) + $gutter-width;
+		max-width: get-columns-width(4) + $gutter-width;
+		color: $text-color-dark-2;
 
 	  h2,
 	  h3,
 	  h4,
 	  h5,
 	  h6 {
-	    margin: rhythm(5) 0 rhythm(2);
 	    color: $text-color-dark-1;
 	  }
 
-	  h4 {
-			margin-top: rhythm(2);
-	  }
-
-	  p + p {
-	    margin-top: rhythm(3);
-	  }
-
-	  p:first-of-type {
+	  p {
 	    margin-bottom: rhythm(3);
 	  }
 
 	  strong {
 	    font-weight: 500;
 	    position: relative;
-	    color: $text-color-dark-2;
+	    color: $text-color-dark-1;
 	  }
 
 	  em {
 	    font-family: 'Open Sans', sans-serif;
 	  }
 
-	  ul,
-	  ol {
-	    margin: 0 0 rhythm(4) 0;
-	    padding-left: 1em;
+		ul {
+		  margin: 0 0 rhythm(3) rhythm(2);
+		  padding: 0;
+		  list-style-type: none;
 
-	    > li {
-	      margin-top: rhythm(2);
-	    }
-	  }
+		  li {
+		    line-height: rhythm(3);
+		    margin: 0 0 rhythm(2) 0;
+
+		    &:before {
+		      float: left;
+		      content: "*";
+		      margin-left: rhythm(-2);
+		      margin-top: 0.2em;
+		    }
+
+		    p {
+		      margin: 0 0 rhythm(2) 0;
+		    }
+		  }
+		}
+
+		ol {
+		  margin: 0 0 rhythm(3) rhythm(2);
+		  padding: 0;
+		  -webkit-font-feature-settings: "tnum";
+		  -o-font-feature-settings: "tnum";
+		  -moz-font-feature-settings: "tnum";
+		  -ms-font-feature-settings: "tnum";
+		  font-feature-settings: "tnum";
+
+		  li {
+		    line-height: rhythm(3);
+		    margin: 0 0 rhythm(2) 0;
+
+		    p {
+		      margin: 0 0 rhythm(2) 0;
+		    }
+		  }
+		}
 
 	  a {
 	    @extend .o-link;

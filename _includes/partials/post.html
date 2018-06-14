@@ -3,7 +3,6 @@
 {% assign show_author = include.show_author %}
 
 <article class="article">
-  {% if is_excerpt %}
   {% unless page.url contains 'category' %}
     {% if post.topic %}
     {% assign post_topic_downcase = post.topic | downcase %}
@@ -18,6 +17,7 @@
     {% endif %}
   {% endunless %}
 
+  {% if is_excerpt %}
   <h2 class="article__title o-h3 o-tc-dark"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
   {% endif %}
 
@@ -39,7 +39,7 @@
         {{ post.excerpt | markdownify }}
       {% else %}
         <div class="article__lead">
-          {{ post.excerpt | strip_html }}
+          <h4 class="o-h4">{{ post.excerpt | strip_html }}</h4>
         </div>
         {{ post.content | remove: post.excerpt | markdownify }}
         <div class="article__link">

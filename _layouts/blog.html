@@ -2,31 +2,18 @@
 layout: default
 ---
 
-{% if page.header %}
-<section class="page-header">
-	<div class="o-container-6">
-		<div class="page-header__hgroup">
-			{% if page.header.title %}<h1 class="page-header__heading o-h2">{{ page.header.title }}</h1>{% endif %}
-			{% if page.header.body %}<p class="page-header__subheading o-lg-text">{{ page.header.body }}</p>{% endif %}
-		</div>
-	</div>
-</section>
-{% endif %}
-
 <section class="section-blog">
   <div class="o-container-6">
   	<ul class="blog__topics c-tab-bar">
-  	<li class="c-tab-bar__item c-tab-bar__item--active">Latest</li>
+  	<li class="c-tab-bar__item c-tab-bar__item--active">Most recent</li>
   	{% for blog_topic in site.topics %}
-  			<li class="c-tab-bar__item"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
+  		<li class="c-tab-bar__item"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
 		{% endfor %}
 		</ul>
 
-  	<div class="">
-			{% for post in site.posts limit:site.per_page %}
-			  {% include partials/post.html post=post is_excerpt=true show_author=true %}
-			{% endfor %}
-		</div>
+		{% for post in site.posts limit:site.per_page %}
+		  {% include partials/post.html post=post is_excerpt=true show_author=true %}
+		{% endfor %}
 
 		<div class="blog__buttonWrap">
   		<a href="/archive" class="button button-secondary">Older posts</a>
