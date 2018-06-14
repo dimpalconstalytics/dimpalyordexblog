@@ -2,11 +2,11 @@
 title: Why do we still have invoices anyway?
 date: 2018-05-15 05:02:00 +01:00
 topic: Best practices
+image: "/uploads/article_img_3@2x.jpg"
 author: Erik De Kroon
 ---
 
 Digital technologies have impacted almost every aspect of business. Well, almost every aspect. The way companies and suppliers exchange orders and invoices still seems mostly still stuck in the pre-Internet days.
-
 
 Let’s take invoices as an example. They may sometimes be received by email, but they still need to be manually compared to what was ordered and what was received. It takes an average business 10 days and between £15 to £25 to approve an invoice for payment. After that, someone still needs to manually enter the invoice in the accounting system and trigger a payment with their bank.
 
@@ -22,15 +22,17 @@ The good news is that, as William Gibson said, the future is already here — it
 
 So if this is a good idea, why is it not evenly distributed yet? The main reason is that this process depends on implementation of Electronic Data Interchange (EDI) protocols which costs most companies millions to implement and years to roll out. Unless you are GM or a company of similar size, it is not worth the effort.
 
-Until now.
+**Until now**.
 
 Our vision at Yordex is to enable online buyer/supplier collaboration between any two companies worldwide to allow them to conduct B2B business at Internet speed and with Internet costs.
 
 We’ve built the technology with the option to take a ‘stepping-stone’ approach so getting rid of the invoice is now feasible for anyone, from day one. Even if you do still want invoices from your suppliers for a while, there are many other immediate benefits:
 
-- Accuracy: The supplier is involved early on in the ordering process which means any mismatches are fixed before the goods are receipted. The supplier has to approve the PO and can confirm delivery at which point prices or quantities can be corrected
-- Consistency: Supplier contracts terms are automatically enforced for every order. This allows the platform to ensure every order matches the contract and it allows it to identify opportunities to improve those contracts
-- Profitability: Early payment discounts can be managed differently to the benefit of both sides. The supplier can be allowed to offer a discount real-time on the platform only when they need it which allows the buyer to negotiate better payment terms for all orders
-You don’t have a PO process yet? No problem, this can be included as well. Do you want to also automate expenses? Also no problem, we offer a complete solution to manage all your spend.
+* **Accuracy**: The supplier is involved early on in the ordering process which means any mismatches are fixed before the goods are receipted. The supplier has to approve the PO and can confirm delivery at which point prices or quantities can be corrected
 
-If you’re under pressure to find ways to free up resources, operate lean, clean, green and fast then reach out as I’d love to discuss how Yordex can help you and your business make sure the old invoicing model becomes a relic of the past.
+* **Consistency**: Supplier contracts terms are automatically enforced for every order. This allows the platform to ensure every order matches the contract and it allows it to identify opportunities to improve those contracts
+
+* **Profitability**: Early payment discounts can be managed differently to the benefit of both sides. The supplier can be allowed to offer a discount real-time on the platform only when they need it which allows the buyer to negotiate better payment terms for all orders
+  You don’t have a PO process yet? No problem, this can be included as well. Do you want to also automate expenses? Also no problem, we offer a complete solution to manage all your spend.
+
+If you’re under pressure to find ways to free up resources, operate lean, clean, green and fast then reach out as [I’d love to discuss how Yordex can help](https://yordex.com/contact) you and your business make sure the old invoicing model becomes a relic of the past.
