@@ -85,6 +85,11 @@
   }
 }
 
+.o-btn-group {
+  .o-btn + .o-btn{
+    margin-left: 20px;
+  }
+}
 
 // Responsive styles
 // ------------------------------------ //

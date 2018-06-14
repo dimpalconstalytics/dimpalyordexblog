@@ -1,3 +1,102 @@
+.c-header {
+	  height: rhythm(5) * 2 + $header-height;
+  	box-shadow: inset 0 -1px 0 $border-color-light;
+  	padding: rhythm(5) 0;
+
+  &__container {
+  	display: flex;
+  	justify-content: space-between;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 9999;
+    margin-right: rhythm(7);
+
+    > yordex-logo {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      .c-header__link:not(:last-child) {
+        margin-right: rhythm(4);
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+
+      > .c-header__link {
+        margin-right: rhythm(3);
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      content: '';
+      transition: transform .25s ease-in-out;
+      transform: scaleX(0);
+      background: $color-primary;
+    }
+
+    &--active::after,
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &__signup {
+    padding-right: rhythm(3);
+    padding-left: rhythm(3);
+  }
+
+  &__mobile-signup {
+    position: relative;
+    z-index: 9999;
+    display: none;
+    flex: none;
+    // 148px is the logo width, add offset to this button in order to make sure
+    // it is centered align.
+    margin-left: -148px + $header-height;
+    padding-right: rhythm(3);
+    padding-left: rhythm(3);
+  }
+
+  &__hamburger {
+    position: relative;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    flex: none;
+    justify-content: center;
+    width: $header-height;
+    height: $header-height;
+    border-radius: 3px;
+    background: $color-white;
+  }
+}
+
 .page-header {
 	padding-top: rhythm(12);
 

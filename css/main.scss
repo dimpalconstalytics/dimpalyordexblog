@@ -14,6 +14,7 @@
 
 // Generic
 @import 'generic.box-sizing';
+@import 'generic.normalize';
 
 // Base
 @import 'base.fonts';
@@ -25,6 +26,7 @@
 @import 'objects.typography.scss';
 @import 'objects.sections.scss';
 @import 'objects.buttons.scss';
+@import 'objects.logo.scss';
 
 // Components
 @import 'components.article.scss';
