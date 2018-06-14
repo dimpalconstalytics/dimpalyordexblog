@@ -5,6 +5,12 @@ position: 0
 header:
   title: Our official Blog
   body: All the latest news about our accounts payable software.
+cta:
+  title: Start simplifying your procurement today
+  subtitle: 
+  button:
+    copy: 
+    url: 
 layout: blog
 ---
 
