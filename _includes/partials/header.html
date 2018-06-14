@@ -3,23 +3,30 @@
 <header role="banner">
 	<div class="c-header">
 		<div class="c-header__container o-container-8 o-gutter">
-			<div class="c-header__logo">
-				<a href="https://yordex.com/">
-		     {% include svgs/logo.html %}
-		    </a>
-		  </div>
+			<a class="c-header__logo" href="https://yordex.com/">
+	     {% include svgs/logo.html inverse=false %}
+	    </a>
 		  <div class="c-header__menu">
-	    	<nav class="c-header__menu-left">
+	    	<nav class="c-header__menu--left">
 	    		{% for item in site.data.navigation.header %}
 					 <a class="c-header__link" href="{{ item.url }}">{{ item.page }}</a>
 					{% endfor %}
 	    	</nav>
-	    	<nav class="c-header__menu-right">
+	    	<nav class="c-header__menu--right">
 	        <a class="c-header__link" href="https://yordex.com/login">Login</a>
-	        <a class="c-header__signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com">Schedule a Demo</a>
+	        <a class="c-header__signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
 	      </nav>
 		  </div>
 
+		  <a class="c-header__signup c-header__mobile-signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
+	    <button class="c-header__hamburger">
+	      <svg class="" width="16px" height="12px">
+	        <use xlink:href="#icon-hamburger"/>
+	      </svg>
+	      <svg width="12px" height="12px">
+	        <use xlink:href="#icon-close"/>
+	      </svg>
+	    </button>
 		</div>
 	</div>
 

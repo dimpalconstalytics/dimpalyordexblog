@@ -12,11 +12,6 @@
     position: relative;
     z-index: 9999;
     margin-right: rhythm(7);
-
-    > yordex-logo {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &__menu {
@@ -25,7 +20,7 @@
     flex: 1;
     justify-content: space-between;
 
-    &-left {
+    &--left {
       display: flex;
       align-items: center;
 
@@ -34,7 +29,7 @@
       }
     }
 
-    &-right {
+    &--right {
       display: flex;
       align-items: center;
 
@@ -98,7 +93,7 @@
 }
 
 .page-header {
-	padding-top: rhythm(12);
+	padding-top: rhythm(11);
 
 	&__hgroup {
 		margin: 0 auto rhythm(9);
@@ -116,4 +111,136 @@
 		margin-left: auto;
 		color: $text-color-dark-2;
 	}
+}
+
+
+// Responsive styles
+// ------------------------------------ //
+@include responsive(desktopSM) {
+  .c-header {
+    &__logo {
+      margin-right: 0;
+    }
+
+    &__menu {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      visibility: hidden;
+      flex-direction: column;
+      height: 100vh;
+      padding-top: rhythm(12);
+      transition: .25s;
+      pointer-events: none;
+      opacity: 0;
+      background: linear-gradient(-180deg, #f7f9fa 0, #fff 100%);
+
+      &--left {
+        flex-direction: column;
+        padding-top: rhythm(5);
+        box-shadow: inset 0 1px 0 $border-color-light;
+      }
+
+      &--right {
+        flex-direction: column;
+      }
+    }
+
+    &__link {
+      line-height: 24px;
+      width: 100%;
+      max-width: 280px;
+      height: 48px;
+      margin-right: 0 !important;
+      padding-top: 12px;
+      padding-bottom: 8px;
+      text-align: center;
+      border-radius: 3px;
+
+      &--mr3 {
+        margin-right: rhythm(3);
+      }
+
+      &--mr4 {
+        margin-right: rhythm(4);
+      }
+
+      &::after {
+        content: none;
+      }
+
+      &--active,
+      &:hover {
+        background: $color-white;
+      }
+    }
+
+    &__signup {
+      display: none;
+    }
+
+    &__mobile-signup {
+      display: block;
+    }
+
+    &__hamburger {
+      display: flex; // override "display: none"
+    }
+  }
+
+.menu-open {
+  .c-header {
+    &__logo {
+      color: $logo-color;
+    }
+
+    &__menu {
+      z-index: 999;
+      visibility: visible;
+      pointer-events: auto;
+      opacity: 1;
+      color: $text-color-dark-3;
+    }
+
+    &__signup {
+      color: $color-white;
+      background: $color-primary;
+      box-shadow: none;
+
+      &:hover,
+      &:focus {
+        background: darken($color-primary, 3%);
+      }
+    }
+  }
+}
+}
+
+@include responsive(tablet) {
+  .c-header {
+    height: rhythm(2) * 2 + $header-height;
+    padding-top: rhythm(2);
+    padding-bottom: rhythm(2);
+
+    &__menu {
+    	padding-top: 80px;
+  	}
+  }
+}
+
+@include responsive(mobile) {
+  .c-header {
+    &__signup {
+      display: block;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    &__mobile-signup {
+      display: none;
+    }
+  }
 }

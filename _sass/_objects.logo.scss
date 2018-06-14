@@ -1,10 +1,10 @@
-.logo {
+.o-logo {
 	&__type {
 		fill: $logo-color;
 	}
 
 	&__mark {
-		fill: $mark-background--light;
+		fill: $mark-background--dark;
 
 		&--left {
 		fill: $mark-background-left;
@@ -17,33 +17,9 @@
 		}
 	}
 
-	&-shape {
-		position: absolute;
-		left: 0;
-
-  	&--accent {
-    	fill: darken($background-light-2, 1%);
-  	}
-
-  	&--default {
-			fill: $background-light-1;
-  	}
-	}
-}
-
-@include responsive(desktopLG) {
-	.logo-shape {
-		left: -452px;
-
-		&--small {
-			display: none;
+	&--dark {
+		.o-logo__mark {
+			fill: $mark-background--light;
 		}
 	}
 }
-
-@include responsive(desktopSM) {
-	.logo-shape {
-		display: none;
-	}
-}
-
