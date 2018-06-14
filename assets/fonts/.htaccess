@@ -1,0 +1,6 @@
+SetEnvIf Referer yordex\.com localreferer
+<FilesMatch \.(woff|woff2)$>
+Order deny,allow
+Deny from all
+Allow from env=localreferer
+</FilesMatch>

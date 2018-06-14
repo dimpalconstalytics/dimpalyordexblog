@@ -1,27 +1,26 @@
 header:
-- title: Product
+- page: Product
   url: https://yordex.com/product
-- title: Suppliers
+- page: Suppliers
   url: https://yordex.com/supplier
 footer:
-- title: About Us
-  url: https://yordex.com/about
-  category: Company
-- title: News
-  url: /
-  category: Company
-- title: Faq
-  url: https://yordex.com/faqs
-  category: Support
-- title: Contact
-  url: https://yordex.com/contact
-  category: Support
-- title: API Docs
-  url: http://docs.yordex.com
-  category: Support
-- title: Privacy Policy
-  url: https://yordex.com/privacy
-  category: Resources
-- title: Terms of Service
-  url: https://yordex.com/terms-of-use
-  category: Resources
+- title: Company
+  items:
+    - page: About Us
+      url: https://yordex.com/about
+    - page: News
+      url: /
+- title: Support
+  items:
+    - page: FAQ
+      url: https://yordex.com/faqs
+    - page: Contact
+      url: https://yordex.com/contact
+    - page: API Docs
+      url: http://docs.yordex.com
+- title: Resources
+  items:
+    - page: Privacy Policy
+      url: https://yordex.com/privacy
+    - page: Terms of Service
+      url: https://yordex.com/terms-of-use

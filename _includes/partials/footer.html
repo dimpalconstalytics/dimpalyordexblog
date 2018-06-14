@@ -1,15 +1,44 @@
 <footer class="" role="contentinfo">
-&copy;&nbsp;{{ 'now' | date: "%Y" }},&nbsp;Yordex Ltd. All rights reserved.
-{% if site.footer_text %}
-  {{ site.footer_text }}
-{% endif %}
 
-{% for item in site.data.navigation.header %}
-  <a href="{{ item.url }}" class="">{{ item.title }}</a>
-{% endfor %}
 
 <!-- TODO: Show Category Label -->
 {% for item in site.data.navigation.footer %}
-  <a href="{{ item.url }}" class="">{{ item.title }}</a>
+  <a href="{{ item.url }}" class="">{{ item.page }}</a>
 {% endfor %}
+</footer>
+
+
+<footer class="c-footer" role="contentinfo">
+  <div class="c-footer__body o-container-8 o-gutter">
+    <div class="c-footer__left">
+      <div class="c-footer__about">
+        <svg class="c-footer__logo" width="32px" height="30px">
+          <use xlink:href="#logo"/>
+        </svg>
+        {% if site.footer_text %}{{ site.footer_text }}{% endif %}
+      </div>
+      <p class="c-footer__copyright">&copy;&nbsp;{{ 'now' | date: "%Y" }},&nbsp;Yordex Ltd. All rights reserved.</p>
+    </div>
+    <div class="c-footer__right">
+      <div class="c-footer__column">
+        <h4 class="c-footer__heading">Explore</h4>
+        <ul class="c-footer__links">
+        	{% for item in site.data.navigation.header %}
+  				<li><a href="{{ item.url }}" class="c-footer__link">{{ item.page }}</a></li>
+					{% endfor %}
+        </ul>
+      </div>
+
+			{% for category in site.data.navigation.footer %}
+      <div class="c-footer__column">
+        <h4 class="c-footer__heading">{{ category.title }}</h4>
+        <ul class="c-footer__links">
+        	{% for item in category.items %}
+  				<li><a href="{{ item.url }}" class="c-footer__link">{{ item.page }}</a></li>
+  				{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </footer>

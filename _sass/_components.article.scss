@@ -3,6 +3,10 @@
 	padding-bottom: rhythm(4);
 	box-shadow: 0 1px 0 0 $text-color-light-7;
 
+	&:only-child {
+		box-shadow: none;
+	}
+
 	&__category {
 		display: inline-block;
 		margin-bottom: rhythm(1);
