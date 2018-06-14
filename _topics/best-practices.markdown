@@ -4,4 +4,4 @@ color: purple
 layout: category
 ---
 
-Best practices and tips. 
+Best practices and tips.

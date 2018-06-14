@@ -15,8 +15,10 @@ layout: default
 		  {% include partials/post.html post=post is_excerpt=true show_author=true %}
 		{% endfor %}
 
-		<div class="blog__buttonWrap">
-  		<a href="/archive" class="button button-secondary">Older posts</a>
+		{% if site.posts.size > site.per_page %}
+		<div class="blog__button">
+  			<a href="/archive" class="o-btn o-btn--sm o-secondary-outline-btn">Older posts</a>
 		</div>
+		{% endif %}
 	</div>
 </div>
