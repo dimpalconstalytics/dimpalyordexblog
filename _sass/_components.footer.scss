@@ -90,9 +90,9 @@
     }
 
     &__left {
-      text-align: center;
       width: 100%;
       margin-bottom: rhythm(5);
+      text-align: center;
     }
 
     &__logo {
@@ -101,8 +101,8 @@
     }
 
     &__right {
-      width: 100%;
       justify-content: center;
+      width: 100%;
       text-align: center;
     }
 
@@ -120,8 +120,8 @@
     }
 
     &__heading {
-      margin-bottom: rhythm(1);
       margin-top: rhythm(4);
+      margin-bottom: rhythm(1);
     }
 
     &__links a {
