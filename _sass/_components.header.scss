@@ -1,11 +1,11 @@
 .c-header {
-	  height: rhythm(5) * 2 + $header-height;
-  	box-shadow: inset 0 -1px 0 $border-color-light;
-  	padding: rhythm(5) 0;
+  height: rhythm(5) * 2 + $header-height;
+  padding: rhythm(5) 0;
+  box-shadow: inset 0 -1px 0 $border-color-light;
 
   &__container {
-  	display: flex;
-  	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__logo {
@@ -93,24 +93,24 @@
 }
 
 .page-header {
-	padding-top: rhythm(11);
+  padding-top: rhythm(11);
 
-	&__hgroup {
-		margin: 0 auto rhythm(9);
-		text-align: center;
-	}
+  &__hgroup {
+    margin: 0 auto rhythm(9);
+    text-align: center;
+  }
 
-	&__heading {
-		margin-bottom: rhythm(2);
-		color: $text-color-dark-1;
-	}
+  &__heading {
+    margin-bottom: rhythm(2);
+    color: $text-color-dark-1;
+  }
 
-	&__subheading {
-		max-width: 700px;
-		margin-right: auto;
-		margin-left: auto;
-		color: $text-color-dark-2;
-	}
+  &__subheading {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $text-color-dark-2;
+  }
 }
 
 
@@ -189,34 +189,46 @@
     &__hamburger {
       display: flex; // override "display: none"
     }
+
+    &__close-svg {
+      display: none;
+    }
   }
 
-.menu-open {
-  .c-header {
-    &__logo {
-      color: $logo-color;
-    }
+  .menu-open {
+    .c-header {
+      &__logo {
+        color: $logo-color;
+      }
 
-    &__menu {
-      z-index: 999;
-      visibility: visible;
-      pointer-events: auto;
-      opacity: 1;
-      color: $text-color-dark-3;
-    }
+      &__menu {
+        z-index: 999;
+        visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
+        color: $text-color-dark-3;
+      }
 
-    &__signup {
-      color: $color-white;
-      background: $color-primary;
-      box-shadow: none;
+      &__signup {
+        color: $color-white;
+        background: $color-primary;
+        box-shadow: none;
 
-      &:hover,
-      &:focus {
-        background: darken($color-primary, 3%);
+        &:hover,
+        &:focus {
+          background: darken($color-primary, 3%);
+        }
+      }
+
+      &__hamburger-svg {
+        display: none;
+      }
+
+      &__close-svg {
+        display: block;
       }
     }
   }
-}
 }
 
 @include responsive(tablet) {
@@ -226,8 +238,8 @@
     padding-bottom: rhythm(2);
 
     &__menu {
-    	padding-top: 80px;
-  	}
+      padding-top: 80px;
+    }
   }
 }
 
