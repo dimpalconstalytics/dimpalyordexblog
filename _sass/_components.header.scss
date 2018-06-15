@@ -197,6 +197,8 @@
   }
 
   .menu-open {
+    overflow: hidden;
+
     .c-header {
       &__logo {
         color: $logo-color;
