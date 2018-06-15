@@ -4,7 +4,7 @@ layout: default
 
 <section class="section-blog">
   <div class="o-container-6">
-    <ul class="archive__items">
+    <ul class="archive">
     {% for post in site.posts %}
       {% assign month = post.date | date: '%B %Y' %}
       {% unless post.next %}<!-- first post -->
