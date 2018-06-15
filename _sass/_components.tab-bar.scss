@@ -1,26 +1,33 @@
 .c-tab-bar {
-	display: flex;
-  box-shadow: 0 1px 0 0 $text-color-light-7;
+  display: flex;
   justify-content: center;
+  box-shadow: 0 1px 0 0 $text-color-light-7;
 
-	&__item {
-    flex: 0 1 auto;
-    padding: 0 18px;
+  &__item {
     font-size: ms(0);
     line-height: 20px;
     display: flex;
     align-items: center;
+    flex: 0 1 auto;
     padding: rhythm(1) 20px;
     transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
     text-align: center;
+    text-transform: capitalize;
     color: $text-color-dark-4;
     box-shadow: none;
-    text-transform: capitalize;
 
     &--active {
       font-weight: 500;
       color: $color-tertiary;
       box-shadow: 0 2px 0 $color-primary;
     }
-	}
+  }
+}
+@include responsive(mobile) {
+  .c-tab-bar {
+    &__item {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
 }
