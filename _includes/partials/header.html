@@ -1,42 +1,42 @@
 {% assign my_page_url = page.url | remove: '/' %}
 
 <header role="banner">
-	<div class="c-header">
-		<div class="c-header__container o-container-8 o-gutter">
-			<a class="c-header__logo" href="https://yordex.com/">
-	     {% include svgs/logo.svg inverse=false %}
-	    </a>
-		  <div class="c-header__menu">
-	    	<nav class="c-header__menu--left">
-	    		{% for item in site.data.navigation.header %}
-					 <a class="c-header__link" href="{{ item.url }}">{{ item.page }}</a>
-					{% endfor %}
-	    	</nav>
-	    	<nav class="c-header__menu--right">
-	        <a class="c-header__link" href="https://yordex.com/login">Login</a>
-	        <a class="c-header__signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
-	      </nav>
-		  </div>
+  <div class="c-header">
+    <div class="c-header__container o-container-8 o-gutter">
+      <a class="c-header__logo" href="https://yordex.com/">
+        {% include svgs/logo.svg inverse=false %}
+      </a>
+      <div class="c-header__menu">
+        <nav class="c-header__menu--left">
+          {% for item in site.data.navigation.header %}
+          <a class="c-header__link" href="{{ item.url }}">{{ item.page }}</a>
+          {% endfor %}
+        </nav>
+        <nav class="c-header__menu--right">
+          <a class="c-header__link" href="https://yordex.com/login">Login</a>
+          <a class="c-header__signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
+        </nav>
+      </div>
 
-			<!-- Peiwen to optimize and add JS -->
-		  <a class="c-header__signup c-header__mobile-signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
-	    <button class="c-header__hamburger">
-	      <svg class="" width="16px" height="12px">
-	        <use xlink:href="#icon-hamburger"/>
-	      </svg>
-	      <svg width="12px" height="12px">
-	        <use xlink:href="#icon-close"/>
-	      </svg>
-	    </button>
-		</div>
-	</div>
+      <!-- Peiwen to optimize and add JS -->
+      <a class="c-header__signup c-header__mobile-signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
+      <button class="c-header__hamburger">
+        <svg class="" width="16px" height="12px">
+          <use xlink:href="#icon-hamburger"/>
+        </svg>
+        <svg width="12px" height="12px">
+          <use xlink:href="#icon-close"/>
+        </svg>
+      </button>
+    </div>
+  </div>
 
-	<div class="page-header">
-		<div class="o-container-6">
-			<div class="page-header__hgroup">
-				<h1 class="page-header__heading o-h2">{{ page.header.title | default: page.title }}</h1>
-				{% if page.header.body %}<p class="page-header__subheading o-lg-text">{{ page.header.body }}</p>{% endif %}
-			</div>
-		</div>
-	</div>
+  <div class="page-header">
+    <div class="o-container-6">
+      <div class="page-header__hgroup">
+        <h1 class="page-header__heading o-h2">{{ page.header.title | default: page.title }}</h1>
+        {% if page.header.body %}<p class="page-header__subheading o-lg-text">{{ page.header.body }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
 </header>
