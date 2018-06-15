@@ -12,6 +12,7 @@
     position: relative;
     z-index: 9999;
     margin-right: rhythm(7);
+    height: 40px;
   }
 
   &__menu {
@@ -92,7 +93,7 @@
   }
 }
 
-.page-header {
+.c-page-header {
   padding-top: rhythm(11);
 
   &__hgroup {
@@ -240,6 +241,22 @@
     &__menu {
       padding-top: 80px;
     }
+
+    &__container {
+      align-items: center;
+    }
+
+    &__logo {
+      margin-right: 0;
+    }
+  }
+
+  .c-page-header {
+    padding-top: rhythm(10);
+
+    &__hgroup {
+      margin: 0 auto rhythm(7);
+    }
   }
 }
 
@@ -254,5 +271,9 @@
     &__mobile-signup {
       display: none;
     }
+  }
+
+  .c-page-header {
+    padding-top: rhythm(7);
   }
 }

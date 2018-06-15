@@ -114,6 +114,9 @@
 
 @include responsive(mobile) {
   .c-footer {
+    padding-top: rhythm(7);
+    padding-bottom: rhythm(7);
+
     &__right {
       display: block;
     }

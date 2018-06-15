@@ -6,7 +6,6 @@
   &__item {
     font-size: ms(0);
     line-height: 20px;
-    display: flex;
     align-items: center;
     flex: 0 1 auto;
     padding: rhythm(1) 20px;
@@ -23,11 +22,19 @@
     }
   }
 }
+
 @include responsive(mobile) {
   .c-tab-bar {
+    flex-wrap: wrap;
+    box-shadow: none;
+
     &__item {
-      padding-right: 10px;
-      padding-left: 10px;
+      margin-bottom: rhythm(1);
+      width: 100%;
+
+      > a {
+        display: block;
+      }
     }
   }
 }
