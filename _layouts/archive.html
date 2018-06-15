@@ -3,23 +3,23 @@ layout: default
 ---
 
 <section class="section-blog">
-  <div class="o-container-6">
+  <div class="o-container-6 o-gutter">
     <ul class="archive">
-    {% for post in site.posts %}
-      {% assign month = post.date | date: '%B %Y' %}
-      {% unless post.next %}<!-- first post -->
-        <h4 class="archive__month o-h4">{{ month }}</h4>
-      {% else %}
-        {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-        {% if month != next_month %}
+      {% for post in site.posts %}
+        {% assign month = post.date | date: '%B %Y' %}
+        {% unless post.next %}<!-- first post -->
           <h4 class="archive__month o-h4">{{ month }}</h4>
-        {% endif %}
-      {% endunless %}
-      <li class="archive__item">
-        <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
-        <a class="archive__link o-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
+      {% else %}
+          {% capture next_month %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
+          {% if month != next_month %}
+            <h4 class="archive__month o-h4">{{ month }}</h4>
+          {% endif %}
+        {% endunless %}
+        <li class="archive__item">
+          <time class="archive__day" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d' }}</time>
+          <a class="archive__link o-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </section>

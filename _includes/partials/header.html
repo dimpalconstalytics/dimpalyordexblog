@@ -9,7 +9,7 @@
       <div class="c-header__menu">
         <nav class="c-header__menu--left">
           {% for item in site.data.navigation.header %}
-          <a class="c-header__link" href="{{ item.url }}">{{ item.page }}</a>
+            <a class="c-header__link" href="{{ item.url }}">{{ item.page }}</a>
           {% endfor %}
         </nav>
         <nav class="c-header__menu--right">
@@ -39,7 +39,7 @@
   </div>
 
   <div class="page-header">
-    <div class="o-container-6">
+    <div class="o-container-6 o-gutter">
       <div class="page-header__hgroup">
         <h1 class="page-header__heading o-h2">{{ page.header.title | default: page.title }}</h1>
         {% if page.header.body %}<p class="page-header__subheading o-lg-text">{{ page.header.body }}</p>{% endif %}
