@@ -28,3 +28,17 @@
 		color: $text-color-light-5;
 	}
 }
+
+// Responsive Styles
+// ------------------------------------ //
+@include responsive(desktopSM) {
+  .section-blog {
+		padding-bottom: rhythm(10);
+	}
+}
+
+@include responsive(mobile) {
+  .section-blog {
+		padding-bottom: rhythm(7);
+	}
+}

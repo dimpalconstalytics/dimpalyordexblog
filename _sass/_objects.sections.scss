@@ -6,7 +6,7 @@
 }
 
 // Responsive
-@include slicer(2) {
+@include responsive(tablet) {
   .o-section {
     padding-top: rhythm(7);
     padding-bottom: rhythm(7);
