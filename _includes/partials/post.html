@@ -21,7 +21,7 @@
   <h2 class="article__title o-h3 o-tc-dark"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
   {% endif %}
 
-  <section class="article__container">
+  <section {% if is_excerpt %}class="article__container"{% endif %}>
     <div class="article__content">
       {% if post.author or post.date %}
         <div class="article__meta">

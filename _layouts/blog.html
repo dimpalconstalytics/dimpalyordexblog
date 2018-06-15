@@ -4,12 +4,12 @@ layout: default
 
 <section class="section-blog">
   <div class="o-container-6 o-gutter">
-    <ul class="blog__topics c-tab-bar">
-      <li class="c-tab-bar__item c-tab-bar__item--active">Most recent</li>
-      {% for blog_topic in site.topics %}
-        <li class="c-tab-bar__item"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
-      {% endfor %}
-    </ul>
+  	<ul class="blog__topics c-tab-bar">
+  	<li class="c-tab-bar__item c-tab-bar__item--active">Most recent</li>
+  	{% for blog_topic in site.topics %}
+  		<li class="c-tab-bar__item"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
+		{% endfor %}
+		</ul>
 
     {% for post in site.posts limit:site.per_page %}
       {% include partials/post.html post=post is_excerpt=true show_author=true %}

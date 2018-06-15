@@ -3,13 +3,13 @@ layout: default
 ---
 
 <section class="section-blog">
-  <div class="o-container-6 o-gutter">
-    <ul class="blog__topics c-tab-bar">
-      <li class="c-tab-bar__item"><a href="/">Most recent</a></li>
-      {% for blog_topic in site.topics %}
-        <li class="c-tab-bar__item {% if blog_topic.url == page.url %}c-tab-bar__item--active{% endif %}"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
-      {% endfor %}
-    </ul>
+	<div class="o-container-6 o-gutter">
+		<ul class="blog__topics c-tab-bar">
+  		<li class="c-tab-bar__item"><a href="/">Most recent</a></li>
+  	{% for blog_topic in site.topics %}
+  		<li class="c-tab-bar__item {% if blog_topic.url == page.url %}c-tab-bar__item--active{% endif %}"><a href="{{ blog_topic.url }}" class="c-tab-bar__link">{{ blog_topic.title }}</a></li>
+		{% endfor %}
+		</ul>
 
     {% assign topic_posts = site.posts | where: 'topic', page.title %}
     {% for post in topic_posts %}

@@ -162,10 +162,6 @@
 // Mobile Responsive Styles
 // ------------------------------------ //
 @include responsive(mobile) {
-  :root {
-    font-size: 15px;
-  }
-
   .o-h1 {
     font-size: ms(6);
   }
