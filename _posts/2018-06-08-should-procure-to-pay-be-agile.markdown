@@ -1,24 +1,24 @@
 ---
-title: Should your supply chain be agile?
+title: Should procure-to-pay be agile?
 date: 2018-06-08 04:39:00 +01:00
 topic: Product
 image: "/uploads/agile-chalkboard-square.jpg"
 author: Erik De Kroon
 ---
 
-This is the first post in a series of posts about making supply chain management and the related functions procurement and accounts payable more agile.
+This is the first post in a series of posts about making procurement and accounts payable more agile.
 
 In this first article we will just look at the "why". In later posts we will look at the "how".
 
-Most companies today want to digitally transform their business and become more agile. IT, product development and marketing are usually high on the agenda, but how about your supply chain? Should it be agile? You want to have long-term relations with your suppliers and the procure-to-pay process should be highly repeatable, so what does it even mean for your supply chain to be agile?
+Most companies today want to digitally transform their business and become more agile. IT, product development and marketing are usually high on the agenda, but how about the procure-to-pay process? Should it be agile? You want to have long-term relations with your suppliers and the process should be highly repeatable, so what does it even mean for procurement and accounts payable to be agile?
 
-I strongly believe supply chains and procure-to-pay processes should be agile. Now, you would probably expect me to say that as the CEO of a company that helps our customers to digitally transform their procure-to-pay process but I wasn’t always in this position.
+I strongly believe the procure-to-pay processes should be agile. Now, you would probably expect me to say that as the CEO of a company that helps our customers to digitally transform this process but I wasn’t always in this position.
 
 In the past I worked for a number of large companies. I have set up agile teams within companies that weren’t agile yet, enabling them to move much faster. I therefore have a very personal and first-hand experience of both the challenges and the rewards of making teams more agile.
 
 Agile doesn’t mean constant reinvention. Agile software development teams don’t change their product all the time. What it does mean is that agile teams can make improvements rapidly.
 
-From experience, there is significant improvement potential left in the supply chain of most companies. This can include consolidating suppliers, reducing order and invoice processing time, reducing errors, improving process adherence, improving payment terms or using dynamic discounting or supply chain finance. Having an agile supply chain simply means being able to rapidly identify and capture these opportunities and doing so in small incremental steps rather than in big (and slow) change programs.
+From experience, there is significant improvement potential left in the procure-to-pay process of most companies. This can include consolidating suppliers, reducing invoice processing time, improving process adherence, improving payment terms or using dynamic discounting or supply chain finance. Having an agile process simply means being able to rapidly identify and capture these opportunities and doing so in small incremental steps rather than in big (and slow) change programs.
 
 A second benefit of agile is job satisfaction. A survey by Sapio Research found that 82% of UK finance professionals surveyed said that poor invoice process management was impacting their teams’ ability to perform effectively and leading to low job satisfaction. A study by the University of Calgary showed that agile can lead to a doubling of job satisfaction. In their study they found that over 80% of people in agile teams were "very satisfied" or "somewhat satisfied" with their work compared to 40% in non-agile teams.
 
