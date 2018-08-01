@@ -1,7 +1,7 @@
 ---
 title: Should procure-to-pay be agile?
 date: 2018-06-08 04:39:00 +01:00
-topic: Product
+topic: Best practices
 image: "/uploads/agile-chalkboard-square.jpg"
 author: Erik De Kroon
 ---
