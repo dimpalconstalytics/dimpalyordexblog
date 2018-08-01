@@ -1,5 +1,5 @@
 ---
-title: How to make procure-to-pay agile - part 1
+title: How to make procure-to-pay agile - part 2
 date: 2018-08-01 14:20:00 +01:00
 topic: Best practices
 image: "/uploads/agile-team-square-1f1ae0.jpg"
