@@ -1,7 +1,7 @@
 ---
 title: Why do we still have invoices anyway?
 date: 2018-05-15 05:02:00 +01:00
-topic: Best practices
+topic: Product
 image: "/uploads/article_img_3@2x.jpg"
 author: Erik De Kroon
 ---
