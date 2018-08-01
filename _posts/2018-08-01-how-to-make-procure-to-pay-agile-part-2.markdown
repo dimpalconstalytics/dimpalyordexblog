@@ -1,12 +1,12 @@
 ---
-title: How to make procure-to-pay agile - part 1
+title: How to make procure-to-pay agile - part 2
 date: 2018-08-01 14:20:00 +01:00
 topic: Best practices
 image: "/uploads/agile-team-square.jpg"
 author: Erik De Kroon
 ---
 
-This is the second post in a series of posts about procurement and accounts payable more agile
+This is the second post in a series of posts about making procurement and accounts payable more agile
 
 In the [first post](http://blog.yordex.com/should-procure-to-pay-be-agile/) we looked at the “why”. In summary, making procurement and accounts payable more agile helps you continuously capture new cost savings opportunities and improve job satisfaction of the teams involved.
 
