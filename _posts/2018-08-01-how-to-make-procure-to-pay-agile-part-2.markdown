@@ -6,7 +6,7 @@ image: "/uploads/agile-team-square-1f1ae0.jpg"
 author: Erik De Kroon
 ---
 
-This is the second post in a series of posts about making procurement and accounts payable more agile
+This is the second post in a series of posts about making procurement and accounts payable more agile focusing on how to continuously improve processes.
 
 In the [first post](http://blog.yordex.com/should-procure-to-pay-be-agile/) we looked at the “why”. In summary, making procurement and accounts payable more agile helps you continuously capture new cost savings opportunities and improve job satisfaction of the teams involved.
 
