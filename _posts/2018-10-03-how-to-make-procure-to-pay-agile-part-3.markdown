@@ -40,7 +40,7 @@ Yordex is a good example of such a type of “agile” tool. It is the first sof
 
 Good agile metrics should meet three criteria:
 * The metrics should contribute to the overall good of the organisation. You should avoid the team implements solutions that help themselves but hurt other teams.
-* The metrics should allow the team to come up with ground breaking solutions to improve. Usually that means measuring outputs, not inputs.
+* The metrics should allow the team to come up with ground breaking solutions to deliver more meaningful improvements. Usually that means measuring outputs, not inputs.
 * The team should have sufficient skills and freedom to identify and implement those ground breaking solutions. Sometimes that means changing the team, not the metric 
 
 The best agile metrics are linked to what I call the "ultimate beneficiary".  The ultimate beneficiary will often be the customer, but for a Procure to Pay team it will be the supplier. Internal stakeholders usually aren’t ultimate beneficiaries unless it is an internal service such as HR or management reporting.
