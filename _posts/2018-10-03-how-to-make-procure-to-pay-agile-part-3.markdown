@@ -26,8 +26,6 @@ Let’s say an Accounts Payable team is measured on the number of invoices they 
 
 It is unlikely that "number of invoices processed per month” is an important metric for any other team in the company, so this team has to take full responsibility.
 
-Better IT tools are likely to be the most important way in which the team can improve the number of invoices they process per month. Therefore, the team should have control over its own IT tools, otherwise they will not be able to meaningfully improve their own processes.
-
 It is likely that the most important way the team can improve the number of invoices processed per month, is to implement better IT tools. This means that the team has to be in control of its own tools, otherwise they will not be able to meaningly improve their own processes.
 
 This solution is a  logical one, but it goes against everything  that companies usually do. They believe that IT people should work in IT teams and that having them scattered throughout the organisation seems highly inefficient. 
