@@ -10,11 +10,10 @@ This is the second post in a series of posts about making procurement and accoun
 
 In the [first post](http://blog.yordex.com/should-procure-to-pay-be-agile/) we looked at the “why”. In summary, making procurement and accounts payable more agile helps you continuously capture new cost savings opportunities and improve job satisfaction of the teams involved.
 
-The next posts are all about the “how”. I will cover 4 specific areas:
-1. How to continuously improve the process (this post)
-2. How to introduce the control and skills required within the team
-3. How to set targets for the team
-4. How to manage the team on a daily basis
+The next posts are all about the “how”. I will cover 3 specific areas:
+1. How to continuously improve the process (this article)
+2. How to best organise the team
+3. How the team can stay agile on a daily basis
  
 ## Why continuously improving the process is key
 
@@ -60,4 +59,4 @@ This process works really well provided two things are in place:
 
 In summary, to create a well-functioning agile team they have to be able to continuously improve their own processes. This requires that the team reviews progress and identifies improvement potential in a structured and regular way. 
 
-It also requires that the team can improve their own processes and knows what good looks like. How to make sure that is the case will be the topic of the next two posts.
+It also requires that the team can improve their own processes and knows what good looks like. How to best organise the team to make sure that is the case will be the topic of the next post.
