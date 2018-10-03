@@ -10,7 +10,7 @@ This is the third post of a series about why and how to make procure-to-pay agil
 
 In the [first post](http://blog.yordex.com/should-procure-to-pay-be-agile/) I discussed why procure to pay should be agile. In the [second post](http://blog.yordex.com/how-to-make-procure-to-pay-agile-part-2/) I discussed why an agile team should continuously improve their own processes. 
 
-In this post I will look at how to organise the team so they can continuously improve their own processes. I will look at the size, cross-functional skills required, metrics and organisational structure.
+In this post I will look at how to organise the team so they can continuously improve their own processes. I will look at the size, cross-functional skills required, metrics and the role of a manager.
 
 ## Size
 
