@@ -53,7 +53,7 @@ It is ok, but it could be better. It is linked to an ultimate beneficiary (the s
 
 In fact, the number of invoices processed may be more suitable as an efficiency metric. An efficiency metric (also referred to as 'velocity'), is also essential to every team as they serve a unique purpose. This will be discussed further in my next post.
 
-## Organisational structure
+## Role of a manager
 
 Agile teams work independently and define their own improvement opportunities. So what is the role of a manager overseeing a number of agile teams?
 
