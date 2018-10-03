@@ -6,7 +6,7 @@ image: "/uploads/organisation%203%20square.jpg"
 author: Erik De Kroon
 ---
 
-This is the third post of a series about why and how to make procure-to-pay agile. 
+This is the third post of a series about why and how to make procure-to-pay agile focusing on how to best organise the team. 
 
 In the [first post](http://blog.yordex.com/should-procure-to-pay-be-agile/) I discussed why procure to pay should be agile. In the [second post](http://blog.yordex.com/how-to-make-procure-to-pay-agile-part-2/) I discussed why an agile team should continuously improve their own processes. 
 
