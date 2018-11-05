@@ -17,9 +17,39 @@
 		}
 	}
 
-	&--dark {
-		.o-logo__mark {
-			fill: $mark-background--light;
+	&-shape {
+		position: absolute;
+		left: 0;
+
+  	&--accent {
+    	fill: darken($background-light-2, 1%);
+  	}
+
+  	&--default {
+			fill: $background-light-1;
+  	}
+	}
+}
+
+// Reverse colors with dark header
+.c-header--dark .o-logo__type,
+.c-header--dark .o-logo__mark {
+	fill: white;
+}
+
+@include responsive(desktopLG) {
+	.logo-shape {
+		left: -452px;
+
+		&--small {
+			display: none;
 		}
 	}
 }
+
+@include responsive(desktopSM) {
+	.logo-shape {
+		display: none;
+	}
+}
+

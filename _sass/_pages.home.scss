@@ -1,0 +1,58 @@
+// Index Hero
+// ------------------------------------ //
+.home-hero {
+  // min-height: rhythm(90); //720px
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding-bottom: rhythm(14);
+
+  .o-logo-shape {
+    top: rhythm(20);
+
+    &--small {
+      top: rhythm(37);
+      left: auto;
+      right: -600px;
+    }
+  }
+
+  &__left {
+    width: 50%;
+    z-index: -3;
+  }
+
+  &__right {
+    align-self: center;
+    width: 50%;
+    padding-top: rhythm(10);
+  }
+
+  &__heading {
+    margin-bottom: rhythm(3);
+  }
+
+  &__subheading {
+    font-size: ms(2);
+    font-weight: 500;
+    line-height: rhythm(4);
+    margin-bottom: rhythm(4);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__btn {
+    height: rhythm(8);
+    padding-right: rhythm(5);
+    padding-left: rhythm(5);
+    border-radius: 3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.07);
+  }
+
+  &__img {
+    display: block;
+    max-width: 818px;
+    position: absolute;
+    left: -160px;
+  }
+}

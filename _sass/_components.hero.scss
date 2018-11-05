@@ -1,0 +1,36 @@
+.c-hero {
+  position: relative;
+  overflow: hidden;
+  background-color: $color-white;
+  padding-top: rhythm(11);
+
+  &--dark {
+    @extend .c-hero;
+    color: $color-white;
+    background-color: $color-tertiary;
+  }
+
+  &__hgroup {
+    margin: 0 auto rhythm(9);
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: rhythm(2);
+    color: $text-color-dark-1;
+  }
+
+  &__subheading {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $text-color-dark-2;
+  }
+}
+
+.c-hero--dark {
+  .c-hero__heading,
+  .c-hero__subheading {
+    color: white;
+  }
+}

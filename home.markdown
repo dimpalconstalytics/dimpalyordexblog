@@ -1,6 +1,6 @@
 ---
 title: Home
-published: false
+published: true
 position: 1
 header:
   title: Unlock the hidden value in accounts payable
@@ -10,6 +10,7 @@ header:
   button:
     copy: Schedule a Demo
     url: "/request-demo"
+  theme: dark
 sections:
 - handle: benefits
   subsections:

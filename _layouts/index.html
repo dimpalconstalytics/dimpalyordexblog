@@ -1,6 +1,34 @@
 ---
 layout: default
 ---
+{% assign page_title = page.title | downcase %}
+<section class="c-hero{%if page.header.theme %}--{{page.header.theme}}{% endif %} {{ page_title }}-hero">
+	<div class="o-container-8">
+		<div class="home-hero__left o-gutter">
+	   	<h1 class="home-hero__heading o-h1">{{ page.header.title | default: page.title }}</h1>
+	    {% if page.header.body %}
+	    <h2 class="home-hero__subheading">{{ page.header.body }}</h2>
+	    {% endif %}
+	    <a class="home-hero__btn o-link-btn o-primary-btn o-lg-text" href="{{ page.header.button.url }}">{{ page.header.button.copy }}</a>
+	  </div>
+
+	  <div class="home-hero__right o-gutter">
+	  	<img class="home-hero__img" src="/assets/images/yordex-hero-tablet@2x.png" alt="" />
+	  </div>
+	</div>
+
+	<div class="o-logo-shape">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1143" height="1471" viewBox="0 0 1143 1471">
+      <path fill="#00204D" fill-opacity=".1" fill-rule="evenodd" d="M653.996438,157.405039 L234,415.330556 L234,637.266466 L234,1560 L1151.95762,994.236401 C1370.83329,852.693256 1441.98976,557.289561 1309.45109,328.513084 C1174.99202,95.4229382 892.028096,20.2493779 653.996438,157.405039 Z" transform="translate(-234 -90)"/>
+    </svg>
+  </div>
+
+  <div class="o-logo-shape o-logo-shape--small">
+    <svg xmlns="http://www.w3.org/2000/svg" width="857" height="1103" viewBox="0 0 857 1103">
+      <path fill="#00204D" fill-opacity=".1" fill-rule="evenodd" d="M911.125989,495.292154 L596,688.692456 L596,855.10667 L986.038867,616.312058 C1089.28869,555.450537 1222.26079,590.629647 1283.27478,696.188592 C1344.74871,802.691126 1310.08692,940.865813 1206.37714,1003.98374 C1206.11717,1004.14785 596,1380.58579 596,1380.58579 L596,1547 L1284.74942,1122.77345 C1448.97322,1016.64015 1502.36237,795.137584 1402.91776,623.594108 C1302.03227,448.816112 1089.72265,392.448718 911.125989,495.292154 Z" transform="matrix(-1 0 0 1 1453 -444)" />
+    </svg>
+  </div>
+</section>
 
 {% for section in page.sections %}
 {% assign handle = section.handle %}
