@@ -9,8 +9,8 @@ cta:
   title: Put your procurement on self-drive
   subtitle: 
   button:
-    copy: 
     url: 
+    copy: 
 layout: blog
 ---
 
