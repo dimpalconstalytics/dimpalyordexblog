@@ -44,8 +44,8 @@ layout: default
                  {{feature_obj.icon_svg}}
             </svg>
           </i>
-          <h4 class="n-feature__heading o-h4">{{feature_obj.title}}</h4>
-          <p class="n-feature__content">{{feature_obj.description}}</p>
+          <h4 class="n-feature__heading o-h4">{{feature_obj.title | markdownify}}</h4>
+          <p class="n-feature__content">{{feature_obj.description | markdownify}}</p>
         </div>
       </div>
       {% endfor %}
@@ -57,14 +57,14 @@ layout: default
 
 <section class="supplier-faqs">
   <div class="supplier-faqs__hgroup o-gutter">
-    <h3 class="supplier-faqs__heading o-h3">{{page.faq_section.title}}</h3>
+    <h3 class="supplier-faqs__heading o-h3">{{page.faq_section.title | markdownify}}</h3>
     <p class="supplier-faqs__subheading o-lg-text">{{page.faq_section.description | markdownify}}</p>
   </div>
   <div class="faqs o-container-6">
     {% for question_obj in page.faq_section.faqs %}
     <div class="faqs__item o-gutter">
       <div class="faq">
-        <h5 class="faq__question">{{question_obj.question}}</h5>
+        <h5 class="faq__question">{{question_obj.question | markdownify}}</h5>
         <p class="faq__answer">{{question_obj.answer_description | markdownify}}</p>
       </div>
     </div>
@@ -72,3 +72,12 @@ layout: default
   </div>
 </section>
 
+<section class="supplier-cta cta o-gutter">
+  <div class="cta__hgroup">
+    <h2 class="cta__heading o-h2">{{page.ready_to_get_paid_section.title | markdownify}}</h2>
+    <p class="o-lg-text">{{page.ready_to_get_paid_section.descption | markdownify}}.</p>
+  </div>
+  <div class="o-flex-h-center">
+    <a class="supplier-hero__btn o-btn o-btn--lg o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
+  </div>
+</section>
