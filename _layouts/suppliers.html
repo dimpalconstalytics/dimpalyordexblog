@@ -36,50 +36,19 @@ layout: default
   <div class="o-container-8">
     <h3 class="supplier-features__heading o-h3 o-gutter">A powerful set of features to get paid faster</h3>
     <div class="supplier-features__list">
+      {% for feature_obj in page.features_list %}
       <div class="supplier-features__list-item o-gutter">
         <div class="n-feature n-feature--small">
           <i class="n-feature__icon">
             <svg width="48px" height="48px">
-                 <svg id="icon-invoice-ok" viewBox="0 0 48 48"><path fill="#3E9CFA" d="M32 2a9.956 9.956 0 0 0-2 6c0 5.523 4.477 10 10 10v28a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h26z"/><path fill="#BFE4FF" d="M14 18.982V20a1 1 0 0 1-2 0v-1h-1.5a1 1 0 0 1 0-2h3.318C14.47 17 15 16.551 15 16c0-.551-.53-1-1.182-1h-1.636C10.428 15 9 13.654 9 12c0-1.596 1.332-2.892 3-2.982V8a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2h-2.818C11.53 11 11 11.449 11 12c0 .551.53 1 1.182 1h1.636C15.572 13 17 14.346 17 16c0 1.596-1.332 2.892-3 2.982z"/><path fill="#82C8FA" d="M48 8a8 8 0 1 0-16 0 8 8 0 0 0 16 0z"/><path fill="#FFF" d="M39 11a1.48 1.48 0 0 0 1.06-.443l3.648-3.833c.39-.395.39-1.033 0-1.428a.993.993 0 0 0-1.414 0L39 8.772l-1.293-1.476a.993.993 0 0 0-1.414 0 1.017 1.017 0 0 0 0 1.428l1.646 1.833c.284.285.66.443 1.061.443z"/><rect width="19" height="13" y="31" fill="#82C8FA" rx="1"/><path fill="#FFF" d="M0 34h19v2H0z"/></svg>
+                 {{feature_obj.icon_svg}}
             </svg>
           </i>
-          <h4 class="n-feature__heading o-h4">Make invoicing easier for everyone</h4>
-          <p class="n-feature__content">Wide range of invoicing options that fit with your process while helping your customer process your invoices faster.</p>
+          <h4 class="n-feature__heading o-h4">{{feature_obj.title}}</h4>
+          <p class="n-feature__content">{{feature_obj.description}}</p>
         </div>
       </div>
-      <div class="supplier-features__list-item o-gutter">
-        <div class="n-feature n-feature--small">
-          <i class="n-feature__icon">
-            <svg width="48px" height="48px">
-              <use xlink:href="#icon-smart-po"/>
-            </svg>
-          </i>
-          <h4 class="n-feature__heading o-h4">Fast order processing</h4>
-          <p class="n-feature__content">Flexible format in which to receive orders so they can be sent directly to your systems</p>
-        </div>
-      </div>
-      <div class="supplier-features__list-item o-gutter">
-        <div class="n-feature n-feature--small">
-          <i class="n-feature__icon">
-            <svg width="48px" height="48px">
-              <use xlink:href="#icon-chat"/>
-            </svg>
-          </i>
-          <h4 class="n-feature__heading o-h4">Fast issue resolution</h4>
-          <p class="n-feature__content">Real-time order status and online messaging to quickly spot and resolve any issues or delays.</p>
-        </div>
-      </div>
-      <div class="supplier-features__list-item o-gutter">
-        <div class="n-feature n-feature--small">
-          <i class="n-feature__icon">
-            <svg width="48px" height="48px">
-              <use xlink:href="#icon-reports-alt"/>
-            </svg>
-          </i>
-          <h4 class="n-feature__heading o-h4">Know where you stand</h4>
-          <p class="n-feature__content">Full transparency into the PO and invoice approval status and payment date.</p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <a class="supplier-features__btn o-btn o-primary-btn" ui-sref="{{APP.ROUTES.SIGNUP}}">Get Started Today</a>
   </div>
