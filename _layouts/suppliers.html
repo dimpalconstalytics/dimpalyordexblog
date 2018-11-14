@@ -50,6 +50,6 @@ layout: default
       </div>
       {% endfor %}
     </div>
-    <a class="supplier-features__btn o-btn o-primary-btn" ui-sref="{{APP.ROUTES.SIGNUP}}">Get Started Today</a>
+    <a class="supplier-features__btn o-btn o-btn--lg o-primary-btn" href="{{ page.get_started_button.url | default:site.signup_button.url }}">{{ page.get_started_button.text | default:site.signup_button.text }}</a>
   </div>
 </section>
