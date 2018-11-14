@@ -14,7 +14,7 @@ layout: default
                 </li>
               {% endfor %}
         </ul>
-        <a class="supplier-hero__btn o-btn o-btn--lg o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
+        <a class="supplier-hero__btn o-link-btn o-btn o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
       </div>
       <div class="supplier-hero__right o-gutter">
         <div class="supplier-hero__video">
@@ -50,7 +50,7 @@ layout: default
       </div>
       {% endfor %}
     </div>
-    <a class="supplier-features__btn o-btn o-btn--lg o-primary-btn" href="{{ page.get_started_button.url | default:site.signup_button.url }}">{{ page.get_started_button.text | default:site.signup_button.text }}</a>
+    <a class="supplier-features__btn o-btn o-primary-btn" href="{{ page.get_started_button.url | default:site.signup_button.url }}">{{ page.get_started_button.text | default:site.signup_button.text }}</a>
   </div>
 </section>
 
@@ -78,6 +78,6 @@ layout: default
     <p class="o-lg-text">{{page.ready_to_get_paid_section.description | markdownify}}</p>
   </div>
   <div class="o-flex-h-center">
-    <a class="supplier-hero__btn o-btn o-btn--lg o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
+    <a class="cta__btn o-btn o-btn--lg o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
   </div>
 </section>
