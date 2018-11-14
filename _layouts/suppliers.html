@@ -53,3 +53,21 @@ layout: default
     <a class="supplier-features__btn o-btn o-btn--lg o-primary-btn" href="{{ page.get_started_button.url | default:site.signup_button.url }}">{{ page.get_started_button.text | default:site.signup_button.text }}</a>
   </div>
 </section>
+
+
+<section class="supplier-faqs">
+  <div class="supplier-faqs__hgroup o-gutter">
+    <h3 class="supplier-faqs__heading o-h3">{{page.faq_section.title}}</h3>
+    <p class="supplier-faqs__subheading o-lg-text">{{page.faq_section.description}}</p>
+  </div>
+  <div class="faqs o-container-6">
+    {% for question_obj in page.faq_section.faqs %}
+    <div class="faqs__item o-gutter">
+      <div class="faq">
+        <h5 class="faq__question">{{question_obj.question}}</h5>
+        <p class="faq__answer">{{question_obj.answer_description}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
