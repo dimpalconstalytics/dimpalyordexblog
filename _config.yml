@@ -92,3 +92,6 @@ exclude:
 plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
+signup_button:
+  url: https://yordex.com/signup
+  text: Sign Up
