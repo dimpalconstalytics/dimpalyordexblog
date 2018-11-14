@@ -8,7 +8,7 @@ layout: default
         <ul class="supplier-steps">
               {% for step_obj in page.steps_to_get_paid %}
                 <li class="supplier-step">
-                  <span class="supplier-step__icon supplier-step__icon--1">1</span>
+                  <span class="supplier-step__icon supplier-step__icon--1">{{step_obj.step_index}}</span>
                   <h4 class="supplier-step__heading o-h4">{{step_obj.step_title}}</h4>
                   <p>{{step_obj.step_description}}</p>
                 </li>
