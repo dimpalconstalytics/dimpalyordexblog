@@ -30,7 +30,7 @@ create_free_account_button:
   url: https://yordex.com/signup
   text: Create Your Free Account
 features_list:
-- feature_icon_svg: <svg id="icon-invoice-ok" viewBox="0 0 48 48" width="100%" height="100%"><path
+- icon_svg: <svg id="icon-invoice-ok" viewBox="0 0 48 48" width="100%" height="100%"><path
     fill="#3E9CFA" d="M32 2a9.956 9.956 0 0 0-2 6c0 5.523 4.477 10 10 10v28a2 2 0
     0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h26z"></path><path fill="#BFE4FF" d="M14
     18.982V20a1 1 0 0 1-2 0v-1h-1.5a1 1 0 0 1 0-2h3.318C14.47 17 15 16.551 15 16c0-.551-.53-1-1.182-1h-1.636C10.428
@@ -41,10 +41,10 @@ features_list:
     0-1.428a.993.993 0 0 0-1.414 0L39 8.772l-1.293-1.476a.993.993 0 0 0-1.414 0 1.017
     1.017 0 0 0 0 1.428l1.646 1.833c.284.285.66.443 1.061.443z"></path><rect width="19"
     height="13" y="31" fill="#82C8FA" rx="1"></rect><path fill="#FFF" d="M0 34h19v2H0z"></path></svg>
-  feature_title: Make invoicing easier for everyone
-  feature_description: Wide range of invoicing options that fit with your process
-    while helping your customer process your invoices faster.
-- feature_icon_svg: <svg id="icon-smart-po" viewBox="0 0 48 48" width="100%" height="100%"><g
+  title: Make invoicing easier for everyone
+  description: Wide range of invoicing options that fit with your process while helping
+    your customer process your invoices faster.
+- icon_svg: <svg id="icon-smart-po" viewBox="0 0 48 48" width="100%" height="100%"><g
     fill="none" fill-rule="evenodd"><path fill="#3E9CFA" d="M15.704 4.702A20.931 20.931
     0 0 1 24 3c11.598 0 21 9.402 21 21 0 2.946-.607 5.751-1.702 8.296a9 9 0 0 0-11.002
     11.002A20.931 20.931 0 0 1 24 45C12.402 45 3 35.598 3 24c0-2.946.607-5.751 1.702-8.296A9
@@ -70,10 +70,10 @@ features_list:
     d="M43.597 38.257a.838.838 0 0 1 1.128-.072.718.718 0 0 1 .078 1.058l-4.182 4.5a.835.835
     0 0 1-1.228-.025l-2.218-2.606a.719.719 0 0 1 .126-1.054.837.837 0 0 1 1.124.118l1.62
     1.903 3.552-3.822z"></path></g></svg>
-  feature_title: Fast order processing
-  feature_description: Flexible format in which to receive orders so they can be sent
-    directly to your systems
-- feature_icon_svg: <svg id="icon-chat" viewBox="0 0 48 48" width="100%" height="100%"><g
+  title: Fast order processing
+  description: Flexible format in which to receive orders so they can be sent directly
+    to your systems
+- icon_svg: <svg id="icon-chat" viewBox="0 0 48 48" width="100%" height="100%"><g
     fill="none" fill-rule="evenodd"><path fill="#82C8FA" d="M42 27.055a9 9 0 1 0 0
     17.89V46a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h19.005L42 14.942v12.113z"></path><path
     fill="#BFE4FF" d="M16.5 21h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1 0-3zm0 6h7a1.5
@@ -86,10 +86,10 @@ features_list:
     5)"><path fill="#3E9CFA" d="M2 0h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H8l-2 2-2-2H2a2
     2 0 0 1-2-2V2a2 2 0 0 1 2-2z"></path><circle cx="3" cy="5" r="1" fill="#FFF"></circle><circle
     cx="6" cy="5" r="1" fill="#FFF"></circle><circle cx="9" cy="5" r="1" fill="#FFF"></circle></g></g></svg>
-  feature_title: Fast issue resolution
-  feature_description: Real-time order status and online messaging to quickly spot
-    and resolve any issues or delays.
-- feature_icon_svg: |-
+  title: Fast issue resolution
+  description: Real-time order status and online messaging to quickly spot and resolve
+    any issues or delays.
+- icon_svg: |-
     <svg id="icon-reports-alt" viewBox="0 0 48 48" width="100%" height="100%">
       <g fill="none" fill-rule="evenodd">
         <rect width="48" height="40" y="8" fill="#3E9CFA" rx="3"></rect>
@@ -105,9 +105,9 @@ features_list:
         </g>
       </g>
     </svg>
-  feature_title: Know where you stand
-  feature_description: Full transparency into the PO and invoice approval status and
-    payment date.
+  title: Know where you stand
+  description: Full transparency into the PO and invoice approval status and payment
+    date.
 faq_section:
   title: Get answers to your FAQs here
   description: Have more questions? [Send us an email](https://yordex.com/contact)
