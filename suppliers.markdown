@@ -26,7 +26,7 @@ steps_to_get_paid:
 get_started_button:
   url: https://yordex.com/signup
   text: Get Started Today
-create_free_account:
+create_free_account_button:
   url: https://yordex.com/signup
   text: Create Your Free Account
 layout: suppliers
