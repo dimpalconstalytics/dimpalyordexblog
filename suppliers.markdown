@@ -23,6 +23,12 @@ steps_to_get_paid:
   list_icon_border_text_color: "#18AAF2"
   list_icon_background_color: "#EDF8FF"
   step_index: 3
+get_started_button:
+  url: https://yordex.com/signup
+  text: Get Started Today
+create_free_account:
+  url: https://yordex.com/signup
+  text: Create Your Free Account
 layout: suppliers
 ---
 
