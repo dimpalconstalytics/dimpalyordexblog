@@ -8,13 +8,13 @@ layout: default
         <ul class="supplier-steps">
               {% for step_obj in page.steps_to_get_paid %}
                 <li class="supplier-step">
-                  <span class="supplier-step__icon supplier-step__icon--1">{{step_obj.step_index}}</span>
+                  <span class="supplier-step__icon supplier-step__icon--{{step_obj.step_index}}">{{step_obj.step_index}}</span>
                   <h4 class="supplier-step__heading o-h4">{{step_obj.step_title}}</h4>
                   <p>{{step_obj.step_description}}</p>
                 </li>
               {% endfor %}
         </ul>
-        <a class="supplier-hero__btn o-link-btn o-btn o-primary-btn" ui-sref="{{APP.ROUTES.SIGNUP}}">Create Your Free Account</a>
+        <a class="supplier-hero__btn o-btn o-btn--lg o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
       </div>
       <div class="supplier-hero__right o-gutter">
         <div class="supplier-hero__video">
