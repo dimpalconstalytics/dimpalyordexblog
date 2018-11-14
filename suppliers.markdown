@@ -11,15 +11,18 @@ steps_to_get_paid:
   step_description: Create your account in less than two minutes. Free for life.
   list_icon_border_text_color: "#974CFF"
   list_icon_background_color: "#F5EDFF"
+  step_index: 1
 - step_title: Complete your profile
   step_description: Completing your company profile only takes up to three minutes.
   list_icon_border_text_color: "#14CCCC"
   list_icon_background_color: "#E3FCFC"
+  step_index: 2
 - step_title: Start receiving orders
   step_description: Once setup, can start using our platform to receive orders and
     get paid faster.
   list_icon_border_text_color: "#18AAF2"
   list_icon_background_color: "#EDF8FF"
+  step_index: 3
 layout: suppliers
 ---
 
