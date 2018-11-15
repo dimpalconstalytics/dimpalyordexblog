@@ -1,0 +1,414 @@
+.about-hgroup {
+  text-align: center;
+
+  &__heading {
+    margin-bottom: rhythm(1);
+    color: $text-color-dark-1;
+
+    &--large {
+      margin-bottom: rhythm(1.5);
+    }
+  }
+
+  &__subheading {
+    font-size: ms(2);
+    font-weight: 500;
+    line-height: rhythm(4);
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $text-color-dark-2;
+  }
+}
+
+.about-mission {
+  position: relative;
+  overflow: hidden;
+  padding-top: rhythm(12);
+  padding-bottom: rhythm(14);
+  background-color: $color-white;
+
+  .logo-shape {
+    top: rhythm(6);
+  }
+
+  .o-container-6 {
+    position: relative;
+  }
+}
+
+.about-mission-content {
+  font-size: ms(0);
+  line-height: 26px;
+  padding-top: rhythm(7);
+  color: $text-color-dark-1;
+  column-count: 2;
+  column-gap: $gutter-width;
+}
+
+.about-team {
+  position: relative;
+  overflow: hidden;
+  padding-top: rhythm(14);
+  padding-bottom: rhythm(10);
+  background-color: $background-light-2;
+
+  .logo-shape {
+    top: -528px; // height mission - top previous shape
+  }
+
+  .o-container-8 {
+    position: relative;
+  }
+}
+
+.about-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: rhythm(7);
+}
+
+.team-member {
+  font-size: ms(0);
+  line-height: rhythm(3);
+  width: get-columns-width(2);
+  margin-bottom: rhythm(5);
+  text-align: center;
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: rhythm(1.5);
+    vertical-align: bottom;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: ms(1);
+    line-height: rhythm(3);
+    margin-bottom: 1px;
+    color: $text-color-dark-1;
+  }
+
+  &__position {
+    margin-bottom: rhythm(1);
+    color: #596980;
+  }
+
+  &__read-bio {
+    line-height: 24px;
+    color: $text-color-link;
+    background: transparent;
+  }
+}
+
+.about-values {
+  padding-top: rhythm(14);
+  padding-bottom: rhythm(15);
+  background-color: $color-white;
+  background-image: url('../images/about-bg-1.svg');
+  background-repeat: no-repeat;
+  background-position: left -1173px;
+}
+
+.about-values-list {
+  max-width: get-columns-width(4);
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: rhythm(10);
+}
+
+.about-value {
+  position: relative;
+  color: $text-color-dark-2;
+
+  &:not(:last-child) {
+    margin-bottom: rhythm(6);
+  }
+
+  &__icon {
+    position: absolute;
+    top: -15px;
+    left: -85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__heading {
+    margin-bottom: rhythm(1);
+  }
+
+  &__body {
+    font-size: ms(0);
+    line-height: 26px;
+  }
+}
+
+
+// Modal Styles
+// ------------------------------------ //
+
+.members-slider {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: rhythm(14);
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 36px;
+    height: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: transparent;
+    border-radius: 50%;
+    background: url('/assets/images/member-arrow.svg');
+  }
+
+  .slick-prev {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-dots {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+
+    > li {
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background: $border-color-default;
+
+      &.slick-active {
+        background: $color-tertiary;
+      }
+
+      > button {
+        display: none;
+      }
+    }
+  }
+
+  .slick-slide {
+    -wekbit-user-select: none;
+    user-select: none;
+    outline: none;
+  }
+}
+
+.bio-modal {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  transition: opacity .3s linear;
+  opacity: 0;
+  outline: none;
+  background: rgba(255, 255, 255, .85);
+  -webkit-overflow-scrolling: touch;
+
+  &.fade.in {
+    opacity: 1;
+  }
+
+  &__dialog {
+    position: relative;
+    max-width: get-columns-width(4) + $gutter-width * 2;
+    margin: 12.5% auto rhythm(5);
+    padding: rhythm(12) rhythm(7.5) rhythm(7.5);
+    border: 1px solid $border-color-default;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 8px 16px 0 rgba(23,77,153,0.10);
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+  }
+}
+
+.member {
+  display: flex;
+  flex: 1;
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  &__bio {
+    flex: 1;
+    padding-top: rhythm(1.5);
+  }
+
+  &__name {
+    font-size: ms(2);
+    line-height: 28px;
+    color: $text-color-dark-2;
+  }
+
+  &__position {
+    margin-bottom: rhythm(3);
+    color: $text-color-dark-4;
+  }
+
+  &__details {
+    line-height: 26px;
+    color: $body-text-color;
+  }
+
+  &__social {
+    display: flex;
+    padding-top: rhythm(6);
+
+    &-divider {
+      width: 1px;
+      height: rhythm(3);
+      margin-right: 10px;
+      margin-left: 10px;
+      background: $text-color-light-6;
+    }
+  }
+}
+
+
+// Responsive styles
+// ------------------------------------ //
+
+@include responsive(desktopSM) {
+  .about-team-members {
+    justify-content: space-between;
+  }
+
+  .about-mission,
+  .about-team {
+    .logo-shape {
+      display: none;
+    }
+  }
+
+  .about-value {
+    &__icon {
+      left: -70px;
+    }
+  }
+}
+
+@include responsive(tablet) {
+  .about-hgroup {
+    &__subheading {
+      font-size: ms(1);
+      line-height: 28px;
+    }
+  }
+
+  .about-mission-content {
+    column-count: 1;
+  }
+
+  .about-team-members {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .team-member {
+    flex-basis: 50%;
+  }
+
+  .about-value {
+    &__icon {
+      position: static;
+      margin-bottom: rhythm(2);
+    }
+  }
+
+  .bio-modal {
+    &__dialog {
+      margin-right: 15px;
+      margin-left: 15px;
+      padding: rhythm(5) rhythm(3) rhythm(3);
+    }
+  }
+
+  .members-slider {
+    padding-bottom: rhythm(10);
+  }
+
+  .member {
+    display: block;
+
+    &__name {
+      font-size: ms(1);
+      line-height: 28px;
+    }
+
+    &__social {
+      display: block;
+      padding-top: rhythm(4);
+
+      > a:not(:last-child) {
+        margin-bottom: rhythm(1);
+      }
+
+      &-divider {
+        display: block;
+        width: 100%;
+        height: 0;
+        margin: 0;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@include responsive(mobile) {
+  .about-mission {
+    padding-top: rhythm(7.5);
+    padding-bottom: rhythm(10.5);
+  }
+
+  .about-team {
+    padding-top: rhythm(10);
+    padding-bottom: rhythm(6);
+  }
+
+  .team-member {
+    flex-basis: 100%;
+  }
+
+  .about-values {
+    padding-top: rhythm(10);
+    padding-bottom: rhythm(11);
+  }
+}

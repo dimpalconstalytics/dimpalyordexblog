@@ -1,0 +1,76 @@
+// Color Swatches
+// ------------------------------------ //
+$color-white: #FFF;
+$color-primary: #14CCCC;
+$color-secondary: #18AAF2;
+$color-tertiary: #0055CC;
+$color-quaternary: #974CFF;
+
+// Text Colors
+// ------------------------------------ //
+$body-text-color: #475466;
+$text-color-dark-1: #0A1B33;
+$text-color-dark-2: #2E3B4D;
+$text-color-dark-3: #475466;
+$text-color-dark-4: #667180;
+$text-color-dark-5: #263140;
+$text-color-dark-6: #222426;
+$text-color-light-5: #A1A8B3;
+$text-color-light-6: #C5CCD6;
+$text-color-light-7: #DFE4EB;
+$text-color-light-8: #EDF1F5;
+$text-color-light-9: #F7F8FA;
+$text-color-error: #e64c2e;
+$text-color-link: #0055CC;
+
+// Background Colors
+// ------------------------------------ //
+$background-light-1: $text-color-light-9;
+$background-light-2: #F2F8FF; // Soft Blue
+$background-error-soft: #fff9f8; // Soft Red
+$background-gradient-dark: linear-gradient(63deg, #0055CC 5%, #0852CF 21%, #0F4FD1 35%, #0036D9 100%); // Dark Blue Gradient
+
+// Border Colors
+// ------------------------------------ //
+$border-color-default: $text-color-light-6;
+$border-color-dark: $text-color-light-5;
+$border-color-light: #E6E8EB;
+$border-color-accent: #C8E5FA; // Soft Blue
+$border-color-error: #ffeae6; // Soft Red
+
+// Logo Colors
+// ------------------------------------ //
+$logo-color: #1A2433;
+$logo-color--inverse: #fff;
+$mark-background-left: $color-quaternary;
+$mark-background-right: $color-primary;
+$mark-background-bottom: #18AAF2;
+$mark-background--dark: #365FD9;
+$mark-background--light: #fff;
+
+// Homepage
+// ------------------------------------ //
+$index-masthead-bg: $color-tertiary;
+$index-masthead-gradient: $background-gradient-dark;
+
+// Code box component
+// ------------------------------------ //
+$code-box-bg: #0A1B33;
+$code-box-shadow: #003073;
+$code-box-line-number-color: #4D6280;
+$code-c1: #698DBF;
+$code-c2: #40BFFF;
+$code-c3: #668CFF;
+$code-c4: #A666FF;
+$code-c5: #3DCCCC;
+$code-c6: #18AAF2;
+
+
+// CTA component
+// ------------------------------------ //
+$cta-banner-description-color: #99C4FF;
+
+// Footer Component
+// ------------------------------------ //
+$footer-link-color: #596980;
+$footer-link-hover-color: $color-tertiary;

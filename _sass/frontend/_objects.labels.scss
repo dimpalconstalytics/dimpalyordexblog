@@ -1,0 +1,29 @@
+.label {
+  font-size: ms(-3);
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+  padding: rhythm(.75) rhythm(1);
+  cursor: default;
+  user-select: none;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+
+  &--soon {
+    color: $color-secondary;
+    background: $background-light-2;
+    box-shadow: inset 0 0 0 1px $border-color-accent;
+  }
+
+  &--optional {
+    color: $color-primary;
+    background: $color-white;
+    box-shadow: inset 0 0 0 1px $color-primary;
+  }
+
+  &--free {
+    color: $color-white;
+    background: $color-primary;
+  }
+}

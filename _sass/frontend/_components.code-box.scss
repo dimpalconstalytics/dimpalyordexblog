@@ -1,0 +1,68 @@
+.code {
+  overflow-x: auto;
+  counter-reset: code;
+  white-space: normal;
+  border-radius: 3px;
+  border-radius: 6px;
+  background: $code-box-bg;
+  box-shadow: 0 16px 32px 0 $code-box-shadow;
+  -webkit-overflow-scrolling: touch;
+
+  > code {
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    white-space: nowrap;
+
+    &::before {
+      float: left;
+      width: 60px;
+      padding-right: 20px;
+      content: counter(code);
+      counter-increment: code;
+      text-align: right;
+      color: $code-box-line-number-color;
+    }
+
+    &::after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+  }
+
+  &-padding {
+    display: flex;
+    height: rhythm(6);
+
+    &::before {
+      width: 60px;
+      content: "";
+    }
+  }
+
+  &-c1 {
+    color: $code-c1;
+  }
+
+  &-c2 {
+    color: $code-c2;
+  }
+
+  &-c3 {
+    color: $code-c3;
+  }
+
+  &-c4 {
+    color: $code-c4;
+  }
+
+  &-c5 {
+    color: $code-c5;
+  }
+
+  &-c6 {
+    color: $code-c6;
+  }
+}

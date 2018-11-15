@@ -1,0 +1,565 @@
+// Product Masthead
+// ------------------------------------ //
+
+.product-masthead {
+  position: relative;
+  overflow: hidden;
+  color: $color-white;
+  background-color: $index-masthead-bg;
+  background-image:
+    url('/assets/images/product-header-bg.svg'),
+    radial-gradient(circle at top right, rgba(0,255,255,0.31) 0%, rgba(43,58,217,0.00) 100%),
+    linear-gradient(63deg, #0055CC 5%, #0F4FD1 35%, #0036D9 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.product-hero {
+  position: relative;
+  z-index: 10;
+  padding-top: rhythm(8);
+  padding-bottom: rhythm(12);
+  text-align: center;
+
+  &__heading {
+    color: $color-white;
+  }
+}
+
+
+// Product Navigation
+// ------------------------------------ //
+
+.product-nav-wrap {
+  height: 80px;
+}
+
+.product-nav {
+  background: $text-color-light-9;
+  box-shadow: 0 1px 0 0 $text-color-light-7;
+
+  &.affix {
+    position: fixed;
+    z-index: 100;
+    top: 96px;
+    right: 0;
+    left: 0;
+  }
+
+  &__links {
+    display: flex;
+    height: 80px;
+  }
+
+  &__link {
+    font-size: ms(-1);
+    line-height: rhythm(2.5);
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    max-width: 160px;
+    height: 100%;
+    margin-right: -1px;
+    margin-left: -1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: $body-text-color;
+    border-left: 1px solid $text-color-light-8;
+    background: $text-color-light-9;
+
+    &:last-child {
+      border-right: 1px solid $text-color-light-8;
+    }
+
+    &.active {
+      font-weight: 500;
+      position: relative;
+      color: $color-tertiary;
+      border-right: 1px solid $text-color-light-7;
+      border-left: 1px solid $text-color-light-7;
+      background: $color-white;
+
+      > span {
+        padding-top: 6px;
+        padding-bottom: 4px;
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+  }
+}
+
+
+// Product Section
+// ------------------------------------ //
+
+.product-section {
+  padding-top: rhythm(15);
+  padding-bottom: rhythm(15);
+}
+
+.section-hgroup {
+  &__icon {
+    margin-bottom: rhythm(1);
+  }
+
+  &__heading {
+    color: $text-color-dark-1;
+  }
+
+  &__subheading {
+    margin-top: rhythm(2);
+    color: $text-color-dark-2;
+  }
+
+  &__text {
+    line-height: 26px;
+    margin-top: rhythm(2);
+    color: $body-text-color;
+  }
+
+  &--centered {
+    margin-bottom: rhythm(8);
+    text-align: center;
+
+    > .section-hgroup__subheading {
+      max-width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    > .section-hgroup__text {
+      max-width: 580px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.product-tabs {
+  margin-bottom: rhythm(8);
+  box-shadow: 0 1px 0 0 $text-color-light-7;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+
+  > li {
+    font-size: ms(0);
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: rhythm(1) 20px;
+    transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
+    text-align: center;
+    color: $text-color-dark-4;
+    box-shadow: none;
+
+    &.active {
+      font-weight: 500;
+      color: $color-tertiary;
+      box-shadow: 0 2px 0 $color-primary;
+    }
+  }
+}
+
+.tab-pane {
+  display: none;
+
+  &.active {
+    display: flex !important;
+  }
+}
+
+#pane-supply-chain-finance {
+  display: none;
+
+  > .o-grid-4 {
+    margin: 0 auto;
+  }
+
+  &.active {
+    display: block !important;
+  }
+}
+
+.product-grid-3 {
+  flex: 0 1 get-columns-percentage(get-columns-width(3) + $gutter-width, get-columns-width(8));
+}
+
+.product-grid-5 {
+  flex: 0 1 get-columns-percentage(get-columns-width(4) + $gutter-width, get-columns-width(8));
+}
+
+// Smart POs Section
+// ------------------------------------ //
+
+.product-tabs-heading {
+  font-size: ms(3);
+  line-height: rhythm(4);
+  margin-bottom: rhythm(1);
+  color: $text-color-dark-1;
+}
+
+.product-tabs-content {
+  font-size: ms(0);
+  line-height: 26px;
+}
+
+.product-tabs-image {
+  text-align: center;
+}
+
+
+// Images Sizes
+@media screen and (min-width: #{map-get($breakpoints-map, tablet) + 1}) {
+  #img-order-tracking {
+    max-width: 510px;
+  }
+
+  #img-payment-status {
+    max-width: 480px;
+  }
+
+  #img-smart-terms{
+    max-width: 510px;
+  }
+
+  #img-messaging {
+    max-width: 390px;
+  }
+
+  #img-custom-forms {
+    max-width: 510px;
+  }
+
+  #img-phone-alerts {
+    max-width: 390px;
+  }
+
+  #img-po-sharing {
+    max-width: 445px;
+  }
+
+  #img-adaptive-format {
+    max-width: 495px;
+  }
+
+  #pane-supplier-self-matching img {
+    max-width: 510px;
+  }
+
+  #pane-self-billing img {
+    max-width: 536px;
+  }
+
+  #pane-invoice-scanning img {
+    max-width: 496px;
+  }
+
+  #po-approvals img {
+    max-width: 664px;
+  }
+
+  #expense-management img {
+    max-width: 704px;
+  }
+
+  #pane-early-payment-discounts img {
+    max-width: 644px;
+  }
+
+  #pane-dynamic-discounting img {
+    max-width: 510px;
+  }
+}
+
+
+// Invoice Central Section
+// ------------------------------------ //
+
+#invoice-central {
+  background: $background-light-2;
+}
+
+.product-invoice-tabs {
+  .tab-content {
+    padding-top: rhythm(3.5);
+  }
+
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+
+    > li {
+      padding: rhythm(3) rhythm(4);
+      text-align: left;
+      border-radius: 4px;
+
+      &.active {
+        font-weight: 400;
+        background: $color-white;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.product-invoice-tab {
+  cursor: default;
+
+  &__heading {
+    margin-bottom: rhythm(1);
+    color: $text-color-dark-2;
+  }
+
+  &__content {
+    line-height: 26px;
+    color: $text-color-dark-4;
+  }
+}
+
+.active {
+  .product-invoice-tab__heading {
+    color: $color-tertiary;
+  }
+
+  .product-invoice-tab__content {
+    color: $body-text-color;
+  }
+}
+
+
+// Expense Management Section
+// ------------------------------------ //
+
+#expense-management {
+  background: $text-color-light-9;
+}
+
+
+// Expense Management Section
+// ------------------------------------ //
+
+.product-features {
+  &__item {
+    flex: 1;
+  }
+}
+
+
+// Supplier Discounts Section
+// ------------------------------------ //
+
+#supplier-discounts {
+  background: $background-light-2;
+}
+
+
+// Invoice Central Section
+// ------------------------------------ //
+
+#invoice-central {
+  background: $background-light-2;
+}
+
+
+// Reporting Section
+// ------------------------------------ //
+
+
+// Premium Support Section
+// ------------------------------------ //
+
+#premium-support {
+  background: $text-color-light-9;
+}
+
+.primary-support-content {
+  font-size: ms(0);
+  line-height: 26px;
+  padding-top: rhythm(1);
+  color: $body-text-color;
+
+  > p {
+    margin-bottom: rhythm(2);
+  }
+
+  li {
+    position: relative;
+    margin-bottom: rhythm(2);
+    padding-left: 24px;
+    color: $body-text-color;
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      content: url('/assets/images/feature-check-small.svg');
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    margin-top: rhythm(5);
+    padding-right: rhythm(4);
+    padding-left: rhythm(4);
+    color: $color-tertiary;
+  }
+}
+
+.primary-support-img {
+  display: block;
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow: 0 24px 48px rgba(46, 59, 77, .15);
+}
+
+.primary-support-features {
+  margin-top: rhythm(15);
+
+  .n-feature {
+    padding-right: $column-width + $gutter-width / 2;
+  }
+}
+
+
+// Responsive styles
+// ------------------------------------ //
+
+@include responsive(desktopSM) {
+  .nav-tabs {
+    > li {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  .primary-support-img {
+    max-width: 100%;
+  }
+
+  .primary-support-features {
+    .n-feature {
+      padding-right: 0;
+    }
+  }
+}
+
+@include responsive(tablet) {
+  .product-nav-wrap {
+    display: none;
+  }
+
+  .product-section {
+    padding-top: rhythm(10);
+    padding-bottom: rhythm(10);
+  }
+
+  .section-hgroup {
+    text-align: center;
+
+    > .section-hgroup__subheading {
+      max-width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    > .section-hgroup__text {
+      max-width: 580px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &--centered {
+      margin-bottom: rhythm(6);
+    }
+  }
+
+  .nav-tabs {
+    display: none;
+  }
+
+  .tab-pane {
+    display: flex !important;
+
+    &:not(:last-child) {
+      margin-bottom: rhythm(5);
+    }
+  }
+
+  .product-tabs-content {
+    padding-bottom: rhythm(5);
+  }
+
+  .product-invoice-tabs {
+    &__content {
+      display: none;
+    }
+
+    .nav-tabs {
+      display: block;
+
+      > li {
+        padding: 0;
+
+        &:not(:last-child) {
+          margin-bottom: rhythm(5);
+        }
+
+        &.active {
+          background: transparent;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .active {
+    .product-invoice-tab__heading {
+      color: $text-color-dark-2;
+    }
+
+    .product-invoice-tab__content {
+      color: $text-color-dark-4;
+    }
+  }
+
+  .product-grid-3,
+  .product-grid-5 {
+    flex: 0 1 100%;
+  }
+
+  #po-approvals,
+  #expense-management {
+    .product-grid-3 {
+      padding-bottom: rhythm(5);
+    }
+  }
+
+  .product-features {
+    display: block;
+
+    &__item:not(:last-child) {
+      margin-bottom: rhythm(5);
+    }
+  }
+
+  .primary-support-features,
+  .reporting-features {
+    .n-feature {
+      margin-bottom: rhythm(5);
+    }
+  }
+
+  .primary-support-features,
+  .primary-support-img {
+    margin-top: rhythm(6);
+  }
+}

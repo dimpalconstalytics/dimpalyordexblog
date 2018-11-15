@@ -1,0 +1,87 @@
+// demo form styles
+.demo-form {
+  $height: rhythm(7);
+  $padding: rhythm(2) rhythm(3);
+
+  width: 100%;
+  max-width: 420px;
+  margin: rhythm(6.5) auto 0;
+
+  &-group {
+    margin-bottom: rhythm(2);
+
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+
+    > .demo-form__input {
+      float: left;
+      width: 48.5%;
+
+      &:first-child {
+        margin-right: 3%;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: rhythm(2);
+
+    &-text {
+      display: block;
+      margin-bottom: rhythm(.5);
+    }
+
+    &.error {
+      .demo-form__email::after {
+        @extend .svg-error;
+      }
+
+      .demo-form__input {
+        box-shadow: inset 0 0 0 1px transparentize($text-color-error, .6);
+      }
+
+      .demo-form__error-message {
+        font-size: ms(-1);
+        display: block;
+        margin-top: rhythm(.5);
+        color: $text-color-error;
+      }
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: $height;
+    padding: $padding !important;
+  }
+
+  &__error-message {
+    display: none;
+  }
+
+  &__submit {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: rhythm(7);
+    transition: opacity .3s ease-in-out, background .3s ease-in-out;
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: .3;
+    }
+  }
+}
+
+// submit success message
+.demo-success {
+  > .form-success__content {
+    max-width: 420px;
+    margin: rhythm(2) auto rhythm(3);
+  }
+}

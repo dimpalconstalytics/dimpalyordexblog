@@ -1,0 +1,122 @@
+// import nice-select styles
+@import 'nice-select/nice-select';
+
+// contact form styles
+.contact-form {
+  $height: rhythm(7);
+  $padding: rhythm(2) rhythm(3);
+
+  margin-top: rhythm(7);
+  margin-bottom: rhythm(15);
+
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  &-group {
+    margin-bottom: rhythm(2);
+
+    &::after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+
+    > .contact-form__input {
+      float: left;
+      width: 48.5%;
+
+      &:first-child {
+        margin-right: 3%;
+      }
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: $height;
+    padding: $padding;
+  }
+
+  &__select {
+    display: block;
+    margin-bottom: rhythm(2);
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-bottom: rhythm(2);
+    padding: $padding;
+    resize: vertical;
+  }
+
+  &__submit {
+    float: right;
+    height: $height;
+    padding: rhythm(2) rhythm(4);
+  }
+
+  select.error + .nice-select,
+  .error {
+    box-shadow: inset 0 0 0 1px transparentize($text-color-error, .6);
+  }
+}
+
+// add contact features border
+.contact-features {
+  &-section {
+    border-top: 1px solid $border-color-light;
+    background: $background-light-1;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    flex-basis: percentage(1/2);
+  }
+}
+
+
+// submit success message
+.contact-success {
+  .form-success__content {
+    max-width: 420px;
+    margin: rhythm(2) auto rhythm(3);
+  }
+}
+
+// responsive
+@include slicer(2) {
+  .contact-form {
+    margin-top: rhythm(5);
+    margin-bottom: rhythm(10);
+  }
+}
+
+@include slicer(3) {
+  .contact-form {
+    &-group {
+      > .contact-form__input {
+        float: none;
+        width: 100%;
+
+        &:first-child {
+          margin-right: 0;
+          margin-bottom: rhythm(2);
+        }
+      }
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}

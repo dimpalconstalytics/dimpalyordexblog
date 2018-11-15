@@ -1,0 +1,128 @@
+// Rebar grids
+$mobile-first: false;
+$max-width: 1220px + 60;
+$breakpoints: $max-width 860px 640px;
+$gutters: 60px 40px 40px 30px;
+
+$container:
+  (
+    '.frontend .container-8': (
+      gutter: true
+    ),
+    '.frontend .container-6': (
+      max-width: (6 / 8 * $max-width),
+      gutter: true
+    ),
+    '.frontend .container-4': (
+      max-width: (4 / 8 * $max-width),
+      gutter: true
+    ),
+    '.frontend .row': (
+      nested: true
+    )
+  );
+
+$grid:
+  (
+    '.frontend .grid-half': (
+      width: (1 / 2) null null 1
+    ),
+    '.frontend .grid-third': (
+      width: (1 / 3) null (1 / 2) 1
+    )
+  );
+
+@import './rebar/rebar.scss';
+
+
+// Container objects
+// ------------------------------------ //
+
+.o-container-8 {
+  max-width: get-columns-width(8) + $gutter-width;
+  margin: auto;
+}
+
+.o-container-6 {
+  max-width: get-columns-width(6) + $gutter-width;
+  margin: auto;
+}
+
+
+// Gutter objects
+// ------------------------------------ //
+
+.o-gutter {
+  padding-right: $gutter-width / 2;
+  padding-left: $gutter-width / 2;
+}
+
+
+// Subheading container objects
+// ------------------------------------ //
+
+.o-subheading {
+  max-width: get-columns-width(4);
+  // CSS specificity conflict, need to remove the .frontend prefixes,
+  // then remeve the !important flag
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+
+// Grids styles
+// ------------------------------------ //
+
+.o-row {
+  display: flex;
+  margin-right: -($gutter-width / 2);
+  margin-left: -($gutter-width / 2);
+}
+
+.o-grid-3 {
+  width: get-columns-percentage(3);
+}
+
+.o-grid-4 {
+  width: get-columns-percentage(4);
+}
+
+.o-offset-1 {
+  margin-left: get-columns-percentage(1);
+}
+
+
+// Responsive styles
+// ------------------------------------ //
+
+@include responsive(desktopSM) {
+  .o-offset-1 {
+    margin-left: 0;
+  }
+
+  .o-grid-3 {
+    width: get-columns-percentage(4);
+  }
+
+  .o-grid-4 {
+    width: get-columns-percentage(5);
+  }
+}
+
+@include responsive(tablet) {
+  .o-gutter {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .o-row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .o-grid-3,
+  .o-grid-4 {
+    width: 100%;
+  }
+}

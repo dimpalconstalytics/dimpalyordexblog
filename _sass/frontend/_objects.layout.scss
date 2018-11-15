@@ -1,0 +1,26 @@
+// float layout
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.waiting-for-ajax, .waiting-for-ajax * {
+	cursor: wait !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}

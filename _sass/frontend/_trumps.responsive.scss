@@ -1,0 +1,27 @@
+.show-tablet {
+  display: none;
+}
+
+@include slicer(2) {
+  .show-tablet {
+    display: block;
+  }
+
+  .tablet-signup-btn {
+    line-height: rhythm(6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@include slicer(3) {
+  .hide-mobile {
+    display: none;
+  }
+}
+

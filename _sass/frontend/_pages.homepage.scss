@@ -1,0 +1,497 @@
+// Index Masthead
+// ------------------------------------ //
+
+.index-masthead {
+  position: relative;
+  overflow: hidden;
+  min-height: rhythm(90); //720px
+  color: $color-white;
+  background-color: $index-masthead-bg;
+  background-image: $index-masthead-gradient;
+
+  .logo-shape {
+    top: rhythm(20);
+
+    &--small {
+      top: rhythm(37);
+      left: auto;
+      right: -600px;
+    }
+  }
+}
+
+
+// Index Hero
+// ------------------------------------ //
+
+.index-hero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding-bottom: rhythm(14);
+
+  &__left {
+    width: 50%;
+    padding-top: rhythm(6);
+    z-index: -3;
+  }
+
+  &__heading {
+    margin-bottom: rhythm(3);
+  }
+
+  &__subheading {
+    font-size: ms(2);
+    font-weight: 500;
+    line-height: rhythm(4);
+    margin-bottom: rhythm(4);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__btn {
+    height: rhythm(8);
+    padding-right: rhythm(5);
+    padding-left: rhythm(5);
+    border-radius: 3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.07);
+  }
+
+  &__right {
+    align-self: center;
+    width: 50%;
+    padding-top: rhythm(10);
+  }
+
+  &__img {
+    display: block;
+    max-width: 818px;
+    position: absolute;
+    left: -160px;
+  }
+}
+
+// Index Main
+// ------------------------------------ //
+
+.index-main {
+  position: relative;
+  overflow: hidden;
+  background-image: url('/assets/images/logo-shape-large--gradient.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 580px right 120px;
+}
+
+#logo-shape-benefits {
+  top: -560px; // 720 - 160px (top masthead shape)
+}
+
+// Index Benefits
+// ------------------------------------ //
+
+.index-benefits {
+  position: relative;
+  padding-top: rhythm(18);
+}
+
+.index-benefit {
+  display: flex;
+
+  &__img {
+    position: relative;
+    display: flex;
+    flex-basis: 50%;
+
+    > img {
+      display: block;
+      align-self: center;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+  }
+
+  &--1 {
+    flex-direction: row-reverse;
+    margin-bottom: rhythm(16);
+
+    > .index-benefit__img > img {
+      max-width: 510px;
+    }
+
+    > .index-benefit__content {
+      padding-top: rhythm(5);
+    }
+  }
+
+  &--2 {
+    margin-bottom: rhythm(29);
+
+    > .index-benefit__img > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 708px;
+    }
+
+    > .index-benefit__content {
+      padding-top: rhythm(5);
+    }
+  }
+
+  &--3 {
+    flex-direction: row-reverse;
+    margin-bottom: rhythm(18);
+
+    > .index-benefit__content {
+      padding-top: rhythm(5);
+    }
+  }
+
+  &--4 {
+    justify-content: center;
+  }
+}
+
+.benefit {
+  &__icon {
+    margin-bottom: rhythm(1.5);
+  }
+
+  &__heading {
+    margin-bottom: rhythm(2);
+    color: $text-color-dark-1;
+  }
+
+  &__content {
+    margin-bottom: rhythm(3);
+  }
+}
+
+
+// Index Demo
+// ------------------------------------ //
+
+.index-demo {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  margin-top: rhythm(30);
+  margin-bottom: rhythm(42);
+
+  &__left {
+    flex-basis: get-columns-width(5) + $gutter-width;
+    flex-shrink: 0;
+    padding-top: rhythm(28);
+  }
+
+  &__right {
+    position: relative;
+    flex-basis: get-columns-percentage(3);
+  }
+}
+
+.schedule-card {
+  padding: rhythm(4) rhythm(5) rhythm(5);
+  border-radius: 4px;
+  background: $color-primary;
+
+  &__text {
+    font-size: ms(3);
+    line-height: rhythm(4);
+    margin-bottom: rhythm(3);
+    color: $color-white;
+  }
+}
+
+.schedule-form {
+  display: flex;
+  height: rhythm(8);
+
+  &__input {
+    font-size: ms(0);
+    line-height: 26px;
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    box-shadow: none !important; // need optimise
+  }
+
+  &__submit {
+    padding-right: rhythm(5);
+    padding-left: rhythm(5);
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+.macbook {
+  position: absolute;
+  z-index: -1;
+  left: -305px;
+  width: 948px; // macbook image size / 2
+  height: 784px; // macbook image size / 2
+  padding-top: 35px;
+  padding-right: 114px;
+  padding-left: 114px;
+  background: url('/assets/images/macbook.png');
+  background-size: cover;
+}
+
+// Index Feauters
+// ------------------------------------ //
+
+.index-features {
+  margin-bottom: rhythm(20);
+
+  &__heading {
+    max-width: 700px + $gutter-width;
+    margin: 0 auto;
+    text-align: center;
+    color: $text-color-dark-2;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    flex-basis: get-columns-percentage(4);
+    margin-top: rhythm(12);
+  }
+
+  &__explore-btn {
+    font-weight: 500;
+    display: block;
+    width: 210px;
+    margin: rhythm(8) auto 0;
+    color: $color-tertiary;
+  }
+}
+
+
+// Index Get Started
+// ------------------------------------ //
+
+.index-get-started {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-bottom: rhythm(15);
+  text-align: center;
+
+  &__left {
+    // flex-basis: get-columns-percentage(4);
+    max-width: get-columns-width(4) + $gutter-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__heading {
+    margin-bottom: rhythm(2.5);
+    color: $text-color-dark-2;
+  }
+
+  &__content {
+    line-height: 26px;
+    margin-bottom: rhythm(4);
+
+    > p:not(:last-child) {
+      margin-bottom: rhythm(2);
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    padding-right: rhythm(4);
+    padding-left: rhythm(4);
+  }
+
+  // &__right {
+  //   > img {
+  //     display: block;
+  //     width: 100%;
+  //     max-width: 480px;
+  //   }
+  // }
+}
+
+
+// Index Testimonials
+// ------------------------------------ //
+
+.index-testimonials {
+  overflow: hidden;
+  padding-top: rhythm(15);
+  padding-bottom: rhythm(15);
+  background: #F2F8FF;
+
+  &__hgroup {
+    max-width: 700px + $gutter-width;
+    margin: 0 auto rhythm(8);
+    text-align: center;
+  }
+
+  &__subheading {
+    line-height: rhythm(3);
+    margin-bottom: rhythm(1.5);
+    color: $color-secondary;
+  }
+
+  &__heading {
+    color: #263140;
+  }
+}
+
+
+// ------------------------------------ //
+// Responsive Styles
+// ------------------------------------ //
+
+@include responsive(desktopLG) {
+  .index-main {
+    background-position: bottom 380px right -200px;
+  }
+}
+
+
+@include responsive(desktopSM) {
+  .index-masthead {
+    min-height: auto;
+  }
+
+  .index-hero {
+    padding-bottom: rhythm(10);
+
+    &__left {
+      width: auto;
+    }
+
+    &__right {
+      flex-basis: 100%;
+    }
+
+    &__img {
+      opacity: 0.3
+    }
+  }
+
+  .index-main {
+    background-image: none;
+  }
+}
+
+@include responsive(tablet) {
+  .index-masthead {
+    overflow: visible;
+  }
+
+  .index-hero {
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      flex-basis: 100%;
+    }
+  }
+
+  .index-benefits {
+    padding-top: rhythm(10);
+  }
+
+  .index-benefit {
+    display: block;
+
+    &__img {
+      justify-content: center;
+    }
+
+    &__content {
+      padding-top: 0 !important;
+    }
+
+    &--1 {
+      margin-bottom: rhythm(10);
+    }
+
+    &--2 {
+      margin-bottom: rhythm(10);
+
+      > .index-benefit__img > img {
+        position: static;
+        width: 100%;
+      }
+    }
+
+    &--3 {
+      margin-bottom: rhythm(10);
+    }
+  }
+
+  .index-demo {
+    display: block;
+    margin: rhythm(10) 0 rhythm(15);
+
+    &__left {
+      padding-top: 0;
+    }
+  }
+
+  .schedule-card {
+    padding: rhythm(4) rhythm(3);
+
+    &__text {
+      font-size: ms(0);
+      line-height: 24px;
+    }
+  }
+
+  .macbook {
+    display: none;
+  }
+
+  .index-features {
+    margin-bottom: rhythm(20);
+
+    &__list-item {
+      flex-basis: 100%;
+      margin-top: rhythm(8);
+    }
+  }
+
+  .index-get-started {
+    margin-bottom: rhythm(10);
+  }
+
+  .index-testimonials {
+    padding-top: rhythm(10);
+    padding-bottom: rhythm(10);
+  }
+}
+
+@include responsive(mobile) {
+  .schedule-form {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &__input {
+      display: block;
+      width: 100%;
+      height: rhythm(6);
+      margin-bottom: rhythm(1);
+      border-radius: 3px;
+    }
+
+    &__submit {
+      display: block;
+      width: 100%;
+      height: rhythm(6);
+      border-radius: 3px;
+    }
+  }
+}

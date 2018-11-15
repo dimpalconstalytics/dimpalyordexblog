@@ -1,0 +1,55 @@
+.tooltip {
+  $_tooltip-icon-color: #c0c8cc;
+  $_tooltip-message-box-color: #fff;
+  $_tooltip-message-box-background: #949899;
+
+  @extend .svg-tooltip;
+  @extend .svg-tooltip-dims;
+
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  margin-left: .25em;
+  vertical-align: middle;
+
+  // message box
+  &::before {
+    @include tooltip-close;
+
+    font-size: ms(-2);
+    font-weight: 400;
+    line-height: 16px;
+    position: absolute;
+    bottom: calc(100% + #{rhythm(1)});
+    left: -12px;
+    width: 230px;
+    padding: 10px;
+    content: attr(data-message);
+    text-align: left;
+    color: $_tooltip-message-box-color;
+    border-radius: 3px;
+    background: $_tooltip-message-box-background;
+  }
+
+  // triangle
+  &::after {
+    @include tooltip-close;
+
+    position: absolute;
+    top: rhythm(1) * -1;
+    left: 4px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 6px solid $_tooltip-message-box-background;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      @include tooltip-open;
+    }
+  }
+}

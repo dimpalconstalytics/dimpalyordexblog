@@ -1,0 +1,120 @@
+.feature {
+  margin-bottom: rhythm(5);
+
+  &__icon-wrap {
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: rhythm(2);
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__heading {
+    margin-bottom: rhythm(2);
+    color: $text-color-dark-2;
+  }
+
+  &__content {
+    flex: 1;
+
+    + p {
+      margin-top: rhythm(2);
+    }
+  }
+
+  &__link-divider {
+    display: inline-block;
+    width: 1px;
+    height: rhythm(3);
+    margin: 0 rhythm(1.5);
+    vertical-align: middle;
+    background: $border-color-light;
+  }
+}
+
+// responsive
+@include slicer(2) {
+  .feature {
+    &:last-child {
+      float: none;
+      overflow: hidden;
+    }
+
+    &__icon {
+      margin: 0 auto rhythm(2);
+    }
+  }
+}
+
+@include slicer(3) {
+  .feature {
+    text-align: left;
+
+    &__icon {
+      margin: 0 0 rhythm(2);
+    }
+  }
+}
+
+
+// New Feature component
+// ------------------------------------ //
+// the "n-" prefix a temporary prefix
+
+.n-feature {
+  position: relative;
+  padding-left: get-columns-width(1);
+
+  &__icon {
+    position: absolute;
+    top: rhythm(-1);
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: get-columns-width(1);
+  }
+
+  &__heading {
+    margin-bottom: rhythm(2);
+    color: $text-color-dark-2;
+  }
+
+  &--small {
+    > .n-feature__heading {
+      margin-bottom: rhythm(1);
+    }
+  }
+
+  &__content {
+    + p {
+      margin-top: rhythm(2);
+    }
+  }
+
+  &--column {
+    padding-left: 0;
+
+    > .n-feature__icon {
+      position: static;
+      width: 48px;
+      height: 48px;
+      margin-bottom: rhythm(3);
+    }
+  }
+}
+
+@include responsive(desktopSM) {
+  .n-feature {
+    padding-left: 0;
+
+    &__icon {
+      position: static;
+      display: block;
+      margin-bottom: rhythm(2);
+    }
+  }
+}

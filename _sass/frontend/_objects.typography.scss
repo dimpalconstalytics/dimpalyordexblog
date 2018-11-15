@@ -1,0 +1,423 @@
+// headings
+.headings-group {
+  text-align: center;
+}
+
+.heading {
+  color: $text-color-dark-1;
+
+  &--l {
+    font-size: ms(7);
+    line-height: 48px;
+    margin-bottom: rhythm(2);
+    font-weight: 600;
+  }
+
+  &--s {
+    font-size: ms(6);
+    line-height: 40px;
+    margin-bottom: rhythm(1.5);
+  }
+}
+
+.subheading {
+  line-height: 32px;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  color: $text-color-dark-2;
+
+  &--l {
+    font-size: ms(2);
+  }
+
+  &--s {
+    font-size: 18px;
+  }
+}
+
+
+// text styles
+.text--blue {
+  color: $text-color-link;
+}
+
+
+// links
+.o-underline-link {
+  position: relative;
+  display: inline-block;
+  color: $text-color-link;
+  outline: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+  }
+
+  &::before {
+    background: rgba(24,170,242,0.50);
+  }
+
+  &::after {
+    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    background: rgba(24,170,242,1);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+// content styles
+.content-section {
+  padding-bottom: rhythm(15);
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: rhythm(5) 0 rhythm(2);
+    color: $text-color-dark-1;
+  }
+
+  p + p {
+    margin-top: rhythm(3);
+  }
+
+  p:first-of-type {
+    margin-bottom: rhythm(3);
+  }
+
+  strong {
+    font-weight: 500;
+    position: relative;
+    color: $text-color-dark-2;
+
+    // &::after {
+    //   position: absolute;
+    //   bottom: 2px;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 1px;
+    //   content: '';
+    //   background: currentColor;
+    // }
+  }
+
+  em {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 rhythm(4) 0;
+    padding-left: 1em;
+
+    > li {
+      margin-top: rhythm(2);
+    }
+  }
+
+  a {
+    @extend .o-underline-link;
+  }
+
+  table {
+    font-size: .875em;
+    overflow: hidden;
+    width: 100%;
+    margin: rhythm(3) 0;
+    border-collapse: collapse;
+    color: $text-color-dark-3;
+    background: $color-white;
+
+    th,
+    td {
+      padding: .5em;
+      text-align: left;
+      border: 1px solid $border-color-default;
+    }
+
+    th {
+      font-weight: normal;
+      padding: 1em .5em;
+      color: $text-color-dark-1;
+      border-bottom: 2px solid $border-color-dark;
+      background: $background-light-2;
+    }
+  }
+}
+
+// responsive
+@include slicer(2) {
+  // headings
+  .heading {
+    &--l {
+      font-size: ms(6);
+      line-height: 40px;
+    }
+
+    &--s {
+      font-size: ms(5);
+      line-height: 40px;
+    }
+  }
+
+  .subheading {
+    &--l {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &--s {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+
+@include slicer(3) {
+  .heading {
+    &--l,
+    &--s {
+      font-size: ms(4);
+      line-height: 32px;
+      margin-bottom: rhythm(1);
+    }
+  }
+
+  .subheading {
+    &--l {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .o-underline-link:hover::after {
+    display: none;
+  }
+
+  // responsive table styles
+  .content-section {
+    table {
+      thead {
+        display: none;
+      }
+
+      tr {
+        border-bottom: 1px solid $border-color-default;
+
+        &:nth-child(2n) {
+          background: $background-light-2;
+        }
+      }
+
+      td {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        border-bottom: 0;
+
+        &::before {
+          font-weight: 500;
+          float: left;
+          width: 50%;
+          content: attr(data-title);
+          color: $text-color-dark-1;
+        }
+      }
+    }
+  }
+}
+
+
+// Heading objects
+// ------------------------------------ //
+
+.o-h1 {
+  font-size: ms(10);
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.o-h2 {
+  font-size: ms(7);
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.o-h3 {
+  font-size: ms(6);
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.o-h4 {
+  font-size: ms(2);
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.o-h5 {
+  font-size: ms(1);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+// Text Size objects
+// ------------------------------------ //
+
+.o-text {
+  font-size: ms(0);
+  line-height: 24px;
+}
+
+.o-lg-text {
+  font-size: ms(1);
+  line-height: 28px;
+}
+
+
+// Text Color objects
+// ------------------------------------ //
+
+.o-tc-black {
+  color: $text-color-dark-1;
+}
+
+.o-tc-dark {
+  color: $text-color-dark-2;
+}
+
+.o-tc-light {
+  color: $text-color-dark-3;
+}
+
+.o-tc-primary {
+  color: $color-primary;
+}
+
+.o-tc-secondary {
+  color: $color-secondary;
+}
+
+.o-tc-link {
+  color: $text-color-link;
+}
+
+// Text align objects
+// ------------------------------------ //
+
+.o-align-center {
+  text-align: center;
+}
+
+
+// Link objects
+// ------------------------------------ //
+
+.o-link {
+  position: relative;
+  display: inline-block;
+  outline: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+  }
+
+  &::before {
+    opacity: .2;
+    background: currentColor;
+  }
+
+  &::after {
+    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    background: currentColor;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+
+// Display objects
+// ------------------------------------ //
+
+.o-block {
+  display: block;
+}
+
+
+// Responsive styles
+// ------------------------------------ //
+
+@include responsive(desktopSM) {
+  .o-h1 {
+    font-size: ms(8);
+    line-height: 48px;
+  }
+
+  .o-h2 {
+    font-size: ms(5);
+    line-height: 40px;
+  }
+
+  .o-h3 {
+    font-size: ms(4);
+    line-height: 32px;
+  }
+
+  .o-h4 {
+    font-size: ms(1);
+    line-height: 28px;
+  }
+
+  .o-h5 {
+    font-size: ms(0);
+    line-height: 24px;
+  }
+
+  .o-text {
+    font-size: ms(0);
+    line-height: 24px;
+  }
+
+  .o-lg-text {
+    font-size: ms(0);
+    line-height: 24px;
+  }
+}
+
+
+// Mobile responsive styles
+// ------------------------------------ //
+
+@include responsive(mobile) {
+  :root {
+    font-size: 15px;
+  }
+
+  .o-h1 {
+    font-size: ms(6);
+  }
+}

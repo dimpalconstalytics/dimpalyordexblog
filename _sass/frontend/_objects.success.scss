@@ -1,0 +1,12 @@
+.success {
+  border: 1px solid lighten($border-color-accent, 5%);
+  background: $background-light-1;
+
+  &-heading {
+    color: $color-secondary;
+  }
+
+  &-description {
+    color: $text-color-dark-3;
+  }
+}
