@@ -1,0 +1,97 @@
+---
+title: yordex.com
+timezone: Europe/London
+collections:
+  authors:
+    title: Authors
+    output: false
+  posts:
+    title: Posts
+    output: true
+  testimonials:
+    title: Testimonials
+    output: false
+  topics:
+    title: Topics
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/:title/"
+    topic: 
+    image: 
+    author: 
+- scope:
+    path: ''
+    type: topics
+  values:
+    permalink: "/category/:title/"
+    layout: category
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/author/:title/"
+    layout: author
+    image: 
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+    header:
+      title: 
+      body: 
+- scope:
+    path: ''
+    type: testimonials
+  values:
+    author:
+      name: 
+      title: 
+      company: 
+      profile-image: 
+    logo-image: 
+    color: 
+url: http://blog.yordex.com
+description: Simplify your payment process with our software to automate the accounts
+  payable system for both buyers and sellers. Reduce cost and improve payment terms.
+twitter:
+  username: YordexLTD
+social:
+  links:
+  - name: Twitter
+    link: https://www.twitter.com/YordexLTD
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/yordex
+footer_text: Procure-to-pay platform to save time, increase visibility into spend
+  and improve cash flow.
+cta:
+  title: Ready to get your business on Yordex?
+  subtitle: Reduce invoice processing costs, improve visibility and working capital.
+    Schedule your free demo today.
+  button:
+    copy: Schedule a Demo
+    url: https://yordex.com/request-demo
+date_format: "%-d %B %Y"
+per_page: 10
+gtm-code: GTM-55TB3WF
+exclude:
+- Gemfile
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+signup_button:
+  url: https://yordex.com/signup
+  text: Sign Up

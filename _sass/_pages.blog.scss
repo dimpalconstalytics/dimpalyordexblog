@@ -1,0 +1,44 @@
+.section-blog {
+	padding-bottom: rhythm(15);
+}
+
+.blog {
+	&__topics {
+		margin-bottom: rhythm(8);
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		margin-top: rhythm(2);
+	}
+}
+
+// Blog Archive Content
+.archive {
+	&__month {
+		margin: rhythm(3) 0 rhythm(1);
+	}
+
+	&__item {
+		margin: 0 0 rhythm(1);
+	}
+
+	&__day {
+		color: $text-color-light-5;
+	}
+}
+
+// Responsive Styles
+// ------------------------------------ //
+@include responsive(desktopSM) {
+  .section-blog {
+		padding-bottom: rhythm(10);
+	}
+}
+
+@include responsive(mobile) {
+  .section-blog {
+		padding-bottom: rhythm(7);
+	}
+}

@@ -1,0 +1,19 @@
+// Grids Settings
+$column-width: 100px;
+$gutter-width: 60px;
+$total-columns: 8;
+
+// http://www.modularscale.com/?16&&1.125&web&table
+$ms-base: 1rem;
+$ms-ratio: 1.125;
+
+// Breakpoints Settings
+$breakpoints-map: (
+  desktopLG: 1440px,
+  desktopSM: 968px,
+  tablet: 768px,
+  mobile: 576px
+);
+
+// Header Height Setting
+$header-height: 48px;

@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="supplier-masthead">
+  <div class="supplier-hero">
+     <div class="supplier-hero__container o-container-8">
+      <div class="supplier-hero__left o-gutter">
+        <ul class="supplier-steps">
+              {% for step_obj in page.steps_to_get_paid %}
+                <li class="supplier-step">
+                  <span class="supplier-step__icon supplier-step__icon--{{step_obj.step_index}}">{{step_obj.step_index}}</span>
+                  <h4 class="supplier-step__heading o-h4">{{step_obj.step_title}}</h4>
+                  <p>{{step_obj.step_description}}</p>
+                </li>
+              {% endfor %}
+        </ul>
+        <a class="supplier-hero__btn o-link-btn o-btn o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
+      </div>
+      <div class="supplier-hero__right o-gutter">
+        <div class="supplier-hero__video">
+          <div class="video">
+            <video class="video__body" poster="/assets/images/supplier-video-poster@2x.png">
+              <source src="" type="video/mp4" />
+            </video>
+            <div class="video__play-btn">
+              <svg width="15px" height="20px">
+                <use xlink:href="#video-play"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!--<div class="logo-shape">
+    <svg fill="#FFF" fill-opacity=".5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1142 1471" width="1142" heigh="1471"><path fill-rule="evenodd" d="M419.923 68.405L0 326.331v221.935l519.748-318.465c137.587-81.167 314.78-34.25 396.084 106.527 81.917 142.035 35.728 326.31-102.47 410.486-.347.22-813.362 502.25-813.362 502.25V1471l917.797-565.764c218.837-141.543 289.981-436.946 157.466-665.723C940.827 6.423 657.913-68.75 419.923 68.405z"/></svg>
+  </div>
+
+  <div class="logo-shape logo-shape--small">
+    <svg xmlns="http://www.w3.org/2000/svg" width="857" height="1103" viewBox="0 0 857 1103">
+      <path fill="#fff" fill-opacity=".5" fill-rule="evenodd" d="M911.125989,495.292154 L596,688.692456 L596,855.10667 L986.038867,616.312058 C1089.28869,555.450537 1222.26079,590.629647 1283.27478,696.188592 C1344.74871,802.691126 1310.08692,940.865813 1206.37714,1003.98374 C1206.11717,1004.14785 596,1380.58579 596,1380.58579 L596,1547 L1284.74942,1122.77345 C1448.97322,1016.64015 1502.36237,795.137584 1402.91776,623.594108 C1302.03227,448.816112 1089.72265,392.448718 911.125989,495.292154 Z" transform="matrix(-1 0 0 1 1453 -444)" />
+    </svg>
+  </div>-->
+</div>
+<section class="supplier-features">
+  <div class="o-container-8">
+    <h3 class="supplier-features__heading o-h3 o-gutter">A powerful set of features to get paid faster</h3>
+    <div class="supplier-features__list">
+      {% for feature_obj in page.features_list %}
+      <div class="supplier-features__list-item o-gutter">
+        <div class="n-feature n-feature--small">
+          <i class="n-feature__icon">
+            <svg width="48px" height="48px">
+                 {{feature_obj.icon_svg}}
+            </svg>
+          </i>
+          <h4 class="n-feature__heading o-h4">{{feature_obj.title | markdownify}}</h4>
+          <p class="n-feature__content">{{feature_obj.description | markdownify}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a class="supplier-features__btn o-btn o-primary-btn" href="{{ page.get_started_button.url | default:site.signup_button.url }}">{{ page.get_started_button.text | default:site.signup_button.text }}</a>
+  </div>
+</section>
+
+
+<section class="supplier-faqs">
+  <div class="supplier-faqs__hgroup o-gutter">
+    <h3 class="supplier-faqs__heading o-h3">{{page.faq_section.title | markdownify}}</h3>
+    <p class="supplier-faqs__subheading o-lg-text">{{page.faq_section.description | markdownify}}</p>
+  </div>
+  <div class="faqs o-container-6">
+    {% for question_obj in page.faq_section.faqs %}
+    <div class="faqs__item o-gutter">
+      <div class="faq">
+        <h5 class="faq__question">{{question_obj.question | markdownify}}</h5>
+        <p class="faq__answer">{{question_obj.answer_description | markdownify}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="supplier-cta cta o-gutter">
+  <div class="cta__hgroup">
+    <h2 class="cta__heading o-h2">{{page.ready_to_get_paid_section.title | markdownify}}</h2>
+    <p class="o-lg-text">{{page.ready_to_get_paid_section.description | markdownify}}</p>
+  </div>
+  <div class="o-flex-h-center">
+    <a class="cta__btn o-btn o-btn--lg o-primary-btn" href="{{ page.create_free_account_button.url | default:site.signup_button.url }}">{{ page.create_free_account_button.text | default:site.signup_button.text }}</a>
+  </div>
+</section>

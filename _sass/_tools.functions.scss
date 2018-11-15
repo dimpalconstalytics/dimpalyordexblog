@@ -1,0 +1,18 @@
+// 8px Vertical Rhythm
+@function rhythm($value) {
+  @return $value * 8px;
+}
+
+@function get-columns-width($n) {
+  @return $column-width * $n + $gutter-width * ($n - 1);
+}
+
+@function get-columns-percentage($width-or-columns, $base-width-or-columns: $total-columns) {
+  $base-width: if(unitless($base-width-or-columns), (get-columns-width($base-width-or-columns) + $gutter-width), $base-width-or-columns);
+
+  @if unitless($width-or-columns) {
+    @return percentage((get-columns-width($width-or-columns) + $gutter-width) / $base-width);
+  } @else {
+    @return percentage($width-or-columns / $base-width);
+  }
+}

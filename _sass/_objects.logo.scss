@@ -1,0 +1,25 @@
+.o-logo {
+	&__type {
+		fill: $logo-color;
+	}
+
+	&__mark {
+		fill: $mark-background--dark;
+
+		&--left {
+		fill: $mark-background-left;
+		}
+		&--right {
+			fill: $mark-background-right;
+		}
+		&--bottom {
+			fill: $mark-background-bottom;
+		}
+	}
+
+	&--dark {
+		.o-logo__mark {
+			fill: $mark-background--light;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+{% for section in page.sections %}
+{% assign handle = section.handle %}
+<section class="section {% if handle %}{{ section.handle | prepend: 'section-' | append: ' ' }}{% endif %}">
+{% case handle %}
+	<!-- Section Benefits -->
+  {% when 'benefits' %}
+    {% for subsection in section.subsections %}
+		<img src="{{ subsection.icon-image }}" />
+		<h2 class="">{{ subsection.title }}</h2>
+		<p>{{ subsection.body | markdownify }}</p>
+		<figure class="">
+			<img src="{{ subsection.image }}" />
+		</figure>
+		{% endfor %}
+
+	<!-- Section Schedule a Demo -->
+	{% when 'demo' %}
+	{{ section.subtitle }}
+	<form>
+    <input class="" type="email" placeholder="Your Work Email"/>
+    <button class="" type="submit">{{ section.button.copy }}</button>
+	</form>
+	<div class="macbook">
+    <div class="macbook__screen" style="padding-top: 62.5%; background-image: url('{{ section.image }}'); background-size: cover;"></div>
+   </div>
+
+  <!-- Section Features -->
+  {% when 'features' %}
+  {% if section.title %}
+		<h3 class="">{{ section.title }}</h3>
+	{% endif %}
+  {% for subsection in section.subsections %}
+		<img src="{{ subsection.icon-image }}" />
+		<h4 class="">{{ subsection.title }}</h4>
+		<p>{{ subsection.body | markdownify }}</p>
+	{% endfor %}
+	{% when 'signup' %}
+		<h3 class="">{{ section.title }}</h3>
+		<p>{{ subsection.body | markdownify }}</p>
+		{% if section.button %}
+			<!-- Later -->
+		{% endif %}
+
+	<!-- Section Testimonials -->
+	{% when 'testimonials' %}
+	{% assign sorted_testimonials = site.testimonials | sort:'position' %}
+	{% for testimonial in sorted_testimonials %}
+		{% if section.testimonials contains testimonial.title %}
+			<blockquote class="">{{ testimonial.content }}</blockquote>
+			<img src="{{ testimonial.author.profile-image }}" alt="Photo of {{ testimonial.author.name }}" title="{{ testimonial.author.name }}" />
+			{{ testimonial.author.name }}
+			{{ testimonial.author.title }}&nbsp;at&nbsp;{{ testimonial.author.company }}
+			{% if testimonial.logo-image %}
+			<img src="{{ testimonial.logo-image }}" alt="{{ testimonial.author.company }} logo" title="{{ testimonial.author.company }}" />
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+
+	<!-- Section Call-to-Action -->
+	{% when 'cta' %}
+		<h2 class="">{{ section.title }}</h2>
+		{% if section.subtitle %}
+		<p class="">{{ section.subtitle }}</p>
+		{% endif %}
+		<form>
+    	<input class="" type="email" placeholder="Your Work Email"/>
+    	<button class="" type="submit">{{ section.button.copy }}</button>
+	</form>
+{% endcase %}
+</section>
+{% endfor %}

@@ -1,0 +1,48 @@
+{% assign my_page_url = page.url | remove: '/' %}
+
+<header role="banner">
+  <div class="c-header">
+    <div class="c-header__container o-container-8 o-gutter">
+      <a class="c-header__logo" href="https://yordex.com/">
+        {% include svgs/logo.svg inverse=false %}
+      </a>
+      <div class="c-header__menu">
+        <nav class="c-header__menu--left">
+          {% for item in site.data.navigation.header %}
+            <a class="c-header__link" href="{{ item.url }}">{{ item.page }}</a>
+          {% endfor %}
+        </nav>
+        <nav class="c-header__menu--right">
+          <a class="c-header__link" href="https://yordex.com/login">Login</a>
+          <a class="c-header__signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
+        </nav>
+      </div>
+
+      <a class="c-header__signup c-header__mobile-signup o-btn o-btn--sm o-primary-btn" href="https://yordex.com/request-demo">Schedule a Demo</a>
+      <button class="c-header__hamburger">
+        <svg class="c-header__hamburger-svg" width="16" height="12" viewBox="0 0 16 12">
+          <g fill="#42474D" fill-rule="evenodd">
+            <rect width="16" height="2" rx="1"/>
+            <rect width="16" height="2" y="5" rx="1"/>
+            <rect width="16" height="2" y="10" rx="1"/>
+          </g>
+        </svg>
+        <svg class="c-header__close-svg" width="12" height="12" viewBox="0 0 12 12">
+          <g fill="#42464D" fill-rule="evenodd">
+            <path d="M1.44773082e-13,7 C-0.552,7 -1,6.552 -1,6 C-1,5.448 -0.552,5 1.44773082e-13,5 L12,5 C12.5525,5 13,5.448 13,6 C13,6.552 12.5525,7 12,7 L1.44773082e-13,7 Z" transform="rotate(45 6 6)"/>
+            <path d="M1.46549439e-13,7 C-0.552,7 -1,6.552 -1,6 C-1,5.448 -0.552,5 1.46549439e-13,5 L12,5 C12.5525,5 13,5.448 13,6 C13,6.552 12.5525,7 12,7 L1.46549439e-13,7 Z" transform="scale(-1 1) rotate(45 0 -8.485)"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+	<div class="c-page-header">
+		<div class="o-container-6 o-gutter">
+			<div class="c-page-header__hgroup">
+				<h1 class="c-page-header__heading o-h2">{{ page.header.title | default: page.title }}</h1>
+				{% if page.header.body %}<p class="c-page-header__subheading o-lg-text">{{ page.header.body }}</p>{% endif %}
+			</div>
+		</div>
+	</div>
+</header>

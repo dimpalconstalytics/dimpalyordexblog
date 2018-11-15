@@ -1,0 +1,63 @@
+{% assign post = include.post %}
+{% assign is_excerpt = include.is_excerpt %}
+{% assign show_author = include.show_author %}
+
+<article class="article">
+  {% unless page.url contains 'category' %}
+    {% if post.topic %}
+    {% assign post_topic_downcase = post.topic | downcase %}
+      <div class="article__category">
+      {% for site_topic in site.topics %}
+        {% assign site_topic_title = site_topic.title | downcase %}
+        {% if site_topic_title == post_topic_downcase %}
+          <a href="{{ site_topic.url }}" class="article__category__link{% if site_topic.color %} article__category__link--{{site_topic.color}}{% endif %}">{{ site_topic.title }}</a>
+        {% endif %}
+      {% endfor %}
+      </div>
+    {% endif %}
+  {% endunless %}
+
+  {% if is_excerpt %}
+  <h2 class="article__title o-h3 o-tc-dark"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+  {% endif %}
+
+  <section {% if is_excerpt %}class="article__container"{% endif %}>
+    <div class="article__content">
+      {% if post.author or post.date %}
+        <div class="article__meta">
+          {% assign author = site.authors | where: 'title', post.author | first %}
+          {% if author and show_author %}
+          <div class="article__author">
+            <img class="article__author__image" src='{{ author.image }}' alt="{{ author.title }}" title="{{ author.title }}" />
+            <div class="article__author__name">{{ author.title }}  {% if post.date %}<span class="article__date">on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></span>{% endif %}</div>
+          </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if is_excerpt %}
+        {{ post.excerpt | markdownify }}
+      {% else %}
+        <div class="article__lead">
+          {{ post.excerpt | strip_html }}
+        </div>
+        {{ post.content | remove: post.excerpt | markdownify }}
+        <div class="article__link">
+          <a href="/" class="o-link">Back to news</a>
+        </div>
+      {% endif %}
+
+      {% if is_excerpt and post.excerpt != post.content %}
+      <div class="article__link">
+        <a href="{{ post.url }}" class="o-link">Read more</a>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if is_excerpt and post.image %}
+    <div class="article__image">
+      <a href="{{ post.url }}" title="{{ post.title }}"><img src='{{ post.image }}' alt="{{ post.title }}" title="{{ post.title }}" /></a>
+    </div>
+    {% endif %}
+  </section>
+</article>
