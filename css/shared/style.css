@@ -1,0 +1,33 @@
+.loading-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  overflow: auto;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.75) url('/assets/images/loading.gif') center no-repeat;
+  background-size: 200px;
+}
+
+.version-info {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 99999;
+
+  &:before {
+    content: 'version: '
+  }
+}
+
+.waiting-for-ajax,
+.waiting-for-ajax * {
+  cursor: wait !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
