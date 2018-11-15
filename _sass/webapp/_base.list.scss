@@ -1,0 +1,47 @@
+// unordered/ordered list
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// description list
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+dt {
+  font-weight: 500;
+  display: inline;
+
+  &::before {
+    display: block;
+    content: '';
+  }
+}
+
+dd {
+  display: inline;
+}
+
+.list {
+  &--has-checks li {
+    margin-bottom: rhythm(2);
+
+    &:before {
+      float: left;
+      content: "";
+      margin-left: -20px;
+      margin-top: 4px;
+      @extend .svg-tick--gray;
+      @extend .svg-tick--gray-dims;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

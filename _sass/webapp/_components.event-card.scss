@@ -1,0 +1,248 @@
+.event-card-group {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    bottom: 10px;
+    left: -20px;
+    width: 2px;
+    content: '';
+    background: $event-card-status-line-color;
+  }
+}
+
+.event-card {
+  position: relative;
+  margin-bottom: rhythm(2);
+  border: 1px solid $event-card-border-color;
+  border-radius: 4px;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 50%;
+    background: $event-card-status-dot-default-color;
+    box-shadow: 0 0 0 2px $event-card-status-dot-shadow-color;
+  }
+
+  &:hover {
+    border-color: $event-card-hover-border-color;
+
+    > .event-card__move {
+      opacity: 1;
+    }
+  }
+
+  // card status
+  &--waiting {
+    &::before {
+      background: $event-card-status-dot-default-color;
+    }
+  }
+
+  // special card
+  &-complete {
+    @extend .event-card;
+
+    margin-top: rhythm(3.5);
+    margin-bottom: 0;
+    color: $event-complete-text-color;
+    border-color: transparent;
+
+    &::before {
+      top: 5px;
+    }
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  &-add-btn {
+    @extend .event-card;
+
+    margin-top: rhythm(4);
+    border-color: transparent;
+
+    &::before {
+      top: 5px;
+    }
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  &__edit-btn {
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    color: $event-card-edit-btn-text-color;
+    border-right: 1px solid $event-card-edit-btn-border-color;
+  }
+
+  &__dropdown {
+    float: left;
+    vertical-align: middle;
+
+    .dropdown__trigger {
+      color: $event-card-dropdown-trigger-color;
+
+      &:hover {
+        color: $event-card-dropdown-trigger-hover-color;
+      }
+    }
+
+    .dropdown__menu {
+      top: calc(100% + 4px);
+    }
+
+    &.open {
+      .dropdown__trigger {
+        color: $event-card-dropdown-trigger-hover-color;
+      }
+    }
+  }
+}
+
+// edit card child elements
+.event-card--edit {
+  width: calc-grids-width(7);
+  border-color: $event-edit-card-border-color;
+  background: white;
+
+  > .event-card__title {
+    margin: rhythm(2.5) $padding-width rhythm(2);
+    padding-bottom: rhythm(1);
+    border-bottom: 1px solid $event-edit-card-border-color;
+
+    > .tooltip {
+      margin-left: 5px;
+    }
+  }
+
+  > .event-card__footer {
+    margin-top: rhythm(4);
+    padding: rhythm(2.5) 0 rhythm(2.5) #{calc-grids-width(2) + $gutter-width};
+    border-top: 1px solid $event-edit-card-footer-border-color;
+    border-radius: 0 0 4px 4px;
+    background: $event-edit-card-footer-background;
+  }
+}
+
+.event-card--detail {
+  position: relative;
+  transition: all .3s ease;
+  background: $event-detail-card-background;
+
+  &:hover {
+    background: $event-detail-card-hover-background;
+  }
+
+  &::before {
+    top: 18px;
+  }
+
+  > .event-card__title {
+    @include clearfix;
+
+    margin: rhythm(1.5) $padding-width;
+
+    > .right {
+      line-height: 24px;
+    }
+  }
+
+  .details-list {
+    padding-bottom: rhythm(2);
+  }
+}
+
+.event-card__move {
+  position: absolute;
+  right: 110px;
+  top: rhythm(1.5);
+  transition: opacity .3s ease;
+  opacity: 0;
+
+  &-up,
+  &-down {
+    width: 24px;
+    height: 24px;
+    color: $event-card-move-btn-color;
+    border-radius: 2px;
+    background: $event-card-move-btn-background;
+
+    &:hover {
+      background: darken($event-card-move-btn-background, 5%);
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+      background: lighten($event-card-move-btn-background, 13.5%);
+
+      &:hover {
+        background: lighten($event-card-move-btn-background, 13.5%);
+      }
+    }
+
+    > svg {
+      vertical-align: 1px;
+    }
+  }
+
+  &-down {
+    margin-left: 2px;
+  }
+}
+
+
+
+// responsive
+@include slicer(2) {
+  .event-card__move {
+    opacity: 1;
+  }
+
+  .event-card--edit {
+    width: calc-grids-width(6);
+  }
+}
+
+@include slicer(3) {
+  .event-card__title {
+    margin-left: $gutter-width / 2 !important;
+  }
+
+  .event-card--edit {
+    width: 100%;
+
+    > .event-card__footer {
+      padding-left: $gutter-width / 2;
+    }
+  }
+
+  .event-card--edit,
+  .modal-box__content {
+    .entry__content {
+      float: left;
+    }
+
+    .entry__rest {
+      float: left;
+      clear: none;
+      width: auto;
+      padding-top: 10px;
+    }
+
+    .tooltip {
+      margin-left: 0 !important;
+    }
+  }
+}

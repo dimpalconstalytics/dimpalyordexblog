@@ -1,0 +1,90 @@
+.input-group {
+  @include clearfix;
+
+  margin-bottom: rhythm(1);
+
+  &:last-child, &:only-of-type {
+    margin-bottom: 0;
+  }
+
+  &__column {
+    float: left;
+    margin-right: 10px;
+
+    &--s {
+      width: $input-width--small;
+    }
+
+    &--m {
+      width: $input-width--medium;
+    }
+
+    &--l {
+      width: $input-width--large;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: rhythm(.5);
+
+    &--hidden {
+      margin-top: rhythm(3);
+    }
+  }
+
+  &__tiny {
+    float: left;
+    width: $input-width--tiny;
+  }
+
+  &__small {
+    float: left;
+    width: $input-width--small;
+  }
+
+  &__medium {
+    float: left;
+    width: $input-width--medium;
+  }
+
+  &__large {
+    float: right;
+    width: calc(100% - #{$input-width--small + 10px});
+  }
+}
+
+.input {
+  &--small {
+    width: $input-width--small;
+  }
+
+  &--textarea {
+    display: block;
+    height: rhythm(10);
+  }
+}
+
+// responsive
+@include slicer(3) {
+  .input-group__small,
+  .input--small,
+  .input-group__large {
+    width: calc(50% - 5px);
+  }
+
+  .input-group__column {
+    margin-bottom: rhythm(1);
+
+    &--m,
+    &--s,
+    &--l {
+      width: 100%;
+    }
+  }
+  .input-group__label--hidden {
+    margin-top: rhythm(1);
+  }
+}

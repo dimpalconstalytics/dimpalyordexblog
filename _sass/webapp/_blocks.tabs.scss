@@ -1,0 +1,33 @@
+.tabs-list {
+	@include clearfix;
+	box-shadow: inset 0 -1px 0 $tabs-border-color;
+  margin-bottom: rhythm(4);
+
+	&__item {
+		padding: rhythm(2) 0;
+    cursor: pointer;
+    transition: color .1s ease;
+		float: left;
+    margin-right: $padding-width * 2;
+
+    &:hover {
+      color: $tabs-text-hover-color;
+    }
+
+    &--active {
+    	color: $tabs-text-hover-color;
+      box-shadow: inset 0 -2px 0 currentColor;
+    }
+	}
+}
+
+
+@include slicer(3) {
+  .tabs-list {
+    &__item {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $default-text-color;
+  background: $body-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
+  color: $default-title-color;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: rhythm(4);
+  margin-bottom: rhythm(5);
+  padding-bottom: 10px;
+  border-bottom: 1px solid darken($border-color,10);
+}
+
+h2 {
+  font-size: 20px;
+  line-height: rhythm(4);
+}
+
+h3 {
+  font-size: 16px;
+  line-height: rhythm(3);
+}
+
+p {
+  margin: 0;
+  line-height: rhythm(2.5);
+
+  strong {
+    color: $default-text-color;
+  }
+}
+
+strong {
+  font-weight: 500;
+  color: $text-strong-color;
+}
+
+em {
+  font-weight: 500;
+  color: inherit;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: $text-link-hover-color;
+  }
+}
+
+// override normalize svg reset
+svg:not(:root) {
+  overflow: visible;
+}
+
+small {
+  font-size: 12px;
+}
+
+// responsive
+@include slicer(2) {
+  h1 {
+    font-size: 20px;
+    line-height: rhythm(4);
+    margin-bottom: rhythm(3);
+    padding-bottom: rhythm(1);
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: rhythm(3);
+  }
+}

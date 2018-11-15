@@ -1,0 +1,140 @@
+.account {
+  &-ownership-group {
+    margin-bottom: rhythm(4.5);
+  }
+
+  &-ownername-group {
+    @include clearfix;
+
+    margin-left: calc-grids-width(2) + $gutter-width;
+
+    > .select {
+      float: left;
+      width: 19%;
+    }
+
+    > input {
+      float: left;
+      width: 25%;
+      margin-left: 2%;
+    }
+  }
+
+  &-input {
+    &--small {
+      width: 230px;
+    }
+
+    &--tiny {
+      width: 120px;
+    }
+  }
+
+  &-date-input {
+    position: relative;
+
+    //++
+    .icon-date {
+      position: absolute;
+      top: 12px; // (40 -16) / 2
+      left: 15px;
+      fill: $input-icon-color;
+    }
+
+    input {
+      padding-left: 40px;
+
+      &:focus + svg {
+        fill: $input-icon-focus-color;
+      }
+    }
+  }
+
+  &-checkbox {
+    margin-top: rhythm(2);
+  }
+
+  &-save {
+    padding-top: rhythm(7);
+  }
+
+  //++
+  .auth-form {
+    &__error-message {
+      display: none;
+    }
+  }
+
+  //++
+  .auth-form__label.error {
+    margin-top: 0px;
+
+    input {
+      color: black;
+    }
+  }
+
+  //++
+  .auth-form__label.error
+  .auth-form__error-message {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .auth-form__label-text {
+    display: none;
+  }
+
+  .auth-form__password {
+    $width: 90px;
+
+    position: relative;
+
+    > .auth-form__input {
+      padding-top: 5px;
+      padding-right: $width + rhythm(2) !important;
+      padding-bottom: 5px;
+    }
+
+    &-toggle {
+      font-size: 14px !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: $width;
+      padding-right: 10px !important;
+      padding-left: 30px !important;
+      text-transform: capitalize;
+      color: $account-password-toggle-text-color;
+      background: transparent;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 13px;
+        margin-right: 5px;
+        content: '';
+        transform: translateY(-55%);
+        vertical-align: -2px;
+
+        @extend .svg-show;
+        @extend .svg-show-dims;
+      }
+
+      &::after {
+        position: absolute;
+        top: rhythm(1);
+        bottom: rhythm(1);
+        left: 0;
+        width: 1px;
+        content: '';
+        background: $account-password-toggle-divider-border-color;
+      }
+
+      &.active::before {
+        @extend .svg-hide;
+      }
+    }
+  }
+}

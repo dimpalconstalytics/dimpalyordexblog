@@ -1,0 +1,92 @@
+// containers
+.container-12 {
+  @include clearfix;
+
+  max-width: $container-width + $gutter-width;
+  margin: auto;
+  padding-right: $gutter-width;
+  padding-left: $gutter-width;
+}
+
+.container-8 {
+  @include clearfix;
+
+  max-width: calc-grids-width(8);
+  margin: auto;
+}
+
+.container-6 {
+  @include clearfix;
+
+  max-width: calc-grids-width(6);
+  margin: auto;
+}
+
+.offset-2 {
+  clear: both;
+  padding-left: calc-grids-width(2) + $gutter-width;
+}
+
+// float layout
+.clearfix {
+  @include clearfix;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+// responsive
+@include slicer(2) {
+  .offset-2 {
+    padding-left: 0;
+  }
+}
+
+
+@include slicer(4) {
+  .container-12 {
+    padding-right: $gutter-width / 2;
+    padding-left: $gutter-width / 2;
+  }
+}
+
+// responsive unilities
+.visible-tablet,
+.visible-mobile {
+  display: none;
+}
+
+// generic margins/paddings
+.mt-1 {
+  margin-top: rhythm(1);
+}
+
+.mb-1 {
+  margin-bottom: rhythm(1);
+}
+
+@include slicer(2) {
+  .visible-tablet {
+    display: block;
+  }
+
+  .hidden-tablet {
+    display: none;
+  }
+}
+
+@include slicer(3) {
+  .visible-mobile {
+    display: block;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+}

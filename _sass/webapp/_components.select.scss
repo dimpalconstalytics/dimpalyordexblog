@@ -1,0 +1,174 @@
+.select {
+  position: relative;
+  width: 100%;
+  height: $input-height;
+
+  &__inner {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    border: 1px solid $select-border-color;
+    border-radius: 3px;
+    background: $select-background;
+
+    &:hover {
+      border: 1px solid darken($select-border-color, 7%);
+    }
+  }
+
+  &__trigger {
+    line-height: $input-height - 2px; // subtract parent border width
+    position: relative;
+    overflow: hidden;
+    height: $input-height - 2px; // subtract parent border width
+    padding: 0 8px 0 $padding-width;
+
+    // unclickable mask prevent focus on readonly input
+    &::after {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      cursor: pointer;
+      background: transparent;
+    }
+
+    // left search icon
+    > .icon-search {
+      display: inline-block;
+      fill: $select-trigger-icon-color;
+    }
+
+    // middle text input
+    > input[readonly] {
+      width: calc(100% - 40px); // icon width 16px
+      height: 100%;
+      padding: 0 5px;
+    }
+
+    // right down arrow
+    > .icon-arrow {
+      display: inline-block;
+      transition: transform .2s ease;
+      fill: $select-trigger-icon-color;
+    }
+  }
+
+  &__menu {
+    // @include select-close;
+    display: none;
+    border-top: 1px solid $select-menu-border-color;
+
+    > .dropdown-select:not(:first-of-type) {
+      border-top: 1px solid $select-menu-divider-color;
+      padding-top: rhythm(1);
+    }
+  }
+
+  &__message {
+    margin: 0 15px;
+    padding: 10px;
+    color: $select-menu-msg-text-color;
+    background-color: $select-add-btn-background;
+    border-radius: 3px;
+    border: solid 1px $select-border-color;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  &__input-wrap {
+    padding: rhythm(1) $padding-width;
+  }
+
+  &__add-btn {
+    line-height: 1;
+    display: block;
+    width: 100%;
+    padding: rhythm(1.5) $padding-width;
+    cursor: pointer;
+    text-align: left;
+    border-top: 1px solid $select-menu-border-color;
+    background: $select-add-btn-background;
+
+    &:hover {
+      background: darken($select-add-btn-background, 2%);
+    }
+
+    > .icon-plus {
+      margin-right: 2px;
+    }
+  }
+}
+
+// open state
+.select.open {
+  > .select__inner {
+    z-index: 9999;
+    border-color: $select-menu-divider-color;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .07);
+  }
+
+  .icon-arrow {
+    transform: rotate(180deg);
+  }
+
+  .select__menu {
+    // @include select-open;
+    display: block;
+  }
+}
+
+// disabled state
+.select__trigger--disabled {
+  @extend .select__trigger;
+  background: $input-disabled-background;
+
+  > input {
+    background: $input-disabled-background;
+  }
+
+  &::after {
+    cursor: not-allowed;
+  }
+}
+
+// smaller size select
+.select--no-icon {
+  input[readonly] {
+    width: calc(100% - 20px);
+    padding-left: 0;
+  }
+}
+
+// extend width on open
+.select--extend {
+  &.open {
+    > .select__inner {
+      width: calc-grids-width(4);
+    }
+  }
+}
+
+// open-top
+.select--open-top {
+  .select__inner {
+    top: auto;
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+
+  .select__trigger {
+    transform: rotate(180deg);
+  }
+
+  .select__menu {
+    transform: rotate(180deg);
+    border-top: 0;
+  }
+}

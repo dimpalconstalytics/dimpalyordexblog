@@ -1,0 +1,9 @@
+// 8px rhythm
+@function rhythm($value) {
+  @return $value * 8px;
+}
+
+// caculate grid width
+@function calc-grids-width($number) {
+  @return $column-width * $number + $gutter-width * ($number - 1);
+}

@@ -1,0 +1,23 @@
+.order-details-page {
+  padding-right: 420px;
+}
+
+.order-details__main {
+  max-width: calc-grids-width(8);
+}
+
+@media only screen and (max-width: 1279px) {
+  .order-details-page {
+    padding-right: 20px;
+  }
+
+  .order-details__main {
+    max-width: 100%;
+  }
+}
+
+@include slicer(3) {
+  .order-details-page {
+    padding-right: 10px;
+  }
+}

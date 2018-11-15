@@ -1,0 +1,118 @@
+.profile {
+  &-ownership-group {
+    margin-bottom: rhythm(4.5);
+  }
+
+  &-ownername-group {
+    @include clearfix;
+
+    margin-left: calc-grids-width(2) + $gutter-width;
+
+    > .select {
+      float: left;
+      width: 19%;
+    }
+
+    > input {
+      float: left;
+      width: 25%;
+      margin-left: 2%;
+    }
+  }
+
+  &-input {
+    &--small {
+      width: 230px;
+    }
+
+    &--tiny {
+      width: 120px;
+    }
+  }
+
+  &-date-input {
+    position: relative;
+
+    //++
+    .icon-date {
+      position: absolute;
+      top: 12px; // (40 -16) / 2
+      left: 15px;
+      fill: $input-icon-color;
+    }
+
+    input {
+      padding-left: 40px;
+
+      &:focus + svg {
+        fill: $input-icon-focus-color;
+      }
+    }
+  }
+
+  &-checkbox {
+    margin-top: rhythm(2);
+  }
+
+  &-save {
+    padding-top: rhythm(7);
+  }
+}
+
+
+// responsive
+@include slicer(2) {
+  .profile-ownername-group {
+    margin-left: 0;
+
+    > .select {
+      width: 360px;
+      margin-bottom: rhythm(1);
+    }
+
+    > input {
+      width: 360px;
+      margin-bottom: rhythm(1);
+      margin-left: 190px;
+
+      &:nth-of-type(3) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .profile-ownership-group {
+    .entry__content {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .entry__rest {
+      float: left;
+      clear: none;
+      width: auto;
+      margin-left: 0;
+      padding-top: 10px;
+    }
+  }
+}
+
+@include slicer(3) {
+  .profile-ownername-group {
+    margin-left: 0;
+
+    > .select {
+      width: 100%;
+      margin-bottom: rhythm(1);
+    }
+
+    > input {
+      width: 100%;
+      margin-bottom: rhythm(1);
+      margin-left: 0;
+    }
+  }
+  .profile-input--small {
+    width: 100%;
+  }
+}

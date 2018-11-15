@@ -1,0 +1,14 @@
+.services {
+  &__btn {
+    margin-top: rhythm(3.5);
+  }
+}
+
+.service {
+  &-input {
+
+    &--tiny {
+      width: 140px;
+    }
+  }
+}

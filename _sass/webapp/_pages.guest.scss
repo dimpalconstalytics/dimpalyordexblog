@@ -1,0 +1,166 @@
+&.guest {
+
+	&__products {
+		display: flex;
+		flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: stretch;
+
+		thead th:last-child {
+  		padding: 0 0 0 20px;
+		}
+
+  	.line-items {
+			width: calc-grids-width(8);
+		}
+	}
+
+	.line-items {
+		margin-top: 0;
+
+		thead th:last-child {
+			padding-right: 0;
+			text-align: left;
+		}
+
+	}
+
+	.order-sent-form,
+	.new-quote-form {
+		padding-top: 110px;
+	}
+
+	.payment-page {
+		.page-title,
+		.details-card__section-title,
+		.section__title,
+		.details-card__title {
+			display: none;
+		}
+
+		.details-card,
+		.details-card__section {
+			border: none;
+		}
+	}
+
+	.review-payment-term {
+		.status-card {
+			border-color: transparent !important;
+
+			&__footer {
+				border: transparent;
+				background: none;
+			}
+
+			&::before {
+				display: none;
+			}
+		}
+
+		.btn-collapse {
+			display: none;
+		}
+	}
+
+	&__message-box {
+		width: calc-grids-width(4);
+		margin-left: $gutter-width;
+
+		a {
+			@extend .text--link;
+		}
+	}
+
+	&-signup {
+		display: flex;
+		margin-top: rhythm(5);
+
+		&__form,
+		&__list {
+			width: calc-grids-width(4);
+		}
+
+		&__list {
+			padding: 32px 0 0 70px;
+
+			li {
+				margin-bottom: rhythm(2);
+
+				> svg {
+			 		float: left;
+			 		margin: 4px 8px 0 0;
+			 		fill: $status-text-green-color;
+			 	}
+
+				&:last-child {
+      		margin-bottom: 0;
+    		}
+			}
+		}
+	}
+
+	h1 + .alert {
+		margin-bottom: 0;
+	}
+}
+
+.section-products + section > .section__title {
+   margin-top: rhythm(6) - 20;
+}
+
+@include slicer(1) {
+	.guest__products {
+		.line-items {
+			width: 50%;
+			padding-right: $gutter-width/2;
+		}
+
+		.guest__message-box {
+			width: 50%;
+			margin-left: 0;
+			padding-left: $gutter-width/2;
+		}
+	}
+}
+
+@include slicer(2) {
+	.guest__products {
+		flex-wrap: wrap;
+
+		.line-items {
+			order: 2;
+			width: 100%;
+			padding: 0;
+		}
+
+		.guest__message-box {
+			order: 1;
+			width: auto;
+			padding: 0;
+		}
+	}
+}
+
+@include slicer(3) {
+	.guest {
+		&-signup {
+			flex-wrap: wrap;
+			margin-top: rhythm(3);
+		}
+
+		&-signup__list {
+			order: 1;
+			padding: 0;
+			margin-bottom: rhythm(3);
+
+			li {
+				margin-bottom: rhythm(1);
+			}
+		}
+
+		&-signup__form {
+			order: 2;
+		}
+	}
+}
