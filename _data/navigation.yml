@@ -3,6 +3,15 @@ header:
   url: https://yordex.com/product
 - page: Suppliers
   url: https://yordex.com/supplier
+others_header:
+- page: Product
+  url: https://yordex.com/product
+- page: Suppliers
+  url: https://yordex.com/supplier
+- page: Api Docs
+  url: https://docs.yordex.com
+- page: Blog
+  url: https://bog.yordex.com
 footer:
 - title: Company
   items:
