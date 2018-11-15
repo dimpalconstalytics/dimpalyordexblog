@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  {% include partials/commonHead.html %}
+  <body>
+  {% if site.gtm-code %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm-code }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% endif %}
+
+  <!-- Include Header -->
+  {% include partials/commonHeader.html %}
+
+  <!-- Include Content -->
+  <main role="main">
+  {{ content }}
+  </main>
+
+  <!-- Include Footer -->
+  {% include partials/footer.html %}
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="/scripts/main.js"></script>
+  </body>
+</html>
