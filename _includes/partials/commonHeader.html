@@ -1,0 +1,38 @@
+<div class="section--gradient">
+  <div class="header-wrap">
+<header class="header" ng-class="{'menu-open': isMenuOpen}">
+    <div class="header__container o-container-8 o-gutter">
+        <a class="header__logo header__logo--dark" href="/">
+            <yordex-logo></yordex-logo>
+        </a>
+        <div class="header__menu">
+            <nav class="header__menu-left">
+                <a class="header__link" ui-sref-active="header__link--active" ui-sref="{{APP.ROUTES.PRODUCT}}">Product</a>
+                <!--
+                  <a class="header__link" ui-sref-active="header__link--active" ui-sref="{{APP.ROUTES.PRICING}}">Pricing</a>
+                  -->
+                <a class="header__link" ui-sref-active="header__link--active" ui-sref="{{APP.ROUTES.SUPPLIER}}">Suppliers</a>
+                <a class="header__link" href="http://docs.yordex.com">API Docs</a>
+                <a class="header__link" href="http://blog.yordex.com">Blog</a>
+            </nav>
+            <nav class="header__menu-right" ng-if="!$parent.isSignedIn">
+                <a class="header__link" href="/login">Login</a>
+                <a class="header__signup o-btn o-btn--sm o-primary-btn"
+                   href="/request-demo">Schedule a Demo</a>
+            </nav>
+        </div>
+
+        <a class="header__mobile-signup header__signup o-btn o-btn--sm o-primary-btn"
+           href="/request-demo">Schedule a Demo</a>
+        <button class="header__hamburger" ng-click="toggleMenu($event)">
+            <svg class="" width="16px" height="12px">
+                <use xlink:href="#icon-hamburger"/>
+            </svg>
+            <svg width="12px" height="12px" ng-if="isMenuOpen">
+                <use xlink:href="#icon-close"/>
+            </svg>
+        </button>
+    </div>
+</header>
+  </div>
+  
