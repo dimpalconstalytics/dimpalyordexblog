@@ -2,10 +2,10 @@
 layout: common
 ---
 
-<div class="container-6">
+<div class="container-6" style="padding-top: 88px;">
         <div class="faq-headings-group headings-group">
-          <h3 class="heading heading--l">{{page.title}}</h3>
-          <p class="subheading subheading--s">{{page.body | markdownify}}</p>
+          <h3 class="heading heading--l">{{page.header.title}}</h3>
+          <p class="subheading subheading--s">{{page.header.body | markdownify}}</p>
         </div>
       </div>
       <section class="faqs-section container-6">
@@ -31,6 +31,6 @@ layout: common
         <p class="o-lg-text">{{page.start_simplify_section.description}}</p>
       </div>
       <div class="o-flex-h-center">
-        <a href="{{site.cta.button.url}}" class="cta__btn o-btn o-btn--lg o-primary-btn">{{site.button.cta.copy}}</a>
+        <a href="{{site.cta.button.url}}" class="cta__btn o-btn o-btn--lg o-primary-btn">{{site.cta.button.copy}}</a>
       </div>
     </section>
