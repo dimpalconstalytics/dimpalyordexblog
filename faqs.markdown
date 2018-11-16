@@ -3,10 +3,8 @@ title: FAQs
 date: 2018-11-16 12:47:00 +00:00
 header:
   title: Frequently Asked Questions
-  body: |-
-    Everything you need to know about our procure-to-pay software.
-
-    Have more questions? [Send us an email](https://yordex.com/contact) and we respond quickly
+  body: Everything you need to know about our procure-to-pay software.Have more questions?
+    [Send us an email](https://yordex.com/contact) and we respond quickly
 faqs_sections:
 - section_name: Tutorials
   questions:
