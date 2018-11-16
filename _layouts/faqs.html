@@ -1,0 +1,37 @@
+---
+layout: common
+---
+
+
+<div class="container-6">
+        <div class="faq-headings-group headings-group">
+          <h3 class="heading heading--l">{{page.title}}</h3>
+          <p class="subheading subheading--s">{{page.body | markdownify}}</p>
+        </div>
+      </div>
+      <section class="faqs-section container-6">
+        {% for section in page.faqs_sections %} 
+        <div class="faq-section">
+          <h4 class="faq-title o-h4">{{section.section_name | markdownify}}</h4>
+          <ul class="faq-list">
+                {% for question in section.questions %}
+            <li class="faq-item" >
+              <a href="{{question.question_url}}" class="faq-link">{{question.question_description | markdownify}}</a>
+            </li>
+                {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+    
+      </section>
+    </div>
+    
+    <section class="cta o-gutter">
+      <div class="cta__hgroup">
+        <h2 class="cta__heading o-h2">{{page.start_simplify_section.title}}</h2>
+        <p class="o-lg-text">{{page.start_simplify_section.description}}</p>
+      </div>
+      <div class="o-flex-h-center">
+        <a href="{{site.cta.button.url}}" class="cta__btn o-btn o-btn--lg o-primary-btn">{{site.button.cta.copy}}</a>
+      </div>
+    </section>
