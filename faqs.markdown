@@ -57,5 +57,6 @@ faqs_sections:
 start_simplify_section:
   title: Start simplifying your procurement today
   description: "Request a demo to learn more\n\n"
+layout: faqs
 ---
 
