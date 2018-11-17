@@ -1,6 +1,7 @@
 ---
 title: How do I create an order
 date: 2018-11-17 09:47:00 +00:00
+permalink: faqs/how-do-i-create-an-order
 header:
   title: How do I create an order?
 layout: article
