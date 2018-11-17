@@ -53,9 +53,6 @@ faqs_sections:
     question_url: https://yordex.com/faqs/do-you-have-an-api
   - question_description: Can I continue to use my existing systems?
     question_url: https://yordex.com/faqs/can-i-continue-to-use-my-existing-systems
-start_simplify_section:
-  title: Start simplifying your procurement today
-  description: "Request a demo to learn more\n\n"
 layout: faqs
 ---
 
