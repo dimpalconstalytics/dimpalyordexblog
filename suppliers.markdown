@@ -109,8 +109,8 @@ features_list:
     date.
 faq_section:
   title: Get answers to your FAQs here
-  description: Have more questions? [Send us an email](https://yordex.com/contact)
-    and we respond quickly
+  description: Have more questions? <a href="https://yordex.com/contact" class="o-underline-link">Send
+    us an email</a> and we respond quickly
   faqs:
   - question: How much does Yordex cost?
     answer_description: Yordex is completely free for suppliers of Yordex customers.
