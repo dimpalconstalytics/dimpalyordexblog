@@ -119,14 +119,15 @@ faq_section:
       You can also continue to email the invoice but that requires additional processing
       on our side and therefore may lead to delays.
   - question: Can I change the format in which I receive orders?
-    answer_description: Yes, you can. To discuss your preferred format, please [Contact
-      us](https://yordex.com/contact)
+    answer_description: Yes, you can. To discuss your preferred format, please <a
+      href="https://yordex.com/contact" class="o-underline-link">Contact us</a>
   - question: Can I send quotes to my customers via Yordex?
     answer_description: Yes, you can. You can create new orders including all line
       items and prices and send them to your customer for approval.
   - question: Can I use Yordex with my other customers or suppliers?
-    answer_description: Yes, you can. Our [Free for Life](https://yordex.com/accounts-payable-software-pricing)
-      plan allows you up to 1000 orders per month with any customer or supplier.
+    answer_description: Yes, you can. Our <a href="https://yordex.com/accounts-payable-software-pricing"
+      class="o-underline-link">Free for Life</a> plan allows you up to 1000 orders
+      per month with any customer or supplier.
   - question: Can other people in my company use Yordex?
     answer_description: Yes, they can. After you created your own account, you can
       create accounts for other users from the User Management section of our application.
