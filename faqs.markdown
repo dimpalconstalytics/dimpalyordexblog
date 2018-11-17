@@ -5,7 +5,7 @@ header:
   title: Frequently Asked Questions
   body: |-
     Everything you need to know about our procure-to-pay software.
-    Have more questions? <a href="https://yordex.com/contact" class="o-underline-link">Send us an email</a> and we respond quickly
+    <br/> Have more questions? <a href="https://yordex.com/contact" class="o-underline-link">Send us an email</a> and we respond quickly
 faqs_sections:
 - section_name: Tutorials
   questions:
