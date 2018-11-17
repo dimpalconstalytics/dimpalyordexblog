@@ -95,3 +95,9 @@ plugins:
 signup_button:
   url: https://yordex.com/signup
   text: Sign Up
+start_simplify_section:
+  title: Start simplifying your procurement today
+  description: Request a demo to learn more
+  button:
+    copy: Request Free Demo
+    url: https://yordex.com/request-demo
