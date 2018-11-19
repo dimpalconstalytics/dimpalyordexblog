@@ -177,6 +177,12 @@ our_team:
       description: B2B trade is global and so are we. So far we have 7 nationalities
         on a team of 9 people and counting. We love our home town London, but we look
         forward to the days we can be local in lots of places.
+  start_simplify_section:
+    title: Start simplifying procurement today
+    description: Reduce invoice processing costs, improve visibility and working capital.
+    button:
+      copy: Schedule a Demo
+      url: https://yordex.com/request-demo
 layout: about
 ---
 
