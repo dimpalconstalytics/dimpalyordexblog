@@ -40,3 +40,36 @@
   </div>
 </header>
   </div>
+
+<script>
+    // sticky header
+    $(window).on('scroll', function(event) {
+      var $header = $('.header');
+      var scrollValue = $(window).scrollTop();
+      var holdTimeout = null;
+
+      if (scrollValue >= 100) {
+        $header.addClass('affix');
+        if ($('.index-masthead, .product-masthead').length) {
+          $('.header__logo').addClass('header__logo--dark');
+          $('.header__signup')
+            .removeClass('o-secondary-outline-btn')
+            .addClass('o-primary-btn');
+        }
+        holdTimeout = null;
+      } else {
+        if ($header.hasClass('affix')) {
+          $header.addClass('hold');
+          holdTimeout = setTimeout(function() {
+            $header.removeClass('affix hold');
+            if ($('.index-masthead, .product-masthead').length) {
+              $('.header__logo').removeClass('header__logo--dark');
+              $('.header__signup')
+                .removeClass('o-primary-btn')
+                .addClass('o-secondary-outline-btn');
+            }
+          }, 300);
+        }
+      }
+    });
+</script>
