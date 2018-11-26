@@ -142,7 +142,7 @@ invoice_central_section:
     supports a range of invoicing options to suit every supplier.
   tabs:
   - title: Supplier Self Matching
-    tab_id: "#pane-supplier-self-matching"
+    tab_id: pane-supplier-self-matching
     description: With this option your supplier uploads the invoice on the portal
       and matches it with the PO. They are asked to confirm the amount and payment
       due date matches with what we have on file. If not, they either change the invoice,
@@ -153,7 +153,7 @@ invoice_central_section:
     image_alt: 
     is_active: true
   - title: Self Billing
-    tab_id: "#pane-self-billing"
+    tab_id: pane-self-billing
     description: In this option, we generate the invoice based on the original order
       and a confirmation of what was received. Unlike other self-billing systems,
       no special agreement is required for tax purposes. Because the supplier has
