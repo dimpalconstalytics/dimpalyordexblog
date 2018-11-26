@@ -67,7 +67,6 @@ supplier_portal_section:
     image_url: "/assets/images/webapp-PO-sharing@2x.png"
     image_alt: Screenshot of PO Sharing
     description: |-
-      Shared Orders
       Smart PO’s are available online or by API from requisition to final payment so there is always a “single version of the truth” between you and your supplier.
 
       So why does that matter? By having a single version of the truth, we can automatically verify invoices and other documents and send them back to the supplier if they are not correct. We can even generate the invoices ourselves.
@@ -370,14 +369,12 @@ premium_support_section:
   - title: Managed Service
     description: |-
       A fully outsourced invoice management service from Yordex to help you process invoices at lowest possible cost.
-
+      <br/><br/>
       <a class="o-underline-link" href="/contact">Contact us for more info</a>
   - title: API Integration Support
     description: |-
       Premium support to integrate Yordex functionality into your systems using our REST API. Automate your procure-to-pay process in a matter of weeks.
-
-
-
+      <br/><br/>
       <a class="o-underline-link" href="http://docs.yordex.com" target="_blank">Explore our API Documentation</a>
 ready_to_get_section:
   title: Ready to get your business on Yordex?
