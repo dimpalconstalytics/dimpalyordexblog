@@ -185,14 +185,14 @@ layout: common
         <div class="tab-content">
           {% for tab in page.supplier_discounts_section.tabs %}
             <div class="tab-pane o-row active" id="{{tab.tab_id}}" role="tabpanel">
-              <div class="{% if tab.image_url != '' %} o-flex-v-center o-offset-1 o-grid-3 o-gutter {% else %} o-grid-4 o-align-center {% endif %}">
+              <div class="{% if tab.image_url %} o-flex-v-center o-offset-1 o-grid-3 o-gutter {% else %} o-grid-4 o-align-center {% endif %}">
                 <div>
                   <h4 class="product-tabs-heading">{{tab.title}}</h4>
                   <p class="product-tabs-content">{{tab.description}}</p>
                 </div>
               </div>
               <div class="o-grid-4 o-gutter">
-                  {% if tab.image_url != '' %}
+                  {% if tab.image_url %}
                 <img alt="{{tab.image_alt}}" src="{{tab.image_url}}" />
                 {% endif %}
               </div>
