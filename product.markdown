@@ -231,7 +231,6 @@ payments_section:
       2.242 0 1.042-.778 2.016-2.145 2.254V17z"></path></g></svg>
     description: With Auto Pay, payment details are put automatically onto your bank
       feed. Payments are then made using your existing payment provider and process.
-    is_active: true
   - title: FX Pay
     svg_icon: <svg id="icon-fx-pay" viewBox="0 0 48 48" width="100%" height="100%"><g
       fill="none" fill-rule="evenodd"><path fill="#82C8FA" d="M9.8 24v17.077H14L7
