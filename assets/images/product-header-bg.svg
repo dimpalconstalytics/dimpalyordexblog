@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 337">
+  <defs>
+    <linearGradient id="group-2-a" x1="100%" x2="0%" y1="50%" y2="0%">
+      <stop offset="0%" stop-color="#05C" stop-opacity=".65"/>
+      <stop offset="31.09%" stop-color="#0F4FD1"/>
+      <stop offset="100%" stop-color="#0036D9"/>
+    </linearGradient>
+    <radialGradient id="group-2-c" cx="96.924%" cy="-21.387%" r="890.13%" fx="96.924%" fy="-21.387%" gradientTransform="scale(.16808 1) rotate(6.339 3.368 43.104)">
+      <stop offset="0%" stop-color="#0FF" stop-opacity=".307"/>
+      <stop offset="100%" stop-color="#2B3AD9" stop-opacity="0"/>
+    </radialGradient>
+    <polygon id="group-2-b" points="202 272 494 248 814 120 1294 64 1614 96 2005 0 2005 337 0 337"/>
+    <circle id="group-2-e" cx="494" cy="248" r="6"/>
+    <filter id="group-2-d" width="325%" height="325%" x="-112.5%" y="-87.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0780400815 0"/>
+    </filter>
+    <circle id="group-2-g" cx="814" cy="120" r="6"/>
+    <filter id="group-2-f" width="325%" height="325%" x="-112.5%" y="-87.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0780400815 0"/>
+    </filter>
+    <circle id="group-2-i" cx="1294" cy="64" r="6"/>
+    <filter id="group-2-h" width="325%" height="325%" x="-112.5%" y="-87.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0780400815 0"/>
+    </filter>
+    <circle id="group-2-k" cx="1614" cy="96" r="6"/>
+    <filter id="group-2-j" width="325%" height="325%" x="-112.5%" y="-87.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0780400815 0"/>
+    </filter>
+    <circle id="group-2-m" cx="202" cy="272" r="6"/>
+    <filter id="group-2-l" width="325%" height="325%" x="-112.5%" y="-87.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0780400815 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-4 1)">
+    <use fill="url(#group-2-a)" xlink:href="#group-2-b"/>
+    <use fill="url(#group-2-c)" stroke="#18AAF2" stroke-opacity=".147" xlink:href="#group-2-b"/>
+    <use fill="#000" filter="url(#group-2-d)" xlink:href="#group-2-e"/>
+    <use fill="#18AAF2" xlink:href="#group-2-e"/>
+    <circle cx="494" cy="248" r="5" stroke="#FFF" stroke-width="2"/>
+    <use fill="#000" filter="url(#group-2-f)" xlink:href="#group-2-g"/>
+    <use fill="#18AAF2" xlink:href="#group-2-g"/>
+    <circle cx="814" cy="120" r="5" stroke="#FFF" stroke-width="2"/>
+    <g>
+      <use fill="#000" filter="url(#group-2-h)" xlink:href="#group-2-i"/>
+      <use fill="#18AAF2" xlink:href="#group-2-i"/>
+      <circle cx="1294" cy="64" r="5" stroke="#FFF" stroke-width="2"/>
+    </g>
+    <g>
+      <use fill="#000" filter="url(#group-2-j)" xlink:href="#group-2-k"/>
+      <use fill="#18AAF2" xlink:href="#group-2-k"/>
+      <circle cx="1614" cy="96" r="5" stroke="#FFF" stroke-width="2"/>
+    </g>
+    <g>
+      <use fill="#000" filter="url(#group-2-l)" xlink:href="#group-2-m"/>
+      <use fill="#18AAF2" xlink:href="#group-2-m"/>
+      <circle cx="202" cy="272" r="5" stroke="#FFF" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
