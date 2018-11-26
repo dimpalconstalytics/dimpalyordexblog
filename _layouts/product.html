@@ -142,7 +142,7 @@ layout: common
           <p class="section-hgroup__subheading o-lg-text">{{page.payments_section.description}}</p>
         </div>
         <div class="product-features o-row">
-            {% for payment_type in page.invoice_central_section.payment_types %}
+            {% for payment_type in page.payments_section.payment_types %}
             <div class="product-features__item o-gutter">
                 <div class="n-feature n-feature--column">
                   <i class="n-feature__icon">
@@ -268,7 +268,7 @@ layout: common
         </div>
         <form class="ng-pristine ng-valid ng-valid-email cta__form">
             <input class="cta__input ng-pristine ng-valid ng-empty ng-valid-email ng-touched" type="email" ng-model="email" placeholder="Your Work Email"/>
-            <button class="cta__submit o-lg-text o-primary-btn" type="submit">{{page.ready_to_get_section.schedule_a_demo_button}}</button>
+            <button class="cta__submit o-lg-text o-primary-btn" type="submit">{{page.ready_to_get_section.schedule_a_demo_button.title}}</button>
         </form>
     </section>
     
