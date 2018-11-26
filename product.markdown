@@ -11,6 +11,7 @@ page_type: product
 product_sections_nav:
 - section_nav_id: smart-pos
   section_nav_title: Supplier Portal
+  is_active: true
 - section_nav_id: invoice-central
   section_nav_title: Invoice Central
 - section_nav_id: po-approvals
@@ -70,6 +71,7 @@ supplier_portal_section:
       Smart PO’s are available online or by API from requisition to final payment so there is always a “single version of the truth” between you and your supplier.
 
       So why does that matter? By having a single version of the truth, we can automatically verify invoices and other documents and send them back to the supplier if they are not correct. We can even generate the invoices ourselves.
+    is_active: true
   - title: Order Tracking
     description: Smart PO’s don’t stop when the PO is sent. They stay alive until
       the final payment is confirmed so all parties always get a real-time view of
@@ -149,6 +151,7 @@ invoice_central_section:
       that don't match.
     image_url: "/assets/images/webapp-upload-invoice@2x.png"
     image_alt: 
+    is_active: true
   - title: Self Billing
     tab_id: "#pane-self-billing"
     description: In this option, we generate the invoice based on the original order
@@ -225,6 +228,7 @@ payments_section:
       2.242 0 1.042-.778 2.016-2.145 2.254V17z"></path></g></svg>
     description: With Auto Pay, payment details are put automatically onto your bank
       feed. Payments are then made using your existing payment provider and process.
+    is_active: true
   - title: FX Pay
     svg_icon: <svg id="icon-fx-pay" viewBox="0 0 48 48" width="100%" height="100%"><g
       fill="none" fill-rule="evenodd"><path fill="#82C8FA" d="M9.8 24v17.077H14L7
@@ -279,6 +283,7 @@ supplier_discounts_section:
       make sure you capture those discounts wherever possible.
     image_url: "/assets/images/box-dynamic-discount@2x.png"
     image_alt: 
+    is_active: true
   - tab_id: pane-dynamic-discounting
     tab_title: Dynamic Discounting
     description: Dynamic Discounting is also called “discounting for the 21st century”.
