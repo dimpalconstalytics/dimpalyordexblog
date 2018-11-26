@@ -12,7 +12,7 @@
 
 <header class="header" ng-class="{'menu-open': isMenuOpen}">
   <div class="header__container o-container-8 o-gutter">
-      <a class="header__logo" href="/">
+      <a class="header__logo {% if page.page_type != 'product' %} header__logo--dark {% endif %}" href="/">
         {% include svgs/logo.svg inverse=false %}
       </a>
       <div class="header__menu">
