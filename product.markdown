@@ -185,7 +185,7 @@ po_approvals_section:
   image_url: "/assets/images/webapp-approval-flow@2x.png"
   image_alt: 
 expense_management_section:
-  section_id: expense-management
+  section_nav_id: expense-management
   title: Expense Management
   svg_icon: |-
     <svg id="icon-cards-check" viewBox="0 0 48 48" width="100%" height="100%">
@@ -202,7 +202,7 @@ expense_management_section:
   image_url: "/assets/images/webapp-expense@2x.png"
   image_alt: 
 payments_section:
-  section_id: payments
+  section_nav_id: payments
   title: Payments
   description: With Smart POs in place, automating payments becomes a breeze. Yordex
     offers a range of payment options depending on your needs.
@@ -260,7 +260,7 @@ payments_section:
       we will take care of paying your individual suppliers, saving time and lowering
       payment costs.
 supplier_discounts_section:
-  section_id: supplier-discounts
+  section_nav_id: supplier-discounts
   title: Supplier Discounts
   svg_icon: <svg id="icon-commission" viewBox="0 0 48 44" width="100%" height="100%"><path
     fill="#82C8FA" d="M42 13h4.4c.884 0 1.6.781 1.6 1.745v20.51c0 .964-.716 1.745-1.6
@@ -300,7 +300,7 @@ supplier_discounts_section:
     image_url: 
     image_alt: 
 reporting_section:
-  section_id: reporting
+  section_nav_id: reporting
   title: Reporting
   svg_icon: |-
     <svg id="icon-reporting" viewBox="0 0 48 48" width="100%" height="100%">
@@ -324,7 +324,7 @@ reporting_section:
       by Smart PO’s to continuously identify new opportunities to improve process
       efficiency, cash flow or payment terms.
 premium_support_section:
-  section_id: premium-support
+  section_nav_id: premium-support
   title: Premium Support
   svg_icon: <svg id="icon-premium-support" viewBox="0 0 42 48" width="100%" height="100%"><g
     fill="none" fill-rule="evenodd"><path fill="#82C8FA" d="M21 41l-1.936-5.019.436-1.389-.436-.445A3.74
