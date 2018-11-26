@@ -111,8 +111,8 @@ our_team:
     linked_in_url: https://yordex.com/about
     profile_pic_url: "/assets/images/mukta@2x.jpg"
   what_we_believe_section:
-    title: 
-    description: 
+    title: What we believe in
+    description: We want to build a company that people love to work with and for.
     believe_in_steps:
     - svg_icon: |-
         <svg id="icon-trust" viewBox="0 0 48 46" width="100%" height="100%">
