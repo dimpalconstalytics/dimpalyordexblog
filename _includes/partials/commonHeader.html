@@ -1,5 +1,13 @@
+{% if page.page_type != 'product' %}
 <div class="section--gradient">
-  <div class="header-wrap header-wrap--no-margin">
+    <div class="header-wrap header-wrap--no-margin">
+{% endif %}
+
+{% if page.page_type == 'product' %}
+<div class="product-masthead">
+    <div class="product-header-wrap">
+{% endif %}
+
 {% assign my_page_url = page.url | remove: '/' %}
 
 <header class="header" ng-class="{'menu-open': isMenuOpen}">
@@ -32,4 +40,3 @@
   </div>
 </header>
   </div>
-  
