@@ -295,10 +295,21 @@ supplier_discounts_section:
     image_url: 
     image_alt: 
 reporting_section:
-  section_id: 
-  title: 
-  svg_icon: 
-  sub_heading: 
+  section_id: reporting
+  title: Reporting
+  svg_icon: |-
+    <svg id="icon-reporting" viewBox="0 0 48 48" width="100%" height="100%">
+      <g fill="none" fill-rule="evenodd">
+        <rect width="48" height="40" y="8" fill="#3E9CFA" rx="3"></rect>
+        <path fill="#BFE4FF" d="M7 0L41 0C42.6568542-3.04359188e-16 44 1.34314575 44 3L44 6 4 6 4 3C4 1.34314575 5.34314575 3.04359188e-16 7 0zM3 17L45 17 45 44C45 44.5522847 44.5522847 45 44 45L4 45C3.44771525 45 3 44.5522847 3 44L3 17z"></path>
+        <circle cx="5" cy="13" r="2" fill="#FFF"></circle>
+        <circle cx="12" cy="13" r="2" fill="#FFF"></circle>
+        <path fill="#3E9CFA" fill-rule="nonzero" d="M7.06962553,38.9590067 L7.06962553,38.9590067 C6.47993164,38.385098 6.46713521,37.4418117 7.04104391,36.8521178 C7.0416566,36.8514883 7.04226984,36.8508593 7.04288364,36.8502308 L13.6641849,30.0708457 L18.7830521,35.3119262 L28.5537985,25.3079027 L33.5685714,30.4424036 L38.8178653,25.0677825 C39.3941322,24.4777573 40.3393308,24.465771 40.9303745,25.0409933 L40.9303745,25.0409933 C41.5200684,25.614902 41.5328648,26.5581883 40.9589561,27.1478822 C40.9583434,27.1485117 40.9577302,27.1491407 40.9571164,27.1497692 L33.5685714,34.714716 L28.5537985,29.5802151 L18.7830521,39.5842386 L13.6641849,34.3431581 L9.18213469,38.9322175 C8.60586781,39.5222427 7.66066919,39.534229 7.06962553,38.9590067 Z"></path>
+      </g>
+    </svg>
+  sub_heading: Smart PO’s will generate a wealth of data that you can (and should!)
+    use to better forecast your cash requirements and to help you identify opportunities
+    to lower costs and improve cash flow and margins.
   report_types:
   - title: Spend Reports
     description: You can download all data as a CSV file or you can define your own
@@ -307,6 +318,64 @@ reporting_section:
     description: Analytics service that allows you to use wealth of data generated
       by Smart PO’s to continuously identify new opportunities to improve process
       efficiency, cash flow or payment terms.
+premium_support_section:
+  section_id: premium-support
+  title: Premium Support
+  svg_icon: <svg id="icon-premium-support" viewBox="0 0 42 48" width="100%" height="100%"><g
+    fill="none" fill-rule="evenodd"><path fill="#82C8FA" d="M21 41l-1.936-5.019.436-1.389-.436-.445A3.74
+    3.74 0 0 1 18 31.531c0-.846.676-1.531 1.51-1.531h2.98c.834 0 1.51.685 1.51 1.53a3.74
+    3.74 0 0 1-1.064 2.617l-.436.445.436 1.39L21 41z"></path><path fill="#3E9CFA"
+    d="M13.143 3.13C14.588 1.54 17.136 0 21 0c3.864 0 6.412 1.54 7.857 3.13a6.879
+    6.879 0 0 1 2.631 8.377c-.614 1.503-.96 2.346-1.036 2.529l.394.603a3.813 3.813
+    0 0 1-1.989 5.707 7.634 7.634 0 0 1-6.146 7.485 8.757 8.757 0 0 1-3.422 0 7.625
+    7.625 0 0 1-4.202-2.398h2.368a6.11 6.11 0 0 0 2.128.862 7.25 7.25 0 0 0 2.834
+    0c2.856-.569 4.904-3.063 4.904-5.949 0-.677.427-1.277 1.059-1.487.187-.063.366-.149.53-.256a2.23
+    2.23 0 0 0 .658-3.096l-.394-.603a1.59 1.59 0 0 1-.224-1.196l-2.408-2.516a.757.757
+    0 0 0-.952-.12c-1.548.97-3.075 1.449-4.59 1.449-1.515 0-3.042-.479-4.59-1.45a.757.757
+    0 0 0-.952.121l-2.408 2.516c.086.41.009.841-.224 1.196l-.394.603c-.087.132-.158.27-.213.412a.913.913
+    0 0 1 .207-.024c.521 0 .943.438.943.979v2.69c0 1.62 1.266 2.935 2.828 2.935H21c.52
+    0 .943.437.943.978 0 .54-.422.978-.943.978h-4.803c-2.603 0-4.713-2.19-4.713-4.891v-.315a3.814
+    3.814 0 0 1-.33-4.61l.394-.603c-.076-.183-.422-1.026-1.036-2.53a6.879 6.879 0
+    0 1 2.63-8.376z"></path><path fill="#3E9CFA" d="M20.851 48c-9.12-1.149-15.576-2.525-19.366-4.129a2.42
+    2.42 0 0 1-1.471-2.486c.207-1.923.558-4.17 1.052-6.743a4.055 4.055 0 0 1 3.121-3.188
+    20.883 20.883 0 0 0 3.81-1.223c1.907-.823 3.483-1.849 4.729-3.076L20.85 48l8.269-21c1.268
+    1.296 2.896 2.373 4.883 3.23 1.217.526 2.487.934 3.81 1.224a4.055 4.055 0 0 1
+    3.12 3.188c.495 2.573.846 4.82 1.053 6.743a2.42 2.42 0 0 1-1.47 2.486C36.721 45.476
+    30.166 46.853 20.85 48z"></path></g></svg>
+  supplier_management:
+    title: Supplier Management
+    description: |-
+      Your suppliers can use Yordex for free. We will also help them adopt the service through online tutorials and online support.
+
+      Where suppliers need more assistance, the Yordex Supplier Management provides a premium service to help you maximise the benefits you get from Yordex.
+
+      The Supplier Management service includes:
+    supplier_management_services:
+    - Premium support to your supplier when they get set up
+    - Option to automate order and invoice exchange using our API
+    - Premium support during the live service
+    how_to_get_started_button:
+      title: How to get started
+      url: "/supplier"
+    image_url: "/assets/images/webapp-premium-support@2x.png"
+    image_alt: 
+  premium_support_sections:
+  - title: Managed Service
+    description: |-
+      A fully outsourced invoice management service from Yordex to help you process invoices at lowest possible cost.
+
+      <a class="o-underline-link" href="/contact">Contact us for more info</a>
+  - title: API Integration Support
+    description: |-
+      Premium support to integrate Yordex functionality into your systems using our REST API. Automate your procure-to-pay process in a matter of weeks.
+
+      <a class="o-underline-link" href="http://docs.yordex.com" target="_blank">Explore our API Documentation</a>
+ready_to_get_section:
+  title: Ready to get your business on Yordex?
+  description: Reduce invoice processing costs, improve visibility and working capital.
+    Schedule your free demo today.
+  schedule_a_demo_button:
+    title: Schedule a Demo
 layout: product
 ---
 
