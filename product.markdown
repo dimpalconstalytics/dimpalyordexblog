@@ -280,21 +280,21 @@ supplier_discounts_section:
     number of options.
   tabs:
   - tab_id: pane-early-payment-discounts
-    tab_title: Early Payment Discounts
+    title: Early Payment Discounts
     description: Smart PO’s can keep track of early payment discounts and help you
       make sure you capture those discounts wherever possible.
     image_url: "/assets/images/box-dynamic-discount@2x.png"
     image_alt: 
     is_active: true
   - tab_id: pane-dynamic-discounting
-    tab_title: Dynamic Discounting
+    title: Dynamic Discounting
     description: Dynamic Discounting is also called “discounting for the 21st century”.
       Your supplier can offer discounts only when they need it while you can negotiate
       better payment terms by offering this option.
     image_url: "/assets/images/webapp-dynamic-discount@2x.png"
     image_alt: 
   - tab_id: pane-supply-chain-finance
-    tab_title: Supply Chain Finance
+    title: Supply Chain Finance
     description: Extend Dynamic Discounting with a third party Supply Chain Finance
       provider. Take advantage of supplier discounts even if you don’t have the cash
       on hand to pay early. Bring your own Supply Chain Finance provider or use one
