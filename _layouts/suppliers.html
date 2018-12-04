@@ -55,9 +55,7 @@ layout: common
       <div class="supplier-features__list-item o-gutter">
         <div class="n-feature n-feature--small">
           <i class="n-feature__icon">
-            <svg width="48px" height="48px">
-                 {{feature_obj.icon_svg}}
-            </svg>
+              <img src="{{feature_obj.icon_svg_image}}" width="48px" height="48px" />
           </i>
           <h4 class="n-feature__heading o-h4">{{feature_obj.title | markdownify}}</h4>
           <p class="n-feature__content">{{feature_obj.description | markdownify}}</p>

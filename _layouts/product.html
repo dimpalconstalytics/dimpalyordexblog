@@ -22,10 +22,8 @@ layout: common
     <section id="{{page.supplier_portal_section.section_nav_id}}" class="product-section">
       <div class="o-container-8 o-gutter">
         <div class="section-hgroup section-hgroup--centered">
-          <svg class="section-hgroup__icon" width="48px" height="48px">
+            <img src="{{page.supplier_portal_section.svg_icon_image}}"  class="section-hgroup__icon" width="48px" height="48px" />
             <!--<use xlink:href="#icon-smart-po"/>-->
-            {{page.supplier_portal_section.svg_icon}}
-          </svg>
           <h3 class="section-hgroup__heading o-h3">{{page.supplier_portal_section.title}}</h3>
           <p class="section-hgroup__subheading o-lg-text">{{page.supplier_portal_section.sub_heading}}</p>
          <p class="section-hgroup__text">{{page.supplier_portal_section.description}}</p>
@@ -51,7 +49,7 @@ layout: common
                   </div>
                 </div>
                 <div class="product-tabs-image o-grid-4 o-gutter">
-                  <img id="img-po-sharing" alt="{{tab.image_alt}}" src="{{tab.image_url}}"/>
+                  <img id="img-po-sharing" alt="{{tab.image_alt}}" src="{{tab.image_url_image}}"/>
                 </div>
               </div>
             {% endfor %}
@@ -62,10 +60,8 @@ layout: common
     <section id="{{page.invoice_central_section.section_nav_id}}" class="product-section">
       <div class="o-container-8 o-gutter">
         <div class="section-hgroup section-hgroup--centered">
-          <svg class="section-hgroup__icon" width="48px" height="48px">
+            <img src="{{page.invoice_central_section.svg_icon_image}}" class="section-hgroup__icon" width="48px" height="48px" />
             <!--<use xlink:href="#icon-invoice"/>-->
-            {{page.invoice_central_section.svg_icon}}
-          </svg>
           <h3 class="section-hgroup__heading o-h3">{{page.invoice_central_section.title}}</h3>
           <p class="section-hgroup__subheading o-lg-text">{{page.invoice_central_section.sub_heading}}</p>
         </div>
@@ -76,7 +72,7 @@ layout: common
                 {% for tab in page.invoice_central_section.tabs %}
                 <div class="tab-pane {% if tab.is_active %} active {% endif %}" id="{{tab.tab_id}}" role="tabpanel">
                     <div>
-                      <img alt="{{tab.image_alt}}" src="{{tab.image_url}}" />
+                      <img alt="{{tab.image_alt}}" src="{{tab.image_url_image}}" />
                     </div>
                   </div>
                 {% endfor %}
@@ -102,17 +98,16 @@ layout: common
       <div class="o-container-8 o-gutter o-flex o-justify-content-space-between">
         <div class="product-grid-3 o-flex-v-center">
           <div class="section-hgroup">
-            <svg class="section-hgroup__icon" width="48px" height="48px">
+              <img src="{{page.po_approvals_section.svg_icon_image}}" class="section-hgroup__icon" width="48px" height="48px" />
               <!--<use xlink:href="#icon-approval"/>-->
-              {{page.po_approvals_section.svg_icon}}
-            </svg>
+            
             <h3 class="section-hgroup__heading o-h3">{{page.po_approvals_section.title}}</h3>
             <p class="section-hgroup__subheading o-lg-text">{{page.po_approvals_section.sub_heading}}</p>
             <p class="section-hgroup__text">{{page.po_approvals_section.description}}</p>
           </div>
         </div>
         <div class="product-grid-5">
-          <img alt="{{page.po_approvals_section.image_alt}}" src="{{page.po_approvals_section.image_url}}" />
+          <img alt="{{page.po_approvals_section.image_alt}}" src="{{page.po_approvals_section.image_url_image}}" />
         </div>
       </div>
     </section>
@@ -121,16 +116,14 @@ layout: common
       <div class="o-container-8 o-gutter o-flex o-flex-row-reverse o-justify-content-space-between">
         <div class="product-grid-3 o-flex-v-center">
           <div class="section-hgroup">
-            <svg class="section-hgroup__icon" width="48px" height="48px">
+              <img src="{{page.expense_management_section.svg_icon_image}}" class="section-hgroup__icon" width="48px" height="48px" />
               <!--<use xlink:href="#icon-cards-check"/>-->
-              {{page.expense_management_section.svg_icon}}
-            </svg>
             <h3 class="section-hgroup__heading o-h3">{{page.expense_management_section.title}}</h3>
             <p class="section-hgroup__subheading o-lg-text">{{page.expense_management_section.description}}</p>
           </div>
         </div>
         <div class="product-grid-5">
-          <img alt="{{page.expense_management_section.image_alt}}" src="{{page.expense_management_section.image_url}}" />
+          <img alt="{{page.expense_management_section.image_alt}}" src="{{page.expense_management_section.image_url_image}}" />
         </div>
       </div>
     </section>
@@ -146,10 +139,8 @@ layout: common
             <div class="product-features__item o-gutter">
                 <div class="n-feature n-feature--column">
                   <i class="n-feature__icon">
-                    <svg width="48px" height="48px">
+                      <img src="{{payment_type.svg_icon_image}}" width="48px" height="48px" />
                       <!--<use xlink:href="#icon-auto-pay"/>-->
-                      {{payment_type.svg_icon}}
-                    </svg>
                   </i>
                   <h4 class="n-feature__heading o-h4">{{payment_type.title}}</h4>
                   <p class="n-feature__content">{{payment_type.description}}</p>
@@ -163,10 +154,8 @@ layout: common
     <section id="{{page.supplier_discounts_section.section_nav_id}}" class="product-section">
       <div class="o-container-8 o-gutter">
         <div class="section-hgroup section-hgroup--centered">
-          <svg class="section-hgroup__icon" width="48px" height="48px">
+            <img src="{{page.supplier_discounts_section.svg_icon_image}}" class="section-hgroup__icon" width="48px" height="48px" />
             <!--<use xlink:href="#icon-commission"/>-->
-            {{page.supplier_discounts_section.svg_icon}}
-          </svg>
           <h3 class="section-hgroup__heading o-h3">{{page.supplier_discounts_section.title}}</h3>
           <p class="section-hgroup__subheading o-lg-text">{{page.supplier_discounts_section.sub_heading}}</p>
           <p class="section-hgroup__text">{{page.supplier_discounts_section.description}}</p>
@@ -185,15 +174,15 @@ layout: common
         <div class="tab-content">
           {% for tab in page.supplier_discounts_section.tabs %}
             <div class="tab-pane o-row active" id="{{tab.tab_id}}" role="tabpanel">
-              <div class="{% if tab.image_url %} o-flex-v-center o-offset-1 o-grid-3 o-gutter {% else %} o-grid-4 o-align-center {% endif %}">
+              <div class="{% if tab.image_url_image %} o-flex-v-center o-offset-1 o-grid-3 o-gutter {% else %} o-grid-4 o-align-center {% endif %}">
                 <div>
                   <h4 class="product-tabs-heading">{{tab.title}}</h4>
                   <p class="product-tabs-content">{{tab.description}}</p>
                 </div>
               </div>
               <div class="o-grid-4 o-gutter">
-                  {% if tab.image_url %}
-                <img alt="{{tab.image_alt}}" src="{{tab.image_url}}" />
+                  {% if tab.image_url_image %}
+                <img alt="{{tab.image_alt}}" src="{{tab.image_url_image}}" />
                 {% endif %}
               </div>
             </div>
@@ -205,10 +194,8 @@ layout: common
     <section id="{{page.reporting_section.section_nav_id}}" class="product-section">
       <div class="o-container-8 o-gutter">
         <div class="section-hgroup section-hgroup--centered">
-          <svg class="section-hgroup__icon" width="48px" height="48px">
+            <img src="{{page.reporting_section.svg_icon_image}}" class="section-hgroup__icon" width="48px" height="48px" />
             <!--<use xlink:href="#icon-reporting"/>-->
-            {{page.reporting_section.svg_icon}}
-          </svg>
           <h3 class="section-hgroup__heading o-h3">{{page.reporting_section.title}}</h3>
           <p class="section-hgroup__subheading o-lg-text">{{page.reporting_section.sub_heading}}</p>
         </div>
@@ -229,10 +216,8 @@ layout: common
     <section id="{{page.premium_support_section.section_nav_id}}" class="product-section">
       <div class="o-container-8 o-gutter">
         <div class="section-hgroup section-hgroup--centered">
-          <svg class="section-hgroup__icon" width="42px" height="48px">
+            <img src="{{page.premium_support_section.svg_icon_image}}" class="section-hgroup__icon" width="42px" height="48px" />
             <!--<use xlink:href="#icon-premium-support"/>-->
-            {{page.premium_support_section.svg_icon}}
-          </svg>
           <h3 class="section-hgroup__heading o-h3">{{page.premium_support_section.title}}</h3>
         </div>
         <div class="o-row">
@@ -247,7 +232,7 @@ layout: common
             <a class="primary-support-content__btn o-btn o-secondary-outline-btn" href="{{page.premium_support_section.supplier_management.how_to_get_started_button.url}}">{{page.premium_support_section.supplier_management.how_to_get_started_button.title}}</a>
           </div>
           <div class="o-grid-4 o-gutter">
-            <img class="primary-support-img" alt="{{page.premium_support_section.supplier_management.image_alt}}" src="{{page.premium_support_section.supplier_management.image_url}}" />
+            <img class="primary-support-img" alt="{{page.premium_support_section.supplier_management.image_alt}}" src="{{page.premium_support_section.supplier_management.image_url_image}}" />
           </div>
         </div>
         <div class="primary-support-features o-row">

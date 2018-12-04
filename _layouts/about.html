@@ -29,7 +29,7 @@ layout: common
       <ul class="about-team-members">
         {% for member in page.our_team.members %} 
             <li class="team-member">
-                <img class="team-member__avatar" alt="" src="{{member.profile_pic_url}}"/>
+                <img class="team-member__avatar" alt="" src="{{member.profile_pic_url_image}}"/>
                 <h4 class="team-member__name">{{member.full_name}}</h4>
                 <p class="team-member__position">{{member.designation}}</p>
                 <button type="button" class="team-member__read-bio o-link-btn o-underline-link" data-toggle="modal" data-target="#bio-modal">Read Bio</button>
@@ -49,9 +49,7 @@ layout: common
             {% for believe_in_step in page.what_we_believe_section.believe_in_steps %}
                 <li class="about-value">
                     <i class="about-value__icon">
-                      <svg width="48px" height="46px">
-                        {{believe_in_step.svg_icon}}
-                      </svg>
+                      <img src="{{believe_in_step.svg_icon_image}}" width="48px" height="46px" />
                     </i>
                     <h4 class="o-h4 about-value__heading">{{believe_in_step.title}}</h4>
                     <p class="about-value__body">{{believe_in_step.description}}</p>
@@ -85,7 +83,7 @@ layout: common
       <div class="members-slider">
             {% for member in page.our_team.members %} 
                 <div class="member">
-                    <img class="member__avatar" alt="" src="{{member.profile_pic_url}}"/>
+                    <img class="member__avatar" alt="" src="{{member.profile_pic_url_image}}"/>
                     <div class="member__bio">
                       <strong class="member__name">{{member.full_name}}</strong>
                       <p class="member__position">{{member.designation}}}</p>

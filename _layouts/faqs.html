@@ -9,13 +9,14 @@ layout: common
         </div>
       </div>
       <section class="faqs-section container-6">
-        {% for section in page.faqs_sections %} 
+        {% for section in site.faqs-topics %} 
         <div class="faq-section">
-          <h4 class="faq-title o-h4">{{section.section_name | markdownify}}</h4>
+          <h4 class="faq-title o-h4">{{section.title | markdownify}}</h4>
           <ul class="faq-list">
-                {% for question in section.questions %}
+                {% assign questions = site.faqs | where: 'FAQs_Topics', section.title %}
+                {% for question in questions %}
             <li class="faq-item" >
-              <a href="{{question.question_url}}" class="faq-link">{{question.question_description | markdownify}}</a>
+              <a href="{{question.url}}" class="faq-link">{{question.title | markdownify}}</a>
             </li>
                 {% endfor %}
           </ul>
