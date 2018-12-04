@@ -39,7 +39,7 @@ supplier_portal_section:
   tabs:
   - title: Shared Orders
     tab_id: pane-po-sharing
-    image_url: "/assets/images/webapp-PO-sharing@2x.png"
+    image_url_image: "/assets/images/webapp-PO-sharing@2x.png"
     image_alt: Screenshot of PO Sharing
     description: |-
       Smart PO’s are available online or by API from requisition to final payment so there is always a “single version of the truth” between you and your supplier.
@@ -50,7 +50,7 @@ supplier_portal_section:
     description: Smart PO’s don’t stop when the PO is sent. They stay alive until
       the final payment is confirmed so all parties always get a real-time view of
       the delivery, invoice approval and payment status.
-    image_url: "/assets/images/webapp-order-tracking@2x.png"
+    image_url_image: "/assets/images/webapp-order-tracking@2x.png"
     tab_id: pane-order-tracking
     image_alt: Screenshot of Order Tracking
   - title: Smart Terms
@@ -59,14 +59,14 @@ supplier_portal_section:
       we can guide employees and suppliers through the correct process every time.
       This saves you time chasing people and gives you confidence processes are adhered
       to without requiring constant training.
-    image_url: "/assets/images/webapp-smart-terms@2x.png"
+    image_url_image: "/assets/images/webapp-smart-terms@2x.png"
     tab_id: pane-smart-terms
     image_alt: Screenshot of Smart Terms
   - title: Automated Alerting
     description: The Smart Terms also keep track of due dates for every process step.
       When actions do not happen on time, we will automatically alert the responsible
       people to remind them. This helps make sure orders never get stuck.
-    image_url: "/assets/images/phone-automated-alerts@2x.png"
+    image_url_image: "/assets/images/phone-automated-alerts@2x.png"
     tab_id: pane-automated-alerting
     image_alt: Screenshot of Automated Alerts
   - title: Messaging
@@ -75,21 +75,21 @@ supplier_portal_section:
       you, your supplier and anyone else in your company to resolve those issues.
       Centralised communications means you won’t have to trawl through lots of emails
       to get a status update.
-    image_url: "/assets/images/webapp-messaging@2x.png"
+    image_url_image: "/assets/images/webapp-messaging@2x.png"
     tab_id: pane-messaging
     image_alt: Screenshot of Messaging
   - title: Adaptive Format
     description: Different suppliers may want to receive the PO in different formats.
       Yordex will translate the PO to the format required by your suppliers, meaning
       less change for everyone involved.
-    image_url: "/assets/images/webapp-adaptive-format@2x.png"
+    image_url_image: "/assets/images/webapp-adaptive-format@2x.png"
     tab_id: pane-adaptive-format
     image_alt: Screenshot of Adaptive Format
   - title: Custom Forms
     description: Custom Forms allow you to add additional data fields to our PO or
       supplier forms. This will help you keep your business running smoothly by making
       sure we always capture the data you need.
-    image_url: "/assets/images/webapp-custom-forms@2x.png"
+    image_url_image: "/assets/images/webapp-custom-forms@2x.png"
     tab_id: pane-custom-forms
     image_alt: 
 invoice_central_section:
@@ -107,7 +107,7 @@ invoice_central_section:
       or request a change to the order. If they request a change, the responsible
       employees have to approve that first. This avoids you ever getting invoices
       that don't match.
-    image_url: "/assets/images/webapp-upload-invoice@2x.png"
+    image_url_image: "/assets/images/webapp-upload-invoice@2x.png"
     image_alt: 
     is_active: true
   - title: Self Billing
@@ -116,13 +116,13 @@ invoice_central_section:
       and a confirmation of what was received. Unlike other self-billing systems,
       no special agreement is required for tax purposes. Because the supplier has
       an account on our portal, we still generate the invoice on behalf of the supplier.
-    image_url: "/assets/images/webapp-self-billing@2x.png"
+    image_url_image: "/assets/images/webapp-self-billing@2x.png"
     image_alt: Screenshot Self Billing
   - title: Invoice Scanning
     tab_id: pane-invoice-scanning
     description: The easiest option for your suppliers is just continue to send you
       the invoice as they do today. Yordex will scan it and match it with your PO’s.
-    image_url: "/assets/images/webapp-invoice-scanning@2x.png"
+    image_url_image: "/assets/images/webapp-invoice-scanning@2x.png"
     image_alt: 
 po_approvals_section:
   section_nav_id: po-approvals
@@ -133,7 +133,7 @@ po_approvals_section:
   description: Routing is based on our flexible PO approval rules which you choose
     based on the PO amount, spend category or cost centres. Approval of the PO can
     be done anytime, anywhere by email or from our mobile app.
-  image_url: "/assets/images/webapp-approval-flow@2x.png"
+  image_url_image: "/assets/images/webapp-approval-flow@2x.png"
   image_alt: 
 expense_management_section:
   section_nav_id: expense-management
@@ -142,7 +142,7 @@ expense_management_section:
   description: Yordex manages PO’s and expenses enabling you to manage all spend in
     one place. For employees this means they can use the same easy process for all
     spend.
-  image_url: "/assets/images/webapp-expense@2x.png"
+  image_url_image: "/assets/images/webapp-expense@2x.png"
   image_alt: 
 payments_section:
   section_nav_id: payments
