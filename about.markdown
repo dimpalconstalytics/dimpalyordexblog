@@ -30,7 +30,7 @@ our_team:
       business. Erik has an MSc in Computer Science an MBA from INSEAD.
     angel_list_url: https://angel.co/erik-de-kroon
     linked_in_url: https://www.linkedin.com/in/erik-de-kroon-76b379/
-    profile_pic_url: "/assets/images/erik@2x.jpg"
+    profile_pic_url_image: "/assets/images/erik@2x.jpg"
   - full_name: Hardeep Nagi
     designation: CTO and Co-Founder
     bio_description: Hardeep is an experienced hands on architect, specialising in
@@ -39,7 +39,7 @@ our_team:
       that codes whenever needed.
     angel_list_url: https://angel.co/hardeep-nagi-1
     linked_in_url: https://www.linkedin.com/in/hardeepnagi/
-    profile_pic_url: "/assets/images/hardeep@2x.jpg"
+    profile_pic_url_image: "/assets/images/hardeep@2x.jpg"
   - full_name: Martin Crowell
     designation: Head of Operation
     bio_description: Martin is an experienced technology leader and engineer with
@@ -48,7 +48,7 @@ our_team:
       solutions across the full lifecycle.
     angel_list_url: https://angel.co/martin-crowell
     linked_in_url: https://www.linkedin.com/in/martin-crowell/
-    profile_pic_url: "/assets/images/martin@2x.jpg"
+    profile_pic_url_image: "/assets/images/martin@2x.jpg"
   - full_name: Ray de Silva
     designation: CCO
     bio_description: Ray has an extensive B2B background within larger corporates
@@ -58,7 +58,7 @@ our_team:
       Unitec.
     angel_list_url: https://angel.co/ray-de-silva
     linked_in_url: https://www.linkedin.com/in/raydesilva/
-    profile_pic_url: "/assets/images/ray@2x.jpg"
+    profile_pic_url_image: "/assets/images/ray@2x.jpg"
   - full_name: David Capilla
     designation: Lead UI Developer
     bio_description: David is a Software Engineer with international experience and
@@ -67,7 +67,7 @@ our_team:
       mainly within the financial services industry.
     angel_list_url: 
     linked_in_url: https://www.linkedin.com/in/davidcapilla/
-    profile_pic_url: "/assets/images/david@2x.jpg"
+    profile_pic_url_image: "/assets/images/david@2x.jpg"
   - full_name: Harpreet Singh
     designation: UI Developer
     bio_description: Harpreet is a Javascript Developer with over 7 years experience.
@@ -75,7 +75,7 @@ our_team:
       projects and had worked with Larsen and Toubro, Phillips Healthcare, HCL.
     angel_list_url: 
     linked_in_url: https://www.linkedin.com/in/harpreet-matharu/
-    profile_pic_url: "/assets/images/harpreet@2x.jpg"
+    profile_pic_url_image: "/assets/images/harpreet@2x.jpg"
   - full_name: Ollie McFarlane
     designation: UI Developer
     bio_description: Ollie is an experienced UI developer focused on delivering great
@@ -83,7 +83,7 @@ our_team:
       front end frameworks.
     angel_list_url: 
     linked_in_url: https://www.linkedin.com/in/olivermcfarlane/
-    profile_pic_url: "/assets/images/ollie@2x.jpg"
+    profile_pic_url_image: "/assets/images/ollie@2x.jpg"
   - full_name: Tibor Veres
     designation: QA Engineer
     bio_description: Tibor has more than 10 years of Software Testing experience in
@@ -92,7 +92,7 @@ our_team:
       Worldpay, Nokia and Reed Business Information.
     angel_list_url: 
     linked_in_url: https://www.linkedin.com/in/verestibor/
-    profile_pic_url: "/assets/images/tibor@2x.jpg"
+    profile_pic_url_image: "/assets/images/tibor@2x.jpg"
   - full_name: Valery Maitre de Kroon
     designation: Office Manager
     bio_description: Valery has 15 years experience in finance, accounting and HR
@@ -100,7 +100,7 @@ our_team:
       for banks. She recently obtained ICA Certificate in compliance, KYC and CDD
     angel_list_url: 
     linked_in_url: https://www.linkedin.com/in/valery-de-kroon-ab1a85/
-    profile_pic_url: "/assets/images/valery@2x.jpg"
+    profile_pic_url_image: "/assets/images/valery@2x.jpg"
   - full_name: Mukta Khanna
     designation: Operations
     bio_description: Mukta is an experienced Customer Success Manager. In her previous
@@ -109,7 +109,7 @@ our_team:
       Mukta holds Bachelor of Engineering in Electronics and Telecommunications.
     angel_list_url: https://yordex.com/about
     linked_in_url: https://yordex.com/about
-    profile_pic_url: "/assets/images/mukta@2x.jpg"
+    profile_pic_url_image: "/assets/images/mukta@2x.jpg"
   what_we_believe_section:
     title: What we believe in
     description: We want to build a company that people love to work with and for.
