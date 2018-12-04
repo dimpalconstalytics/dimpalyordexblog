@@ -5,6 +5,12 @@ collections:
   authors:
     title: Authors
     output: false
+  faqs:
+    title: FAQs
+    output: true
+  faqs-topics:
+    title: FAQs_Topics
+    output: true
   posts:
     title: Posts
     output: true
