@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon-reports-alt" viewBox="0 0 48 48" width="100%" height="100%">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="40" y="8" fill="#3E9CFA" rx="3"></rect>
+    <path fill="#BFE4FF" d="M7,0 L41,0 C42.6568542,-3.04359188e-16 44,1.34314575 44,3 L44,6 L4,6 L4,3 C4,1.34314575 5.34314575,3.04359188e-16 7,0 Z"></path>
+    <path fill="#FFF" d="M3,17 L45,17 L45,44 C45,44.5522847 44.5522847,45 44,45 L4,45 C3.44771525,45 3,44.5522847 3,44 L3,17 Z"></path>
+    <circle cx="5" cy="13" r="2" fill="#FFF"></circle>
+    <circle cx="12" cy="13" r="2" fill="#FFF"></circle>
+    <g transform="translate(9 24)">
+      <rect width="6" height="9" y="9" fill="#BFE4FF"></rect>
+      <rect width="6" height="12" x="8" y="6" fill="#3E9CFA"></rect>
+      <rect width="6" height="8" x="16" y="10" fill="#BFE4FF"></rect>
+      <rect width="6" height="18" x="24" fill="#3E9CFA"></rect>
+    </g>
+  </g>
+</svg>
