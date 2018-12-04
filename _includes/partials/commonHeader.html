@@ -8,6 +8,11 @@
     <div class="product-header-wrap">
 {% endif %}
 
+{% if page.page_type == 'home' %}
+<div class="index-masthead">
+    <div class="index-header-wrap">
+{% endif %}
+
 {% assign my_page_url = page.url | remove: '/' %}
 
 <header class="header" ng-class="{'menu-open': isMenuOpen}">
@@ -41,10 +46,11 @@
 </header>
   </div>
 
+
 <script>
-    // sticky header
-    $(window).on('scroll', function(event) {
-      var $header = $('.header');
+
+function setHeader(){
+  var $header = $('.header');
       var scrollValue = $(window).scrollTop();
       var holdTimeout = null;
 
@@ -71,5 +77,13 @@
           }, 300);
         }
       }
+}
+
+    // sticky header
+    $(window).on('scroll', function(event) {
+      setHeader();
+    });
+    $(function(){
+      setHeader();
     });
 </script>

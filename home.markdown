@@ -1,15 +1,18 @@
 ---
 title: Home
-published: false
+published: true
 position: 1
 header:
   title: Unlock the hidden value in accounts payable
   body: Yordex Smart PO’s help businesses reduce invoice processing costs by up to
     75%, improve visibility, optimise cash flow and deliver winning buyer-supplier
     relationships.
+  image: /assets/images/yordex-hero-tablet@2x.png
   button:
     copy: Schedule a Demo
     url: "/request-demo"
+  theme: dark
+page_type: home
 sections:
 - handle: benefits
   subsections:
@@ -69,7 +72,7 @@ sections:
       and margins. Improve cash forecasting, optimise use of existing payment terms
       and identity opportunities to further improve terms or process efficiency.
     icon-image: "/uploads/icon-reports.svg"
-- handle: signup
+- handle: get-started
   title: Maximise your ROI from day one
   body: Get up and running with Yordex with virtually no interruption to your current
     processes. Unlike other AP solutions Yordex has no expensive, time-consuming process
@@ -78,6 +81,7 @@ sections:
     copy: 
     url: 
 - handle: testimonials
+  title: Manage spend in real time with Yordex
   testimonials:
   - Aidan Connolly
   - Sheetal Sachdev

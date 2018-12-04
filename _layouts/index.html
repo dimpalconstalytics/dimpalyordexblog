@@ -1,75 +1,188 @@
 ---
-layout: default
+layout: common
 ---
 
+<div class="index-hero o-container-8">
+		<div class="index-hero__left o-gutter">
+		  <img class="index-hero__img" src="{{page.header.image}}" alt="" />
+		</div>
+		<div class="index-hero__right o-gutter">
+		  <h1 class="index-hero__heading o-h1">{{page.header.title}}</h1>
+		  <p class="index-hero__subheading">{{page.header.body | markdownify}}</p>
+		  <a class="index-hero__btn o-link-btn o-primary-btn o-lg-text" href="{{page.header.button.url}}">{{page.header.button.copy}}</a>
+		</div>
+	
+	  </div>
+	
+	  <div class="logo-shape">
+		<svg xmlns="http://www.w3.org/2000/svg" width="1143" height="1471" viewBox="0 0 1143 1471">
+		  <path fill="#00204D" fill-opacity=".1" fill-rule="evenodd" d="M653.996438,157.405039 L234,415.330556 L234,637.266466 L234,1560 L1151.95762,994.236401 C1370.83329,852.693256 1441.98976,557.289561 1309.45109,328.513084 C1174.99202,95.4229382 892.028096,20.2493779 653.996438,157.405039 Z" transform="translate(-234 -89)"/>
+		</svg>
+	  </div>
+	
+	  <div class="logo-shape logo-shape--small">
+		<svg xmlns="http://www.w3.org/2000/svg" width="857" height="1103" viewBox="0 0 857 1103">
+		  <path fill="#00204D" fill-opacity=".1" fill-rule="evenodd" d="M911.125989,495.292154 L596,688.692456 L596,855.10667 L986.038867,616.312058 C1089.28869,555.450537 1222.26079,590.629647 1283.27478,696.188592 C1344.74871,802.691126 1310.08692,940.865813 1206.37714,1003.98374 C1206.11717,1004.14785 596,1380.58579 596,1380.58579 L596,1547 L1284.74942,1122.77345 C1448.97322,1016.64015 1502.36237,795.137584 1402.91776,623.594108 C1302.03227,448.816112 1089.72265,392.448718 911.125989,495.292154 Z" transform="matrix(-1 0 0 1 1453 -444)" />
+		</svg>
+	  </div>
+	</div>
+	<div class="index-main">
+			<div id="logo-shape-benefits" class="logo-shape">
+					<svg class="logo-shape--default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1142 1471" width="1142" heigh="1471"><path fill-rule="evenodd" d="M419.923 68.405L0 326.331v221.935l519.748-318.465c137.587-81.167 314.78-34.25 396.084 106.527 81.917 142.035 35.728 326.31-102.47 410.486-.347.22-813.362 502.25-813.362 502.25V1471l917.797-565.764c218.837-141.543 289.981-436.946 157.466-665.723C940.827 6.423 657.913-68.75 419.923 68.405z"/></svg>
+				  </div>
 {% for section in page.sections %}
 {% assign handle = section.handle %}
-<section class="section {% if handle %}{{ section.handle | prepend: 'section-' | append: ' ' }}{% endif %}">
+<section class="{% if handle %}{{ section.handle | prepend: 'index-' | append: ' ' }}{% endif %}">
 {% case handle %}
 	<!-- Section Benefits -->
   {% when 'benefits' %}
-    {% for subsection in section.subsections %}
-		<img src="{{ subsection.icon-image }}" />
-		<h2 class="">{{ subsection.title }}</h2>
-		<p>{{ subsection.body | markdownify }}</p>
-		<figure class="">
-			<img src="{{ subsection.image }}" />
-		</figure>
+  	{% for subsection in section.subsections %}
+	<div class="index-benefit index-benefit--{{forloop.index}} o-container-8">
+		<div class="index-benefit__content o-gutter">
+		  <div class="benefit">
+			  <img src="{{ subsection.icon-image }}" class="benefit__icon" width="72px" height="72px" />
+			<h2 class="o-h2 benefit__heading">Reduce the cost of invoice processing and payment by up to 75%</h2>
+			<p class="o-lg-text benefit__content">A fresh approach to an age old problem. Yordex’s easy to implement Smart POs automatically take your employees and suppliers through the right process every time, incl. requisition, PO approval, receipting and invoicing. This means you can sit back and watch the process go into self-drive.</p>
+		  </div>
+		</div>
+		{% if subsection.image %}
+		<div class="index-benefit__img o-gutter">
+		  <img src="{{ subsection.image }}" alt="">
+		</div>
+		{% endif %}
+	</div>
 		{% endfor %}
 
 	<!-- Section Schedule a Demo -->
 	{% when 'demo' %}
 	{{ section.subtitle }}
-	<form>
-    <input class="" type="email" placeholder="Your Work Email"/>
-    <button class="" type="submit">{{ section.button.copy }}</button>
-	</form>
-	<div class="macbook">
-    <div class="macbook__screen" style="padding-top: 62.5%; background-image: url('{{ section.image }}'); background-size: cover;"></div>
-   </div>
+    <div class="index-demo__left o-gutter">
+			<div class="schedule-card">
+			  <p class="schedule-card__text">{{section.title}}</p>
+			  <form class="schedule-form">
+					<input class="cta__input" type="email" placeholder="Your Work Email"/>
+					<button class="cta__submit o-lg-text o-tertiary-btn" type="submit">{{ section.button.copy }}</button>
+				</form>
+			</div>
+		  </div>
+		  <div class="index-demo__right o-gutter">
+			<div class="macbook">
+			  <div class="macbook__screen" style="padding-top: 62.5%; background-image: url('{{ section.image }}'); background-size: cover;"></div>
+			</div>
+		  </div>
 
   <!-- Section Features -->
   {% when 'features' %}
-  {% if section.title %}
-		<h3 class="">{{ section.title }}</h3>
+  <div class="o-container-8">
+	{% if section.title %}
+		<h3 class="index-features__heading o-h3 o-gutter">{{ section.title }}</h3>
 	{% endif %}
-  {% for subsection in section.subsections %}
-		<img src="{{ subsection.icon-image }}" />
-		<h4 class="">{{ subsection.title }}</h4>
-		<p>{{ subsection.body | markdownify }}</p>
-	{% endfor %}
-	{% when 'signup' %}
-		<h3 class="">{{ section.title }}</h3>
-		<p>{{ subsection.body | markdownify }}</p>
-		{% if section.button %}
-			<!-- Later -->
-		{% endif %}
+	<div class="index-features__list">
+		{% for subsection in section.subsections %}
+        	<div class="index-features__list-item o-gutter">
+				<div class="n-feature">
+				  <i class="n-feature__icon">
+					<img src="{{ subsection.icon-image }}" width="48px" height="48px" />
+				  </i>
+				  <h4 class="n-feature__heading o-h4">{{ subsection.title }}</h4>
+				  <p class="n-feature__content">{{ subsection.body | markdownify }}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+   </div>
+	{% when 'get-started' %}
+    	<div class="index-get-started__left o-gutter">
+			<h3 class="index-get-started__heading o-h3">{{ section.title }}</h3>
+			<div class="index-get-started__content">
+			  <p>{{ section.body | markdownify }}</p>
+			</div>
+		</div>
 
 	<!-- Section Testimonials -->
 	{% when 'testimonials' %}
+		<div class="index-testimonials__hgroup o-gutter">
+			<h3 class="index-testimonials__heading o-h3">{{section.title}}</h3>
+		</div>
+		<div class="o-container-8">
+			<div class="testimonials-slider">
 	{% assign sorted_testimonials = site.testimonials | sort:'position' %}
 	{% for testimonial in sorted_testimonials %}
 		{% if section.testimonials contains testimonial.title %}
-			<blockquote class="">{{ testimonial.content }}</blockquote>
-			<img src="{{ testimonial.author.profile-image }}" alt="Photo of {{ testimonial.author.name }}" title="{{ testimonial.author.name }}" />
-			{{ testimonial.author.name }}
-			{{ testimonial.author.title }}&nbsp;at&nbsp;{{ testimonial.author.company }}
-			{% if testimonial.logo-image %}
-			<img src="{{ testimonial.logo-image }}" alt="{{ testimonial.author.company }} logo" title="{{ testimonial.author.company }}" />
-			{% endif %}
+			<div class="o-gutter">
+				<div class="testimonial testimonial--tertiary">
+				  <blockquote class="testimonial__quote o-lg-text">{{ testimonial.content }}</blockquote>
+				  <div class="testimonial__data">
+					<div class="testimonial__author">
+					  <img class="testimonial__author-avatar" alt="Photo of {{ testimonial.author.name }}" title="{{ testimonial.author.name }}" src="{{ testimonial.author.profile-image }}"/>
+					  <p class="testimonial__author-data"><span>{{ testimonial.author.name }}</span><br/>{{ testimonial.author.title }}&nbsp;at&nbsp;<span>{{ testimonial.author.company }}</span></p>
+					</div>
+					{% if testimonial.logo-image %}
+					<img src="{{ testimonial.logo-image }}" alt="{{ testimonial.author.company }} logo" title="{{ testimonial.author.company }}" width="67px" height="42" />
+					{% endif %}
+				  </div>
+				</div>
+			</div>
 		{% endif %}
 	{% endfor %}
+			</div>
+		</div>
 
 	<!-- Section Call-to-Action -->
 	{% when 'cta' %}
-		<h2 class="">{{ section.title }}</h2>
-		{% if section.subtitle %}
-		<p class="">{{ section.subtitle }}</p>
-		{% endif %}
-		<form>
-    	<input class="" type="email" placeholder="Your Work Email"/>
-    	<button class="" type="submit">{{ section.button.copy }}</button>
-	</form>
+
+	<section class="cta o-gutter">
+			<div class="cta__hgroup">
+			  <h2 class="cta__heading o-h2">{{ section.title }}</h2>
+			  {% if section.subtitle %}
+			  <p class="o-lg-text">{{ section.subtitle }}</p>
+			  {% endif %}
+			</div>
+			<form class="cta__form">
+				<input class="cta__input" type="email" placeholder="Your Work Email"/>
+				<button class="cta__submit o-lg-text o-primary-btn" type="submit">{{ section.button.copy }}</button>
+			</form>
+	</section>
 {% endcase %}
 </section>
 {% endfor %}
+</div>
+
+<script>
+		$('.testimonials-slider').slick({
+		  dots: false,
+		  infinite: true,
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		  responsive: [
+			{
+			  breakpoint: 968,
+			  settings: {
+				slidesToShow: 1,
+				arrows: false
+			  }
+			}
+		  ]
+		});
+	  
+		!function() {
+			var t;
+			if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+				t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+				t.factory = function(e) {
+					return function() {
+						var n;
+						return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+					};
+				}, t.methods.forEach(function(e) {
+				t[e] = t.factory(e);
+			}), t.load = function(t) {
+				var e, n, o, i;
+				e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+					o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+					n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+			});
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('kfkatt4ftnbg');
+	  </script>
